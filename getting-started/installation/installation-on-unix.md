@@ -35,9 +35,9 @@ You should be using the binaries in 99% of the cases as it requires no installat
 Go to the actions tab (at the top of the repo), click on the latest build and download the appropriate binary according to your OS.
 
 {% hint style="warning" %}
-Binaries are compiled for python 3.8 / 3.9 / 3.10 / 3.11
+Binaries are compiled for Python 3.8 / 3.9 / 3.10 / 3.11
 {% endhint %}
 
 {% hint style="info" %}
-Note: you need to be logged into Github in order to download the binaries from the **Actions** feature
+Note: you need to be logged into GitHub in order to download the binaries from the **Actions** feature
 {% endhint %}

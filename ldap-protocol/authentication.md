@@ -2,7 +2,7 @@
 
 ### LDAP Authentication
 
-Testing if account exist without kerberos protocol
+Testing if an account exists without kerberos protocol
 
 ```
 #~ nxc ldap 192.168.1.0/24 -u users.txt -p '' -k
@@ -28,4 +28,4 @@ LDAP        192.168.255.131 5985   ROGER            [+] GOLD\user:password
 Domain name resolution is expected
 {% endhint %}
 
-By default, the ldap protocol will ge the domain name by making connection to the SMB share (of the dc), if you don't want that initial connection, just add the option `--no-smb`
+By default, the ldap protocol will get the domain name by making connection to the SMB share (of the dc), if you don't want that initial connection, just add the option `--no-smb`

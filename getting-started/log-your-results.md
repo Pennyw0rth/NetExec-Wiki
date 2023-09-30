@@ -2,10 +2,14 @@
 description: Log every output and command into a file
 ---
 
-# Log your results
+# Logging
 
-Using nxc you have to way to log your results:
+There are two ways to log results:
 
-* using the nxc.conf file, this will log everything
-* using the option `--log` file , this will log only the current command
-* both at the same time
+* Using the nxc.conf file
+  * Set "log\_mode = True"
+  * This will log everything
+* Using the option `--log` file
+  * This will log only the current command
+
+You can use both at the same time if you wish to log to two separate files

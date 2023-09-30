@@ -1,13 +1,9 @@
----
-description: check if the spooler or webdav service are running
----
+# Checking for Spooler & WebDav
 
-# Spooler, WebDav running ?
-
-### Checking if the service spooler is running
+### Checking if the Spooler Service is Running
 
 `NetExec smb <ip> -u 'user' -p 'pass' -M spooler`
 
-### Checking if the service webdav is running
+### Checking if the WebDav Service is Running
 
 `NetExec smb <ip> -u 'user' -p 'pass' -M webdav`

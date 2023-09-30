@@ -15,13 +15,13 @@ netexec <protocol> <target(s)> -u username -p password
 ```
 
 {% hint style="info" %}
-When using usernames or passwords that contain special symbols, wrap them in single quotes to make your shell interpret them as a string.
+When using usernames or passwords that contain special symbols (especially exclaimation points!), wrap them in single quotes to make your shell interpret them as a string.
 {% endhint %}
 
 Example:
 
 ```
-netexec <protocol> <target(s)> -u username -p 'October2022'
+netexec <protocol> <target(s)> -u username -p 'October2022!'
 ```
 
 {% hint style="info" %}
@@ -30,7 +30,7 @@ Due to a [bug](https://bugs.python.org/issue9334) in Python's argument parsing l
 
 `netexec <protocol> <target(s)> -u='-username' -p='-`October2022`'`
 
-## Using a credential set from the database
+## Using a Credential Set From the Database
 
 By specifying a credential ID (or multiple credential IDs) with the `-id` flag nxc will automatically pull that credential from the back-end database and use it to authenticate (saves a lot of typing):
 
@@ -38,7 +38,7 @@ By specifying a credential ID (or multiple credential IDs) with the `-id` flag n
 netexec <protocol> <target(s)> -id <cred ID(s)>
 ```
 
-## Multi-domain environment
+## Multi-Domain Environment
 
 You can use nxc with mulitple domain environment
 
@@ -77,7 +77,7 @@ netexec <protocol> <target(s)> -u ~/file_containing_usernames -p ~/file_containi
 netexec <protocol> <target(s)> -u ~/file_containing_usernames -H ~/file_containing_ntlm_hashes
 ```
 
-## Password Spraying without bruteforce
+## Password Spraying Without Bruteforce
 
 Can be usefull for protocols like WinRM and MSSQL. This option avoid the bruteforce when you use files (-u file -p file)
 

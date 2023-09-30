@@ -1,12 +1,25 @@
 ---
-description: Learn to use NetExec
-cover: >-
-  https://images.unsplash.com/photo-1517825738774-7de9363ef735?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxiZWFzdHxlbnwwfHx8fDE2OTQ2MjE5OTZ8MA&ixlib=rb-4.0.3&q=85
-coverY: 137
+description: Welcome to the NetExec wiki
+cover: .gitbook/assets/NetExec-Favicon1.2B.png
+coverY: 144
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Introduction
 
 ## NetExec
 
-NetExec (a.k.a nxc) is a post-exploitation tool that helps automate assessing the security of _large_ Active Directory networks.
+NetExec (a.k.a nxc) is a network service exploitation tool that helps automate assessing the security of _large_ networks.

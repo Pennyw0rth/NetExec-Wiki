@@ -1,6 +1,6 @@
-# Enumerate hosts
+# Enumerate Hosts
 
-### Map network hosts
+### Map Network Hosts
 
 Returns a list of live hosts
 
