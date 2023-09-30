@@ -1,10 +1,14 @@
 ---
-description: Enumeration on CrakMapExec
+description: Enumeration on NetExec
 ---
 
 # Enumeration
 
-The following use cases assume you have a Kali Linux host connected to an internal network. For the examples it is also assumed hosts are within a 192.168.1.0/24 IP space. If nxc isnt giving output of anykind, you probably have something wrong with the command.
+The following use cases assume you have a Kali Linux host connected to an internal network.
+
+For the examples it is also assumed hosts are within a 192.168.1.0/24 IP space.
+
+If nxc isnt giving output of any kind, you probably have something wrong with the command.
 
 {% content-ref url="untitled.md" %}
 [untitled.md](untitled.md)

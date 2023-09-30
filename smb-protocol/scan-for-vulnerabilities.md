@@ -1,14 +1,14 @@
 ---
-description: Check if the DC is vulnerable
+description: Check if a DC is vulnerable
 ---
 
-# Scan for vulnerabilities
+# Scan for Vulnerabilities
 
-When you start your internal pentest, this is the first modules you should try:
+When you start your internal pentest, these are the first modules you should try:
 
-### Zerologon
+### ZeroLogon
 
-`NetExec smb <ip> -u '' -p '' -M zerologo`
+`NetExec smb <ip> -u '' -p '' -M zerologon`
 
 ### PetitPotam
 
@@ -21,3 +21,7 @@ When you start your internal pentest, this is the first modules you should try:
 {% hint style="warning" %}
 You need a credential for this one
 {% endhint %}
+
+Or, try them all at once! Just list each one: `-M zerologon -M petitpotam`
+
+Check out what other modules are available via `nxc <protocol> -L`

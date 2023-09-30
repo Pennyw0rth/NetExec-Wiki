@@ -1,8 +1,10 @@
-# Execute remote command
+# Executing Remote Commands
 
 ## Command Execution
 
-Executing commands on a windows system requires Administrator credentials, nxc automatically tells you if the credential set you're using has admin access to a host by appending '(Pwn3d!)' to the output when authentication is successful.
+Executing commands on a windows system requires Administrator credentials.
+
+nxc automatically tells you if the credential set you're using has admin access to a host by appending "(Pwn3d!)" (or whatever value you've set in the config) to the output when authentication is successful.
 
 ## Execution Methods
 
@@ -20,7 +22,7 @@ By default nxc will fail over to a different execution method if one fails. It a
 
 If you want to force nxc to use only one execution method you can specify which one using the `--exec-method` flag.
 
-## Executing commands
+## Executing Commands
 
 In the following example, we try to execute `whoami` on the target using the `-x` flag:
 

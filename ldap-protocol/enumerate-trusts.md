@@ -1,10 +1,6 @@
----
-description: Domain trusts
----
+# Enumerate Domain Trusts
 
-# Enumerate trusts
-
-#### Identify Trust Relationships And Direction
+#### Identify Trust Relationships and Direction
 
 ```
 NetExec ldap <ip> -u user -p pass -M enum_trusts

@@ -4,7 +4,7 @@ description: NetExec vs LAPS
 
 # Defeating LAPS
 
-### Using NetExec when LAPS installed on the domain
+### Using NetExec When LAPS Installed on the Domain
 
 If LAPS is used inside the domain, it can be hard to use NetExec to execute a command on every computer on the domain.
 

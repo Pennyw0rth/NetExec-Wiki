@@ -2,9 +2,9 @@
 description: Get a remote file or send a remote file using NetExec
 ---
 
-# Get and Put files
+# Get and Put Files
 
-## Send a file to the remote target
+## Send a File to the Remote Target
 
 Send a local file to the remote target
 
@@ -12,7 +12,7 @@ Send a local file to the remote target
 #~ nxc smb 172.16.251.152 -u user -p pass --put-file /tmp/whoami.txt \\Windows\\Temp\\whoami.txt
 ```
 
-## Get a file from the remote target
+## Get a File From the Remote Target
 
 Get a remote file on the remote target
 

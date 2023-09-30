@@ -1,6 +1,6 @@
-# Unconstrained delegation
+# Unconstrained Delegation
 
-NetExec allows you to retrieve the list of all computers et users with the flag **TRUSTED\_FOR\_DELEGATION**
+NetExec allows you to retrieve the list of all computers and users with the flag **TRUSTED\_FOR\_DELEGATION**
 
 ```
 nxc ldap 192.168.0.104 -u harry -p pass --trusted-for-delegation
@@ -12,7 +12,7 @@ nxc ldap 192.168.0.104 -u harry -p pass --trusted-for-delegation
 
 {% embed url="https://github.com/PowerShellMafia/PowerSploit/blob/dev/Recon/PowerView.ps1" %}
 
-### Ressources:
+### Resources:
 
 {% embed url="https://troopers.de/downloads/troopers19/TROOPERS19_AD_Fun_With_LDAP.pdf" %}
 

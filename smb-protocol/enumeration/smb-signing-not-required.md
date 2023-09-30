@@ -1,10 +1,10 @@
-# Enumerate host with SMB signing not required
+# Enumerate Hosts with SMB Signing Not Required
 
 Maps the network of live hosts and saves a list of only the hosts that **don't** require SMB signing.\
 List format is one IP per line
 
 ```
-#~ nxc smb 192.168.1.0/24 --gen-relay-list relaylistOutputFilename.txt
+#~ nxc smb 192.168.1.0/24 --gen-relay-list relay_list.txt
 ```
 
 Expected Results:
@@ -16,12 +16,10 @@ SMB         192.168.1.111    445    SERVER1          [*] Windows Server 2016 Sta
 SMB         192.168.1.117    445    WIN10DESK1       [*] WIN10DESK1 x64 (name:WIN10DESK1) (domain:OCEAN) (signing:False) (SMBv1:True)
 ...SNIP...
 
-#~ cat relaylistOutputFilename.txt
+#~ cat relay_list.txt
 192.168.1.111
 192.168.1.117
 ```
-
-{% embed url="https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html" %}
 
 ### Alternative with nmap
 
