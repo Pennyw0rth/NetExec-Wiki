@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [News](news/README.md)
+  * [v1.0.0 Release!](news/v1.0.0-release.md)
 * [Changelog](changelog.md)
 
 ## Getting Started
