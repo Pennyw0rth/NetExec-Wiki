@@ -1,12 +1,12 @@
-# Enumerate null sessions
+# Enumerate Null Sessions
 
 Checking if **Null Session** is enabled on the network, can be very useful on a Domain Controller to enumerate users, groups, password policy etc
 
 ```
-#~ nxc smb 10.10.10.161 -u '' -p ''
-#~ nxc smb 10.10.10.161 --pass-pol
-#~ nxc smb 10.10.10.161 --users
-#~ nxc smb 10.10.10.161 --groups
+nxc smb 10.10.10.161 -u '' -p ''
+nxc smb 10.10.10.161 --pass-pol
+nxc smb 10.10.10.161 --users
+nxc smb 10.10.10.161 --groups
 ```
 
 You can also reproduce this behavior with `smbclient` or `rpcclient`

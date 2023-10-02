@@ -2,10 +2,10 @@
 description: Extract subnet over an active directory environment
 ---
 
-# Extract subnet
+# Extract Subnet
 
 ```
-$ poetry run NetExec ldap <ip> -u <user> -p <pass> -M get-network
-$ poetry run NetExec ldap <ip> -u <user> -p <pass> -M get-network -o ONLY_HOSTS=true
-$ poetry run NetExec ldap <ip> -u <user> -p <pass> -M get-network -o ALL=true
+$ nxc ldap <ip> -u <user> -p <pass> -M get-network
+$ nxc ldap <ip> -u <user> -p <pass> -M get-network -o ONLY_HOSTS=true
+$ nxc ldap <ip> -u <user> -p <pass> -M get-network -o ALL=true
 ```

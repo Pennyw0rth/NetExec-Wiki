@@ -44,7 +44,7 @@ Example:
 nxc <protocol> <target(s)> -u Administrator -p 'P@ssw0rd' -M lsassy -o COMMAND=xxxxxxxxug'
 ```
 
-### Running Multiple Modules
+### 🆕 Running Multiple Modules
 
 Simply define all the modules you want, each proceeded by a `-m` option flag:
 

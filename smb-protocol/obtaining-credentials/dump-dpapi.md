@@ -2,7 +2,7 @@
 description: Dump DPAPI credentials using NetExec
 ---
 
-# Dump DPAPI
+# 🆕 Dump DPAPI
 
 You can dump DPAPI credentials using NetExec using the following option --dpapi. It will get all secrets from Credential Manager, Chrome, Edge, Firefox. --dpapi support options :&#x20;
 

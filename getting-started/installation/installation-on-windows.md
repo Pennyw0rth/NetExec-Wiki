@@ -1,23 +1,20 @@
----
-description: Installation of NetExec on Windows
----
-
 # 🪟 Installation for Windows
 
 ## Using NetExec Binary
 
-1. Download the latest Windows binary on the release page (netexec-windows-latest)
+1. Download the latest Windows binary on the [release ](https://github.com/Pennyw0rth/NetExec/releases)page (netexec-windows-latest)
 2. Unzip the folder
 3. Run the binary from the command line
 
-## From Python Standalone Version
+## From Python ZippApp
 
 {% hint style="warning" %}
 Not all functionalities have been tested
 {% endhint %}
 
 1. You can also use the [standalone](https://www.python.org/downloads/windows/) version of Python, then add the path of the folder containing the python.exe file to the **PATH** env variable of your user.
-2. Then just run the binary `python.exe .\nxc`
+2. Download the ZippApp for your specific OS & Python version [here](https://github.com/Pennyw0rth/NetExec/actions/runs/6374124950)
+3. Then just run the binary `python.exe .\nxc`
 
 {% embed url="https://www.python.org/downloads/windows/" %}
 

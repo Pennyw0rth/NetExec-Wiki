@@ -2,22 +2,22 @@
 description: Using NetExec for password spraying
 ---
 
-# Password spraying
+# Password Spraying
 
 ### Using Username/Password Lists
 
 You can use multiple usernames or passwords by seperating the names/passwords with a space.
 
 ```
-#~ nxc smb 192.168.1.101 -u user1 user2 user3 -p Summer18
-#~ nxc smb 192.168.1.101 -u user1 -p password1 password2 password3
+nxc smb 192.168.1.101 -u user1 user2 user3 -p Summer18
+nxc smb 192.168.1.101 -u user1 -p password1 password2 password3
 ```
 
 nxc accepts txt files of usernames and passwords. One user/password per line. Watch out for account lockout!
 
 ```
-#~ nxc smb 192.168.1.101 -u /path/to/users.txt -p Summer18
-#~ nxc smb 192.168.1.101 -u Administrator -p /path/to/passwords.txt
+nxc smb 192.168.1.101 -u /path/to/users.txt -p Summer18
+nxc smb 192.168.1.101 -u Administrator -p /path/to/passwords.txt
 ```
 
 {% hint style="warning" %}
@@ -25,19 +25,19 @@ By default nxc will exit after a successful login is found. Using the **--contin
 {% endhint %}
 
 ```
-#~ nxc smb 192.168.1.101 -u /path/to/users.txt -p Summer18 --continue-on-success
+nxc smb 192.168.1.101 -u /path/to/users.txt -p Summer18 --continue-on-success
 ```
 
 ### Checking login == password using wordlist
 
 ```
-#~ nxc smb 192.168.1.101 -u user.txt -p user.txt
+nxc smb 192.168.1.101 -u user.txt -p user.txt
 ```
 
-### Checking multiple usernames/passwords using worlist
+### Checking multiple usernames/passwords using worclist
 
 ```
-#~ nxc smb 192.168.1.101 -u user.txt -p password.txt
+nxc smb 192.168.1.101 -u user.txt -p password.txt
 ```
 
 The result will be:
@@ -58,7 +58,7 @@ No bruteforce possible with this one as 1 user = 1 password
 {% endhint %}
 
 ```
-#~ nxc smb 192.168.1.101 -u user.txt -p password.txt --no-bruteforce --continue-on-succes
+nxc smb 192.168.1.101 -u user.txt -p password.txt --no-bruteforce --continue-on-succes
 ```
 
 The result will be:

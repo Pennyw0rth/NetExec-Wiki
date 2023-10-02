@@ -1,11 +1,11 @@
-# Read DACL right
+# Read DACL Rights
 
 LDAP module that permits to read and export the DACLs of one or mulitple objects !
 
 * Read all the ACEs of the Administrator
 
 ```
-poetry run NetExec ldap lab-dc.lab.local -k --kdcHost lab-dc.lab.local -M daclread -o TARGET=Administrator ACTION=read
+nxc ldap lab-dc.lab.local -k --kdcHost lab-dc.lab.local -M daclread -o TARGET=Administrator ACTION=read
 SMB         lab-dc.lab.local 445    LAB-DC           [*] Windows 10.0 Build 17763 x64 (name:LAB-DC) (domain:lab.local) (signing:False) (SMBv1:False)
 LDAP        lab-dc.lab.local 389    LAB-DC           [+] lab.local\
 DACLREAD    lab-dc.lab.local 389    LAB-DC           Target principal found in LDAP (CN=Administrator,CN=Users,DC=lab,DC=local)
@@ -39,7 +39,7 @@ DACLREAD    lab-dc.lab.local 389    LAB-DC           Target principal found in L
 * Read all the rights the BlWasp user has on the Administrator
 
 ```
-poetry run NetExec ldap lab-dc.lab.local -k --kdcHost lab-dc.lab.local -M daclread -o TARGET=Administrator ACTION=read PRINCIPAL=BlWasp
+nxc ldap lab-dc.lab.local -k --kdcHost lab-dc.lab.local -M daclread -o TARGET=Administrator ACTION=read PRINCIPAL=BlWasp
 SMB         lab-dc.lab.local 445    LAB-DC           [*] Windows 10.0 Build 17763 x64 (name:LAB-DC) (domain:lab.local) (signing:False) (SMBv1:False)
 LDAP        lab-dc.lab.local 389    LAB-DC           [+] lab.local\
 DACLREAD    lab-dc.lab.local 389    LAB-DC           Found principal SID to filter on: S-1-5-21-2570265163-3918697770-3667495639-1103
@@ -56,7 +56,7 @@ DACLREAD    lab-dc.lab.local 389    LAB-DC           Target principal found in L
 * Read all the principals that have DCSync rights on the domain
 
 ```
-poetry run NetExec ldap lab-dc.lab.local -k --kdcHost lab-dc.lab.local -M daclread -o TARGET_DN="DC=lab,DC=LOCAL" ACTION=read RIGHTS=DCSync
+nxc ldap lab-dc.lab.local -k --kdcHost lab-dc.lab.local -M daclread -o TARGET_DN="DC=lab,DC=LOCAL" ACTION=read RIGHTS=DCSync
 SMB         lab-dc.lab.local 445    LAB-DC           [*] Windows 10.0 Build 17763 x64 (name:LAB-DC) (domain:lab.local) (signing:False) (SMBv1:False)
 LDAP        lab-dc.lab.local 389    LAB-DC           [+] lab.local\
 DACLREAD    lab-dc.lab.local 389    LAB-DC           Target principal found in LDAP (DC=lab,DC=local)
@@ -86,7 +86,7 @@ DACLREAD    lab-dc.lab.local 389    LAB-DC           Target principal found in L
 * Maybe a Denied ACE is present ?
 
 ```
-poetry run NetExec ldap lab-dc.lab.local -k --kdcHost lab-dc.lab.local -M daclread -o TARGET=Administrator ACTION=read ACE_TYPE=denied
+nxc ldap lab-dc.lab.local -k --kdcHost lab-dc.lab.local -M daclread -o TARGET=Administrator ACTION=read ACE_TYPE=denied
 SMB         lab-dc.lab.local 445    LAB-DC           [*] Windows 10.0 Build 17763 x64 (name:LAB-DC) (domain:lab.local) (signing:False) (SMBv1:False)
 LDAP        lab-dc.lab.local 389    LAB-DC           [+] lab.local\
 DACLREAD    lab-dc.lab.local 389    LAB-DC           Target principal found in LDAP (CN=Administrator,CN=Users,DC=lab,DC=local)
@@ -100,7 +100,7 @@ DACLREAD    lab-dc.lab.local 389    LAB-DC           Target principal found in L
 * Backup the DACLs of multiple targets
 
 ```
-poetry run NetExec ldap lab-dc.lab.local -k --kdcHost lab-dc.lab.local -M daclread -o TARGET=../../targets.txt ACTION=backup
+nxc ldap lab-dc.lab.local -k --kdcHost lab-dc.lab.local -M daclread -o TARGET=../../targets.txt ACTION=backup
 SMB         lab-dc.lab.local 445    LAB-DC           [*] Windows 10.0 Build 17763 x64 (name:LAB-DC) (domain:lab.local) (signing:False) (SMBv1:False)
 LDAP        lab-dc.lab.local 389    LAB-DC           [+] lab.local\
 DACLREAD    lab-dc.lab.local 389    LAB-DC           Target principal found in LDAP (blwasp)

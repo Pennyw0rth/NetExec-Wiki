@@ -1,9 +1,9 @@
-# Enumerate shares and access
+# Enumerate Shares and Access
 
 Enumerate permissions on all shares
 
 ```
-#~ nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --shares
+nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --shares
 ```
 
 {% hint style="info" %}

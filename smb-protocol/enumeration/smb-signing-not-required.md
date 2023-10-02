@@ -4,7 +4,7 @@ Maps the network of live hosts and saves a list of only the hosts that **don't**
 List format is one IP per line
 
 ```
-#~ nxc smb 192.168.1.0/24 --gen-relay-list relay_list.txt
+nxc smb 192.168.1.0/24 --gen-relay-list relay_list.txt
 ```
 
 Expected Results:

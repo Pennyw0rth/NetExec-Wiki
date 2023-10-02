@@ -18,8 +18,8 @@
 * [Database General Usage](getting-started/database-general-usage.md)
 * [BloodHound Integration](getting-started/bloodhound-integration.md)
 * [Audit Mode](getting-started/audit-mode.md)
-* [Ignore OpSec Warnings](getting-started/ignore-opsec-warnings.md)
-* [Logging](getting-started/log-your-results.md)
+* [🆕 Ignore OpSec Warnings](getting-started/ignore-opsec-warnings.md)
+* [🆕 Logging](getting-started/log-your-results.md)
 
 ## SMB protocol
 
@@ -55,8 +55,8 @@
   * [Dump LSASS](smb-protocol/obtaining-credentials/dump-lsass.md)
   * [Dump WIFI password](smb-protocol/obtaining-credentials/dump-wifi-password.md)
   * [Dump KeePass](smb-protocol/obtaining-credentials/dump-keepass.md)
-  * [Dump DPAPI](smb-protocol/obtaining-credentials/dump-dpapi.md)
-* [Defeating LAPS](smb-protocol/defeating-laps.md)
+  * [🆕 Dump DPAPI](smb-protocol/obtaining-credentials/dump-dpapi.md)
+* [🆕 Defeating LAPS](smb-protocol/defeating-laps.md)
 * [Checking for Spooler & WebDav](smb-protocol/spooler-webdav-running.md)
 * [Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
 
@@ -64,7 +64,7 @@
 
 * [Authentication](ldap-protocol/authentication.md)
 * [ASREPRoast](ldap-protocol/asreproast.md)
-* [Find domain SID](ldap-protocol/find-domain-sid.md)
+* [Find Domain SID](ldap-protocol/find-domain-sid.md)
 * [Kerberoasting](ldap-protocol/kerberoasting.md)
 * [Unconstrained Delegation](ldap-protocol/unconstrained-delegation.md)
 * [Admin Count](ldap-protocol/admin-count.md)
@@ -85,7 +85,7 @@
 * [Password Spraying](winrm-protocol/password-spraying.md)
 * [Authentication](winrm-protocol/authentication.md)
 * [Command Execution](winrm-protocol/command-execution.md)
-* [Defeating LAPS](winrm-protocol/defeating-laps.md)
+* [🆕 Defeating LAPS](winrm-protocol/defeating-laps.md)
 
 ## MSSQL protocol
 
@@ -105,7 +105,7 @@
 ## FTP protocol
 
 * [Password Spraying](ftp-protocol/password-spraying.md)
-* [File Listing, etc](ftp-protocol/file-listing-etc.md)
+* [🆕 File Listing, etc](ftp-protocol/file-listing-etc.md)
 
 ## RDP Protocol
 
