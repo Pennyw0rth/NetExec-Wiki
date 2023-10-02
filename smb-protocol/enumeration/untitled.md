@@ -5,7 +5,7 @@
 Returns a list of live hosts
 
 ```
-#~ nxc smb 192.168.1.0/24
+nxc smb 192.168.1.0/24
 ```
 
 Expected Results:

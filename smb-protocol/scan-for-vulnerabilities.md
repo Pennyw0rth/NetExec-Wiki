@@ -8,15 +8,15 @@ When you start your internal pentest, these are the first modules you should try
 
 ### ZeroLogon
 
-`NetExec smb <ip> -u '' -p '' -M zerologon`
+nxc `smb <ip> -u '' -p '' -M zerologon`
 
 ### PetitPotam
 
-`NetExec smb <ip> -u '' -p '' -M petitpotam`
+nxc `smb <ip> -u '' -p '' -M petitpotam`
 
 ### noPAC
 
-`NetExec smb <ip> -u 'user' -p 'pass' -M nopac`
+nxc `smb <ip> -u 'user' -p 'pass' -M nopac`
 
 {% hint style="warning" %}
 You need a credential for this one
