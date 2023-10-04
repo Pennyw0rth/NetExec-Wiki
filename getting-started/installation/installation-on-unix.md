@@ -6,7 +6,7 @@ You're going to need to install [Poetry](https://python-poetry.org/docs/#install
 
 ```
 apt-get install -y libssl-dev libffi-dev python-dev-is-python3 build-essential
-git clone -b mainhttps://github.com/Pennyw0rth/NetExec
+git clone https://github.com/Pennyw0rth/NetExec
 cd NetExec
 poetry install
 poetry run NetExec
@@ -19,7 +19,7 @@ Using pipx over pip is recommanded
 {% endhint %}
 
 <pre><code><strong>python3 -m pip install pipx
-</strong>git clone -b main https://github.com/Pennyw0rth/NetExec
+</strong>git clone https://github.com/Pennyw0rth/NetExec
 cd NetExec
 pipx install .
 </code></pre>
