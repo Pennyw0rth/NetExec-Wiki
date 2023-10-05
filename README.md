@@ -1,11 +1,11 @@
 ---
 description: Welcome to the NetExec wiki
-cover: .gitbook/assets/NetExec-Favicon1.2B.png
-coverY: 144
+cover: .gitbook/assets/NetExec-Logo-Color.png
+coverY: 10.04061416542843
 layout:
   cover:
     visible: true
-    size: hero
+    size: full
   title:
     visible: true
   description:
