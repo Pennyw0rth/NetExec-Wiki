@@ -1,6 +1,25 @@
 # 🐧 Installation for Unix
 
-## Installing from Source & with Poetry
+## Installing NetExec with pipx
+
+Using pipx to install NetExec is recommended. This allows you to use NetExec and the nxcdb system-wide.
+
+{% code overflow="wrap" fullWidth="false" %}
+```
+apt install pipx git
+pipx ensurepath
+pipx install git+https://github.com/Pennyw0rth/NetExec
+```
+{% endcode %}
+
+Open a new shell and you are ready to go:
+
+```
+NetExec
+nxcdb
+```
+
+## Installation for development using Poetry
 
 You're going to need to install [Poetry](https://python-poetry.org/docs/#installation) which is what nxc uses to manage dependencies.
 
@@ -12,18 +31,21 @@ poetry install
 poetry run NetExec
 ```
 
-## Python Package
+## Installing NetExec with pip
 
 {% hint style="warning" %}
 Using pipx over pip is recommanded
 {% endhint %}
 
-<pre><code><strong>python3 -m pip install pipx
+<pre><code><strong>apt install python3 python3-pip
 </strong>git clone https://github.com/Pennyw0rth/NetExec
 cd NetExec
-pipx install .
+python3 -m venv .
+source bin/activate
+pip install .
+NetExec
 </code></pre>
 
 ## Binaries
 
-We recommend installing via pip/pipx, but if you want to use a pre-compiled binary, go to the [Releases](https://github.com/Pennyw0rth/NetExec/releases) and download the appropriate binary.
+We recommend installing via pipx/pip, but if you want to use a pre-compiled binary, go to the [Releases](https://github.com/Pennyw0rth/NetExec/releases) and download the appropriate binary.
