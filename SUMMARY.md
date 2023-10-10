@@ -59,7 +59,8 @@
   * [🆕 Dump DPAPI](smb-protocol/obtaining-credentials/dump-dpapi.md)
 * [🆕 Defeating LAPS](smb-protocol/defeating-laps.md)
 * [Checking for Spooler & WebDav](smb-protocol/spooler-webdav-running.md)
-* [Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
+* [🆕 Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
+* [Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
 
 ## LDAP protocol
 
