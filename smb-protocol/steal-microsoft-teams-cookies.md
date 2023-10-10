@@ -1,4 +1,4 @@
-# Steal Microsoft Teams Cookies
+# 🆕 Steal Microsoft Teams Cookies
 
 {% hint style="warning" %}
 You need at least local admin privilege on the remote target
