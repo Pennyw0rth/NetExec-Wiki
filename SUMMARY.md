@@ -2,7 +2,8 @@
 
 * [Welcome](README.md)
 * [News](news/README.md)
-  * [v1.0.0 Release!](news/v1.0.0-release.md)
+  * [🕷 v1.0.0 Release!](news/v1.0.0-release.md)
+  * [🔧 v1.1.0 - nxc4u](news/v1.1.0-nxc4u.md)
 * [Logo & Banner](logo-and-banner.md)
 * [Changelog](changelog.md)
 
