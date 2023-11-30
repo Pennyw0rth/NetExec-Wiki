@@ -14,6 +14,12 @@ netexec ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --ls [DIRECTORY]
 Example:
 ```
 netexec ftp 10.10.176.246 -u frank -p D2xc9CgD --ls
+FTP         10.10.176.246   21     10.10.176.246    [*] Banner: (vsFTPd 3.0.3)
+FTP         10.10.176.246   21     10.10.176.246    [+] frank:D2xc9CgD
+FTP         10.10.176.246   21     10.10.176.246    [*] Directory Listing
+FTP         10.10.176.246   21     10.10.176.246    drwx------   10 1001     1001         4096 Sep 15  2021 Maildir
+FTP         10.10.176.246   21     10.10.176.246    -rw-rw-r--    1 1001     1001         4006 Sep 15  2021 README.txt
+FTP         10.10.176.246   21     10.10.176.246    -rw-rw-r--    1 1001     1001           39 Sep 15  2021 ftp_flag.thm
 ```
 
 ## Download a File
@@ -27,11 +33,14 @@ netexec ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --get [FILE]
 Example:
 ```
 netexec ftp 10.10.176.246 -u frank -p D2xc9CgD --get ftp_flag.thm
+FTP         10.10.176.246   21     10.10.176.246    [*] Banner: (vsFTPd 3.0.3)
+FTP         10.10.176.246   21     10.10.176.246    [+] frank:D2xc9CgD
+FTP         10.10.176.246   21     10.10.176.246    [+] Downloaded: ftp_flag.thm
 ```
 
 ## Upload a File
 
-Upload a file to the FTP server.
+Upload a file to the FTP server providing you have relevant permissions
 
 ```
 netexec ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --put [LOCAL_FILE] [REMOTE_FILE]
@@ -39,5 +48,8 @@ netexec ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --put [LOCAL_FILE] [REMOTE_
 
 Example:
 ```
-netexec ftp 10.10.176.246 -u frank -p D2xc9CgD --put localFile.txt remoteFile.txt
+ netexec ftp 10.10.176.246 -u frank -p D2xc9CgD --put test.txt test.txt
+FTP         10.10.176.246   21     10.10.176.246    [*] Banner: (vsFTPd 3.0.3)
+FTP         10.10.176.246   21     10.10.176.246    [+] frank:D2xc9CgD
+FTP         10.10.176.246   21     10.10.176.246    [-] Failed to upload file. Response: (550 Permission denied.)
 ```
