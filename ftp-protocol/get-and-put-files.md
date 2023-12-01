@@ -12,6 +12,7 @@ netexec ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --ls [DIRECTORY]
 ```
 
 Example:
+
 ```
 netexec ftp 10.10.176.246 -u frank -p D2xc9CgD --ls
 FTP         10.10.176.246   21     10.10.176.246    [*] Banner: (vsFTPd 3.0.3)
@@ -31,6 +32,7 @@ netexec ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --get [FILE]
 ```
 
 Example:
+
 ```
 netexec ftp 10.10.176.246 -u frank -p D2xc9CgD --get ftp_flag.thm
 FTP         10.10.176.246   21     10.10.176.246    [*] Banner: (vsFTPd 3.0.3)
@@ -47,6 +49,7 @@ netexec ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --put [LOCAL_FILE] [REMOTE_
 ```
 
 Example:
+
 ```
  netexec ftp 10.10.176.246 -u frank -p D2xc9CgD --put test.txt test.txt
 FTP         10.10.176.246   21     10.10.176.246    [*] Banner: (vsFTPd 3.0.3)
