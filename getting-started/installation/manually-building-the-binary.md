@@ -1,8 +1,10 @@
 ---
-description: If you want to build the binaries yourself, here is a tutorial for you
+description: >-
+  If you want to build the standalone binary yourself, here is a tutorial for
+  you
 ---
 
-# 🛠 Manually building the binaries
+# 🛠 Manually building the binary
 
 
 
@@ -24,16 +26,14 @@ Create a virtual environment for pip, install some packages and build the binary
 ```
 virtualenv env
 source env/bin/activate
-pip install shiv
-pip install .
-python build_collector.py    # This will compile the binary
+pip install pyinstaller
+pyinstaller netexec.spec    # This will compile the binary
 ```
 
 You should now have compiled binaries:
 
 ```
-./bin/nxc
-./bin/nxcdb
+./dist/nxc
 ```
 
 ## Windows
@@ -53,17 +53,15 @@ git clone https://github.com/Pennyw0rth/NetExec.git
 cd NetExec
 ```
 
-```
-virtualenv env
-source env/Scripts/activate
-pip install shiv
-pip install .
-python build_collector.py    # This will compile the binary
-```
-
-You should now have compiled binaries:
+Install required packages and build the binary:
 
 ```
-./bin/nxc
-./bin/nxcdb
+pip install pyinstaller pillow
+pyinstaller netexec.spec
+```
+
+You should now have compiled binary:
+
+```
+./dist/nxc.exe
 ```

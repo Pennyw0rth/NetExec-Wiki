@@ -1,7 +1,10 @@
 ---
-description: Instructions for using FTP commands to access and transfer files using NetExec.
+description: >-
+  Instructions for using FTP commands to access and transfer files using
+  NetExec.
 ---
-# FTP File Access and Transfer
+
+# 🆕 File Upload & Download
 
 ## List Files in a Directory
 
