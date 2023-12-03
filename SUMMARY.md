@@ -12,7 +12,7 @@
 * [Installation](getting-started/installation/README.md)
   * [🐧 Installation for Unix](getting-started/installation/installation-on-unix.md)
   * [🪟 Installation for Windows](getting-started/installation/installation-on-windows.md)
-  * [🛠 Manually building the binaries](getting-started/installation/manually-building-the-binaries.md)
+  * [🛠 Manually building the binary](getting-started/installation/manually-building-the-binary.md)
 * [Selecting & Using a Protocol](getting-started/selecting-and-using-a-protocol.md)
 * [Target Formats](getting-started/target-formats.md)
 * [Using Credentials](getting-started/using-credentials.md)
