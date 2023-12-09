@@ -28,13 +28,13 @@ By default nxc will exit after a successful login is found. Using the **--contin
 nxc smb 192.168.1.101 -u /path/to/users.txt -p Summer18 --continue-on-success
 ```
 
-### Checking login == password using wordlist
+### Checking 'username == password' using wordlist
 
 ```
-nxc smb 192.168.1.101 -u user.txt -p user.txt
+nxc smb 192.168.1.101 -u user.txt -p user.txt --no-bruteforce --continue-on-success
 ```
 
-### Checking multiple usernames/passwords using worclist
+### Checking multiple usernames/passwords using wordlist
 
 ```
 nxc smb 192.168.1.101 -u user.txt -p password.txt
