@@ -12,7 +12,7 @@ Installing with pipx is recommended for global install
 
 {% code overflow="wrap" fullWidth="false" %}
 ```
-apt install python3-argcomplete
+sudo apt install python3-argcomplete
 activate-global-python-argcomplete
 ```
 {% endcode %}
