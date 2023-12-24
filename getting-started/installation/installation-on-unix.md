@@ -34,7 +34,7 @@ poetry run NetExec
 ## Installing NetExec with pip
 
 {% hint style="warning" %}
-Using pipx over pip is recommanded
+Using pipx over pip is recommended
 {% endhint %}
 
 <pre><code><strong>apt install python3 python3-pip
