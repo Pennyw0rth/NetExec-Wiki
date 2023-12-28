@@ -26,8 +26,8 @@ nxc smb 10.10.10.10 -u 'user' -p 'pass' -M spider_plus
 
 ### Dumping All Files
 
-Using the option `-o READ_ONLY=false` all files will be copied on the host
+Using the option `-o DOWNLOAD_FLAG=True` all files will be copied on the host
 
 ```
-nxc smb 10.10.10.10 -u 'user' -p 'pass' -M spider_plus -o READ_ONLY=false
+nxc smb 10.10.10.10 -u 'user' -p 'pass' -M spider_plus -o DOWNLOAD_FLAG=True
 ```
