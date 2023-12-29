@@ -13,7 +13,12 @@ Installing with pipx is recommended for global install
 {% code overflow="wrap" fullWidth="false" %}
 ```
 sudo apt install python3-argcomplete
-activate-global-python-argcomplete
+
+# For Bash
+register-python-argcomplete nxc >> ~/.bashrc
+
+# For Zsh
+register-python-argcomplete nxc >> ~/.zshrc
 ```
 {% endcode %}
 
@@ -24,15 +29,3 @@ NetExec
 netexec
 nxc
 ```
-
-If you don't want global python argcomplete, you can manually register individual commands:
-
-{% code overflow="wrap" fullWidth="false" %}
-```
-eval "$(register-python-argcomplete nxc)"
-```
-{% endcode %}
-
-{% hint style="info" %}
-Note that this eval should be added to your `.bashrc` or `.zshrc` to activate on source
-{% endhint %}
