@@ -67,6 +67,7 @@
 ## LDAP protocol
 
 * [Authentication](ldap-protocol/authentication.md)
+* [Enumerate Users](ldap-protocol/enumerate-users.md)
 * [ASREPRoast](ldap-protocol/asreproast.md)
 * [Find Domain SID](ldap-protocol/find-domain-sid.md)
 * [Kerberoasting](ldap-protocol/kerberoasting.md)
