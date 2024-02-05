@@ -38,16 +38,25 @@ You should now have compiled binaries:
 
 ## Windows
 
-Clone the repository:
+{% hint style="warning" %}
+For Windows Rust is required to build the python dependencies.
+{% endhint %}
+
+Go to the Rust installation page and follow the installation instructions:\
+[https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)
+
+With Rust installed clone the repository:
 
 ```
 git clone https://github.com/Pennyw0rth/NetExec.git
 cd NetExec
 ```
 
-Install required packages and build the binary:
+Set up a virtual environment, install required packages and build the binary:
 
 ```
+python -m venv env
+source env/Scipts/activate
 pip install pyinstaller pillow .
 pyinstaller netexec.spec
 ```
