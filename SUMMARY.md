@@ -13,6 +13,7 @@
   * [🐧 Installation for Unix](getting-started/installation/installation-on-unix.md)
   * [🪟 Installation for Windows](getting-started/installation/installation-on-windows.md)
   * [🛠 Manually building the binary](getting-started/installation/manually-building-the-binary.md)
+  * [➡ Setting up Tab Completion](getting-started/installation/setting-up-tab-completion.md)
 * [Selecting & Using a Protocol](getting-started/selecting-and-using-a-protocol.md)
 * [Target Formats](getting-started/target-formats.md)
 * [Using Credentials](getting-started/using-credentials.md)
