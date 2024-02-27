@@ -2,7 +2,7 @@
 
 * [Welcome](README.md)
 * [News](news/README.md)
-  * [🕷 v1.0.0 Release!](news/v1.0.0-release.md)
+  * [🕷️ v1.0.0 Release!](news/v1.0.0-release.md)
   * [🔧 v1.1.0 - nxc4u](news/v1.1.0-nxc4u.md)
 * [Logo & Banner](logo-and-banner.md)
 * [Changelog](changelog.md)
@@ -10,10 +10,11 @@
 ## Getting Started
 
 * [Installation](getting-started/installation/README.md)
+  * [🍎 Installation for Mac](getting-started/installation/installation-for-mac.md)
   * [🐧 Installation for Unix](getting-started/installation/installation-on-unix.md)
   * [🪟 Installation for Windows](getting-started/installation/installation-on-windows.md)
-  * [🛠 Manually building the binary](getting-started/installation/manually-building-the-binary.md)
-  * [➡ Setting up Tab Completion](getting-started/installation/setting-up-tab-completion.md)
+  * [🛠️ Manually building the binary](getting-started/installation/manually-building-the-binary.md)
+  * [➡️ Setting up Tab Completion](getting-started/installation/setting-up-tab-completion.md)
 * [Selecting & Using a Protocol](getting-started/selecting-and-using-a-protocol.md)
 * [Target Formats](getting-started/target-formats.md)
 * [Using Credentials](getting-started/using-credentials.md)
