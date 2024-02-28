@@ -2,10 +2,10 @@
 description: Command execution on NetExec
 ---
 
-# Command execution
+# Command Execution
 
-{% content-ref url="execute-remote-command.md" %}
-[execute-remote-command.md](execute-remote-command.md)
+{% content-ref url="execute-remote-command/" %}
+[execute-remote-command](execute-remote-command/)
 {% endcontent-ref %}
 
 {% content-ref url="getting-shells-101.md" %}
