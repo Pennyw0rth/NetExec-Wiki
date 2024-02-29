@@ -4,9 +4,10 @@ Checking if **Null Session** is enabled on the network, can be very useful on a 
 
 ```
 nxc smb 10.10.10.161 -u '' -p ''
-nxc smb 10.10.10.161 --pass-pol
-nxc smb 10.10.10.161 --users
-nxc smb 10.10.10.161 --groups
+nxc smb 10.10.10.161 -u '' -p '' --shares
+nxc smb 10.10.10.161 -u '' -p '' --pass-pol
+nxc smb 10.10.10.161 -u '' -p '' --users
+nxc smb 10.10.10.161 -u '' -p '' --groups
 ```
 
 You can also reproduce this behavior with `smbclient` or `rpcclient`
