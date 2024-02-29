@@ -10,10 +10,6 @@ nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --shares
 By fare one of the most useful feature of nxc
 {% endhint %}
 
-{% hint style="warning" %}
-The following option is accessible to sponsors only
-{% endhint %}
-
 If you want to filter only by readable or writable share
 
 ```
