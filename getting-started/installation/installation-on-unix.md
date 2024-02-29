@@ -6,7 +6,7 @@ Using pipx to install NetExec is recommended. This allows you to use NetExec and
 
 {% code overflow="wrap" fullWidth="false" %}
 ```
-apt install pipx git
+sudo apt install pipx git
 pipx ensurepath
 pipx install git+https://github.com/Pennyw0rth/NetExec
 ```
@@ -37,7 +37,7 @@ poetry run NetExec
 Using pipx over pip is recommended
 {% endhint %}
 
-<pre><code><strong>apt install python3 python3-pip
+<pre><code><strong>sudo apt install python3 python3-pip
 </strong>git clone https://github.com/Pennyw0rth/NetExec
 cd NetExec
 python3 -m venv .

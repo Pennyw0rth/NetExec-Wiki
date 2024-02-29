@@ -10,9 +10,9 @@
 ## Getting Started
 
 * [Installation](getting-started/installation/README.md)
-  * [🍎 Installation for Mac](getting-started/installation/installation-for-mac.md)
   * [🐧 Installation for Unix](getting-started/installation/installation-on-unix.md)
   * [🪟 Installation for Windows](getting-started/installation/installation-on-windows.md)
+  * [🍎 Installation for Mac](getting-started/installation/installation-for-mac.md)
   * [🛠️ Manually building the binary](getting-started/installation/manually-building-the-binary.md)
   * [➡️ Setting up Tab Completion](getting-started/installation/setting-up-tab-completion.md)
 * [Selecting & Using a Protocol](getting-started/selecting-and-using-a-protocol.md)
