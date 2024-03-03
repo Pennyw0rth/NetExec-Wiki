@@ -1,6 +1,11 @@
-# Get user descriptions
+# Get User Descriptions
 
-New LDAP module to look for password inside the user's description.\
+New LDAP module to look for password inside the user's description.
+
+```
+nxc ldap <hostname> -u <user> -p <pass> -M get-desc-users
+```
+
 Three options are available:
 
 * **FILTER**: To look for a string inside the description
