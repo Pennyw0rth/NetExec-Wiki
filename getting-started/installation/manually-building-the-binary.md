@@ -4,7 +4,7 @@ description: >-
   you
 ---
 
-# 🛠 Manually building the binary
+# 🛠️ Manually building the binary
 
 
 
@@ -56,7 +56,7 @@ Set up a virtual environment, install required packages and build the binary:
 
 ```
 python -m venv env
-source env/Scipts/activate
+source env/Scripts/activate
 pip install pyinstaller pillow .
 pyinstaller netexec.spec
 ```
