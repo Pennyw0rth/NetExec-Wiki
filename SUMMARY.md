@@ -30,7 +30,7 @@
 
 * [Scan for Vulnerabilities](smb-protocol/scan-for-vulnerabilities.md)
 * [Enumeration](smb-protocol/enumeration/README.md)
-  * [Enumerate Hosts](smb-protocol/enumeration/untitled.md)
+  * [Enumerate Hosts](smb-protocol/enumeration/enumerate-hosts.md)
   * [Enumerate Null Sessions](smb-protocol/enumeration/enumerate-null-sessions.md)
   * [Enumerate Anonymous Logon](smb-protocol/enumeration/enumerate-anonymous-logon.md)
   * [Enumerate Hosts with SMB Signing Not Required](smb-protocol/enumeration/smb-signing-not-required.md)
