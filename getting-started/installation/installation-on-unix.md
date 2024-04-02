@@ -2,7 +2,7 @@
 
 ## Installing NetExec with pipx
 
-Using pipx to install NetExec is recommended. This allows you to use NetExec and the nxcdb system-wide.
+Using [pipx ](https://github.com/pypa/pipx)to install NetExec is recommended. This allows you to use NetExec and the nxcdb system-wide.
 
 {% code overflow="wrap" fullWidth="false" %}
 ```
@@ -21,10 +21,19 @@ nxcdb
 
 ## Installation for development using Poetry
 
-You're going to need to install [Poetry](https://python-poetry.org/docs/#installation) which is what nxc uses to manage dependencies.
+You're going to need to install [Poetry](https://python-poetry.org/docs/#installation) which is what nxc uses to manage dependencies. To install poetry you should use [pipx](https://github.com/pypa/pipx), because our dynamic-versioning plugin will likely crash otherwise.
 
 ```
-apt-get install -y libssl-dev libffi-dev python-dev-is-python3 build-essential
+apt install pipx git
+pipx ensurepath
+pipx install poetry
+poetry self add "poetry-dynamic-versioning[plugin]"
+poetry dynamic-versioning enable
+```
+
+Now that poetry is set, up and we can download the NetExec repository and install its dependencies:
+
+```
 git clone https://github.com/Pennyw0rth/NetExec
 cd NetExec
 poetry install
