@@ -26,6 +26,7 @@ Create a virtual environment for pip, install pyinstaller and build the binary:
 ```
 virtualenv env
 source env/bin/activate
+sudo apt remove python3-pyinstaller    # Remove old apt pyinstaller
 pip install pyinstaller .
 pyinstaller netexec.spec    # This will compile the binary
 ```
