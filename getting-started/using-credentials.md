@@ -43,7 +43,7 @@ netexec <protocol> <target(s)> -id <cred ID(s)>
 You can use nxc with mulitple domain environment
 
 ```
-netexec <protocol> <target(s)> -p FILE -u password
+netexec <protocol> <target(s)> -u FILE -p password
 ```
 
 Where **FILE** is a file with usernames in this format
