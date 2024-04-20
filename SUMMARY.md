@@ -32,7 +32,7 @@
 * [Enumeration](smb-protocol/enumeration/README.md)
   * [Enumerate Hosts](smb-protocol/enumeration/enumerate-hosts.md)
   * [Enumerate Null Sessions](smb-protocol/enumeration/enumerate-null-sessions.md)
-  * [Enumerate Anonymous Logon](smb-protocol/enumeration/enumerate-anonymous-logon.md)
+  * [Enumerate Guest Logon](smb-protocol/enumeration/enumerate-guest-logon.md)
   * [Enumerate Hosts with SMB Signing Not Required](smb-protocol/enumeration/smb-signing-not-required.md)
   * [Enumerate Active Sessions](smb-protocol/enumeration/enumerate-active-sessions.md)
   * [Enumerate Shares and Access](smb-protocol/enumeration/enumerate-shares-and-access.md)
