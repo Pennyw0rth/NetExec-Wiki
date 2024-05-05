@@ -14,6 +14,10 @@ Generally speaking, to use credentials, you can run the following commands:
 netexec <protocol> <target(s)> -u username -p password
 ```
 
+{% hint style="success" %}
+Code execution results in a (**Pwn3d!**) added after the login confirmation. With SMB protocol, most likely your compromised users are in the local administrators group.
+{% endhint %}
+
 {% hint style="info" %}
 When using usernames or passwords that contain special symbols (especially exclaimation points!), wrap them in single quotes to make your shell interpret them as a string.
 {% endhint %}
