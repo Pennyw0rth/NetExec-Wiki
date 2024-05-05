@@ -18,6 +18,17 @@ netexec <protocol> <target(s)> -u username -p password
 Code execution results in a (**Pwn3d!**) added after the login confirmation. With SMB protocol, most likely your compromised users are in the local administrators group.
 {% endhint %}
 
+| Protocol | See Pwn3d! in output                         |
+| -------- | -------------------------------------------- |
+| FTP      | No check                                     |
+| SSH      | root (otherwise specific message)            |
+| WINRM    | Code execution at least                      |
+| LDAP     | Path to domain admin                         |
+| SMB      | Most likely local admin :white\_check\_mark: |
+| RDP      | Code execution at least                      |
+| VNC      | Code execution at least                      |
+| WMI      | Most likely local admin :white\_check\_mark: |
+
 {% hint style="info" %}
 When using usernames or passwords that contain special symbols (especially exclaimation points!), wrap them in single quotes to make your shell interpret them as a string.
 {% endhint %}
