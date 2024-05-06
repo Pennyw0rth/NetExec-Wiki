@@ -1,5 +1,5 @@
 ---
-description: Using crendentials with NetExec
+description: Using credentials with NetExec
 ---
 
 # Using Credentials
