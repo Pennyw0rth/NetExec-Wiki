@@ -6,7 +6,7 @@ description: Using NetExec for password spraying
 
 ### Using Username/Password Lists
 
-You can use multiple usernames or passwords by seperating the names/passwords with a space.
+You can use multiple usernames or passwords by separating the names/passwords with a space.
 
 ```
 nxc smb 192.168.1.101 -u user1 user2 user3 -p Summer18
@@ -21,7 +21,7 @@ nxc smb 192.168.1.101 -u Administrator -p /path/to/passwords.txt
 ```
 
 {% hint style="warning" %}
-By default nxc will exit after a successful login is found. Using the **--continue-on-success** flag will continue spraying even after a valid password is found. Usefull for spraying a single password against a large user list Usage example:
+By default nxc will exit after a successful login is found. Using the **--continue-on-success** flag, it will continue spraying even after a valid password is found. Useful for spraying a single password against a large user list. Usage example:
 {% endhint %}
 
 ```
@@ -58,7 +58,7 @@ No bruteforce possible with this one as 1 user = 1 password
 {% endhint %}
 
 ```
-nxc smb 192.168.1.101 -u user.txt -p password.txt --no-bruteforce --continue-on-succes
+nxc smb 192.168.1.101 -u user.txt -p password.txt --no-bruteforce --continue-on-success
 ```
 
 The result will be:
@@ -67,5 +67,5 @@ The result will be:
 * user2 => password2
 
 {% hint style="danger" %}
-Avoid range or a list of IP when using option --no-bruteforce
+Avoid range or a list of IPs when using the `--no-bruteforce` option
 {% endhint %}
