@@ -2,7 +2,7 @@
 
 ## Testing credentials
 
-You can use two methods to authenticate to the MSSQL: `windows` or `local` (default: `windows`). To use local auth, add the following flag `--local-auth`
+You can use two methods to authenticate to MSSQL: `windows` or `local` (default: `windows`). To use local auth, add the following flag `--local-auth`
 
 ### **Windows auth**
 
