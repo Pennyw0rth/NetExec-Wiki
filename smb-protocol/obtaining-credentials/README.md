@@ -1,6 +1,6 @@
 # Obtaining Credentials
 
-The following examples use a username and plaintext password although user/hash combos work as well.
+The following examples use a username and plaintext password, although user/hash combos work as well.
 
 {% content-ref url="dump-sam.md" %}
 [dump-sam.md](dump-sam.md)
