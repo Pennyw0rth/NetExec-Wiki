@@ -4,7 +4,7 @@ description: Execute MSSQL command using NetExec
 
 # MSSQL command
 
-### Execute MSSQL command
+### Execute MSSQL commands
 
 ```
 nxc mssql 10.10.10.52 -u admin -p 'm$$ql_S@_P@ssW0rd!' --local-auth -q 'SELECT name FROM master.dbo.sysdatabases;'
@@ -24,7 +24,7 @@ MSSQL       10.10.10.52     1433   None             orcharddb
 ```
 
 {% hint style="info" %}
-When playing with MSSQL, you can use the tool [MSDAT ](https://github.com/quentinhardy/msdat)from [quentinhardy](https://github.com/quentinhardy)
+When playing with MSSQL, you can use the tool [MSDAT ](https://github.com/quentinhardy/msdat) from [quentinhardy](https://github.com/quentinhardy)
 {% endhint %}
 
 {% embed url="https://github.com/quentinhardy/msdat" %}
