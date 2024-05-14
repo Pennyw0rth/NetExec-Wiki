@@ -1,6 +1,6 @@
 # Enumerate Null Sessions
 
-Checking if **Null Session**, also known as Anonymous session, is enabled on the network, can be very useful on a Domain Controller to enumerate users, groups, password policy etc
+Check if **Null Session**, also known as Anonymous session, is enabled on the network. Can be very useful on a Domain Controller to enumerate users, groups, password policies, etc.
 
 ```
 nxc smb 10.10.10.161 -u '' -p ''
@@ -21,7 +21,6 @@ rpcclient -N -U "" -L \\10.10.10.161
 rpcclient $> enumdomusers
 user:[bonclay] rid:[0x46e]
 user:[zoro] rid:[0x46f]
-
 ```
 
 {% embed url="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj852200(v=ws.11)" %}
