@@ -6,13 +6,13 @@ You can use two methods to authenticate to the WMI: `windows` or `local` (defaul
 
 ### **Windows auth**
 
-1. With SMB port open
+- With SMB port open
 
 ```
 #~ nxc wmi 10.10.10.52 -u james -p 'J@m3s_P@ssW0rd!'
 ```
 
-1. With SMB port close, add the flag `-d DOMAIN`
+- With SMB port close, add the flag `-d DOMAIN`
 
 ```
 #~ nxc wmi 10.10.10.52 -u james -p 'J@m3s_P@ssW0rd!' -d HTB
