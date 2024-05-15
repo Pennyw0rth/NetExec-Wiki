@@ -97,7 +97,7 @@
 
 ## MSSQL protocol
 
-* [Password Spraying](mssql-protocol/untitled.md)
+* [Password Spraying](mssql-protocol/mssql-passwordspray.md)
 * [Authentication](mssql-protocol/authentication.md)
 * [MSSQL PrivEsc](mssql-protocol/mssql-privesc.md)
 * [MSSQL Command Execution](mssql-protocol/mssql-command.md)
@@ -107,7 +107,7 @@
 ## SSH protocol
 
 * [Password Spraying](ssh-protocol/password-spraying.md)
-* [Authentication](ssh-protocol/untitled.md)
+* [Authentication](ssh-protocol/authentication.md)
 * [Command Execution](ssh-protocol/command-execution.md)
 
 ## FTP protocol
