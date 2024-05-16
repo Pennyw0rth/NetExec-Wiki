@@ -23,7 +23,7 @@
 * [Database General Usage](getting-started/database-general-usage.md)
 * [BloodHound Integration](getting-started/bloodhound-integration.md)
 * [Audit Mode](getting-started/audit-mode.md)
-* [🆕 Ignore OpSec Warnings](getting-started/ignore-opsec-warnings.md)
+* [Ignore OpSec Warnings](getting-started/ignore-opsec-warnings.md)
 * [🆕 Logging](getting-started/log-your-results.md)
 
 ## SMB protocol
@@ -48,6 +48,7 @@
 * [Authentication](smb-protocol/authentication/README.md)
   * [Checking Credentials (Domain)](smb-protocol/authentication/checking-credentials-domain.md)
   * [Checking Credentials (Local)](smb-protocol/authentication/checking-credentials-local.md)
+  * [🆕 Delegation](smb-protocol/authentication/delegation.md)
 * [Command Execution](smb-protocol/command-execution/README.md)
   * [Executing Remote Commands](smb-protocol/command-execution/execute-remote-command/README.md)
     * [Process Injection (pi module)](smb-protocol/command-execution/execute-remote-command/process-injection-pi-module.md)
@@ -59,12 +60,15 @@
   * [Dump LSA](smb-protocol/obtaining-credentials/dump-lsa.md)
   * [Dump NTDS.dit](smb-protocol/obtaining-credentials/dump-ntds.dit.md)
   * [Dump LSASS](smb-protocol/obtaining-credentials/dump-lsass.md)
+  * [🆕 Dump DPAPI](smb-protocol/obtaining-credentials/dump-dpapi.md)
   * [Dump WIFI password](smb-protocol/obtaining-credentials/dump-wifi-password.md)
   * [Dump KeePass](smb-protocol/obtaining-credentials/dump-keepass.md)
-  * [🆕 Dump DPAPI](smb-protocol/obtaining-credentials/dump-dpapi.md)
-* [🆕 Defeating LAPS](smb-protocol/defeating-laps.md)
+  * [🆕 Dump Veeam](smb-protocol/obtaining-credentials/dump-veeam.md)
+  * [🆕 Dump WinSCP](smb-protocol/obtaining-credentials/dump-winscp.md)
+  * [🆕 Dump PuTTY](smb-protocol/obtaining-credentials/dump-putty.md)
+* [Defeating LAPS](smb-protocol/defeating-laps.md)
 * [Checking for Spooler & WebDav](smb-protocol/spooler-webdav-running.md)
-* [🆕 Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
+* [Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
 * [🆕 Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
 
 ## LDAP protocol
