@@ -2,7 +2,7 @@
 description: NetExec vs LAPS
 ---
 
-# 🆕 Defeating LAPS
+# Defeating LAPS
 
 ### Using NetExec When LAPS Installed on the Domain
 
