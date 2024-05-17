@@ -116,3 +116,17 @@ By default nxc will exit after a successful login is found. Using the --continue
 ```
 netexec <protocol> <target(s)> -u ~/file_containing_usernames -H ~/file_containing_ntlm_hashes --no-bruteforce --continue-on-success
 ```
+
+### Throttling Authentication Requests
+
+{% hint style="warning" %}
+Authentication throttling works on a per-host basis! Keep this in mind if you are spraying credentials against multiple hosts.
+{% endhint %}
+
+If there is a need to throttle authentications during brute forcing, you can use the jitter functionality. The length of the timeout (in seconds) between requests is randomly selected from an interval unless otherwise specified. If you want to hardcode the timeout, set the upper and lower bounds of the interval to the same value. The syntax is as follows:
+
+```
+netexec --jitter 3 <protocol> <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
+netexec --jitter 2-5 <protocol> <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
+netexec --jitter 4-4 <protocol> <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
+```
