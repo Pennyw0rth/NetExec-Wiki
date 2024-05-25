@@ -46,8 +46,8 @@ The following examples use a username and plaintext password, although user/hash
 [dump-mremoteng.md](dump-mremoteng.md)
 {% endcontent-ref %}
 
-{% content-ref url="dump-rdman.md" %}
-[dump-rdman.md](dump-rdman.md)
+{% content-ref url="dump-rdcman.md" %}
+[dump-rdcman.md](dump-rdcman.md)
 {% endcontent-ref %}
 
 {% content-ref url="dump-putty.md" %}
