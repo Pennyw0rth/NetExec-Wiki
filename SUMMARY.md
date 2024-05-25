@@ -20,6 +20,7 @@
 * [Using Credentials](getting-started/using-credentials.md)
 * [Using Kerberos](getting-started/using-kerberos.md)
 * [Using Modules](getting-started/using-modules.md)
+* [🆕 DNS options](getting-started/dns-options.md)
 * [Database General Usage](getting-started/database-general-usage.md)
 * [BloodHound Integration](getting-started/bloodhound-integration.md)
 * [Audit Mode](getting-started/audit-mode.md)
