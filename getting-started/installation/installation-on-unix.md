@@ -1,6 +1,6 @@
 # 🐧 Installation for Unix
 
-## Installing NetExec with pipx
+## Installing NetExec with pipx :saxophone:
 
 Using [pipx ](https://github.com/pypa/pipx)to install NetExec is recommended. This allows you to use NetExec and the nxcdb system-wide.
 
@@ -19,7 +19,14 @@ NetExec
 nxcdb
 ```
 
-## Installation for development using Poetry
+## Installation for Kali :dragon\_face:
+
+```
+apt update
+apt install netexec
+```
+
+## Installation for development using Poetry :postal\_horn:
 
 You're going to need to install [Poetry](https://python-poetry.org/docs/#installation) which is what nxc uses to manage dependencies. To install poetry you should use [pipx](https://github.com/pypa/pipx), because our dynamic-versioning plugin will likely crash otherwise.
 
@@ -40,7 +47,7 @@ poetry install
 poetry run NetExec
 ```
 
-## Installing NetExec with pip
+## Installing NetExec with pip :no\_entry:
 
 {% hint style="warning" %}
 Using pipx over pip is recommended
