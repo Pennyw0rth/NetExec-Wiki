@@ -75,6 +75,7 @@
 * [Checking for Spooler & WebDav](smb-protocol/spooler-webdav-running.md)
 * [Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
 * [🆕 Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
+* [🆕 Dump User Local Security Questions](smb-protocol/dump-user-local-security-questions.md)
 
 ## LDAP protocol
 
