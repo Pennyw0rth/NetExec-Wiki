@@ -2,9 +2,9 @@
 description: Dump DPAPI credentials using NetExec
 ---
 
-# 🆕 Dump DPAPI
+# Dump DPAPI
 
-You can dump DPAPI credentials using NetExec using the following option: `--dpapi`. It will get all secrets from Credential Manager, Chrome, Edge, Firefox. `--dpapi` supports the following options :&#x20;
+You can dump DPAPI credentials using NetExec using the following option: `--dpapi`. It will get all secrets from Credential Manager, Chrome, Edge, Firefox. `--dpapi` supports the following options :
 
 * cookies : Collect every cookies in browsers
 * nosystem : Won't collect system credentials. This will prevent EDR from stopping you from looting passwords :fire:

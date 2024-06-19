@@ -2,7 +2,7 @@
 description: Dump passwords used by Veeam for backup jobs
 ---
 
-# 🆕 Dump Veeam
+# Dump Veeam
 
 {% hint style="warning" %}
 You need at least local admin privilege on the remote target, use option **--local-auth** if your user is a local account
