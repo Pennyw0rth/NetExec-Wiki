@@ -2,7 +2,7 @@
 description: Dump WinSCP Credentials stored in the registry or local files
 ---
 
-# 🆕 Dump WinSCP
+# Dump WinSCP
 
 {% hint style="warning" %}
 You need at least local admin privilege on the remote target, use option **--local-auth** if your user is a local account
