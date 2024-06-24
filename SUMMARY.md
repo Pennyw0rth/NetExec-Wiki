@@ -25,7 +25,7 @@
 * [BloodHound Integration](getting-started/bloodhound-integration.md)
 * [Audit Mode](getting-started/audit-mode.md)
 * [Ignore OpSec Warnings](getting-started/ignore-opsec-warnings.md)
-* [🆕 Logging](getting-started/log-your-results.md)
+* [Logging](getting-started/log-your-results.md)
 
 ## SMB protocol
 
@@ -37,6 +37,7 @@
   * [Enumerate Hosts with SMB Signing Not Required](smb-protocol/enumeration/smb-signing-not-required.md)
   * [Enumerate Active Sessions](smb-protocol/enumeration/enumerate-active-sessions.md)
   * [Enumerate Shares and Access](smb-protocol/enumeration/enumerate-shares-and-access.md)
+  * [🆕 Enumerate Network Interfaces](smb-protocol/enumeration/enumerate-network-interfaces.md)
   * [Enumerate Disks](smb-protocol/enumeration/enumerate-disks.md)
   * [Enumerate Logged on Users](smb-protocol/enumeration/enumerate-logged-on-users.md)
   * [Enumerate Domain Users](smb-protocol/enumeration/enumerate-domain-users.md)
