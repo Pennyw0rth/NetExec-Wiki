@@ -7,5 +7,5 @@ You need at least local admin privilege on the remote target, use option **--loc
 {% endhint %}
 
 ```
-#~ nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --sam
+#~ nxc smb 192.168.1.0/24 -u UserName -p 'PASSWORDHERE' --sam
 ```
