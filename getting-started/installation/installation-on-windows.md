@@ -10,17 +10,17 @@ If Python is available it is recommended to install NetExec with pipx
 For Windows, git and Rust are required for installation. If you can't install either of these, see below for a standalone executable.
 {% endhint %}
 
-Set up git and Rust:\
+Set up git, Rust and C++:\
 [https://git-scm.com/download/win](https://git-scm.com/download/win)\
-[https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)
+[https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)\
+[https://visualstudio.microsoft.com/de/visual-cpp-build-tools/](https://visualstudio.microsoft.com/de/visual-cpp-build-tools/)
 
 Install pipx and install NetExec directly from the repository:
 
-```
-pip install pipx
-python -m pipx ensurepath
+<pre><code><strong>pip install pipx
+</strong>python -m pipx ensurepath
 python -m pipx install git+https://github.com/Pennyw0rth/NetExec
-```
+</code></pre>
 
 Restart your command line and you should be able to execute NetExec:
 

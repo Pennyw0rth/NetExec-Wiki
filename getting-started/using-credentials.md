@@ -1,5 +1,5 @@
 ---
-description: Using crendentials with NetExec
+description: Using credentials with NetExec
 ---
 
 # Using Credentials
@@ -13,6 +13,21 @@ Generally speaking, to use credentials, you can run the following commands:
 ```
 netexec <protocol> <target(s)> -u username -p password
 ```
+
+{% hint style="success" %}
+Code execution results in a (**Pwn3d!**) added after the login confirmation. With SMB protocol, most likely your compromised users are in the local administrators group.
+{% endhint %}
+
+| Protocol | See Pwn3d! in output                                   |
+| -------- | ------------------------------------------------------ |
+| FTP      | No check                                               |
+| SSH      | root (otherwise specific message) :white\_check\_mark: |
+| WINRM    | Code execution at least :space\_invader:               |
+| LDAP     | Path to domain admin :crown:                           |
+| SMB      | Most likely local admin :white\_check\_mark:           |
+| RDP      | Code execution at least :space\_invader:               |
+| VNC      | Code execution at least :space\_invader:               |
+| WMI      | Most likely local admin :white\_check\_mark:           |
 
 {% hint style="info" %}
 When using usernames or passwords that contain special symbols (especially exclaimation points!), wrap them in single quotes to make your shell interpret them as a string.
@@ -43,7 +58,7 @@ netexec <protocol> <target(s)> -id <cred ID(s)>
 You can use nxc with mulitple domain environment
 
 ```
-netexec <protocol> <target(s)> -p FILE -u password
+netexec <protocol> <target(s)> -u FILE -p password
 ```
 
 Where **FILE** is a file with usernames in this format
@@ -100,4 +115,18 @@ By default nxc will exit after a successful login is found. Using the --continue
 
 ```
 netexec <protocol> <target(s)> -u ~/file_containing_usernames -H ~/file_containing_ntlm_hashes --no-bruteforce --continue-on-success
+```
+
+### Throttling Authentication Requests
+
+{% hint style="warning" %}
+Authentication throttling works on a per-host basis! Keep this in mind if you are spraying credentials against multiple hosts.
+{% endhint %}
+
+If there is a need to throttle authentications during brute forcing, you can use the jitter functionality. The length of the timeout (in seconds) between requests is randomly selected from an interval unless otherwise specified. If you want to hardcode the timeout, set the upper and lower bounds of the interval to the same value. The syntax is as follows:
+
+```
+netexec --jitter 3 <protocol> <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
+netexec --jitter 2-5 <protocol> <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
+netexec --jitter 4-4 <protocol> <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
 ```

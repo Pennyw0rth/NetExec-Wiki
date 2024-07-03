@@ -10,9 +10,9 @@
 ## Getting Started
 
 * [Installation](getting-started/installation/README.md)
-  * [🍎 Installation for Mac](getting-started/installation/installation-for-mac.md)
   * [🐧 Installation for Unix](getting-started/installation/installation-on-unix.md)
   * [🪟 Installation for Windows](getting-started/installation/installation-on-windows.md)
+  * [🍎 Installation for Mac](getting-started/installation/installation-for-mac.md)
   * [🛠️ Manually building the binary](getting-started/installation/manually-building-the-binary.md)
   * [➡️ Setting up Tab Completion](getting-started/installation/setting-up-tab-completion.md)
 * [Selecting & Using a Protocol](getting-started/selecting-and-using-a-protocol.md)
@@ -20,22 +20,24 @@
 * [Using Credentials](getting-started/using-credentials.md)
 * [Using Kerberos](getting-started/using-kerberos.md)
 * [Using Modules](getting-started/using-modules.md)
+* [🆕 DNS options](getting-started/dns-options.md)
 * [Database General Usage](getting-started/database-general-usage.md)
 * [BloodHound Integration](getting-started/bloodhound-integration.md)
 * [Audit Mode](getting-started/audit-mode.md)
-* [🆕 Ignore OpSec Warnings](getting-started/ignore-opsec-warnings.md)
-* [🆕 Logging](getting-started/log-your-results.md)
+* [Ignore OpSec Warnings](getting-started/ignore-opsec-warnings.md)
+* [Logging](getting-started/log-your-results.md)
 
 ## SMB protocol
 
 * [Scan for Vulnerabilities](smb-protocol/scan-for-vulnerabilities.md)
 * [Enumeration](smb-protocol/enumeration/README.md)
-  * [Enumerate Hosts](smb-protocol/enumeration/untitled.md)
+  * [Enumerate Hosts](smb-protocol/enumeration/enumerate-hosts.md)
   * [Enumerate Null Sessions](smb-protocol/enumeration/enumerate-null-sessions.md)
-  * [Enumerate Anonymous Logon](smb-protocol/enumeration/enumerate-anonymous-logon.md)
+  * [Enumerate Guest Logon](smb-protocol/enumeration/enumerate-guest-logon.md)
   * [Enumerate Hosts with SMB Signing Not Required](smb-protocol/enumeration/smb-signing-not-required.md)
   * [Enumerate Active Sessions](smb-protocol/enumeration/enumerate-active-sessions.md)
   * [Enumerate Shares and Access](smb-protocol/enumeration/enumerate-shares-and-access.md)
+  * [🆕 Enumerate Network Interfaces](smb-protocol/enumeration/enumerate-network-interfaces.md)
   * [Enumerate Disks](smb-protocol/enumeration/enumerate-disks.md)
   * [Enumerate Logged on Users](smb-protocol/enumeration/enumerate-logged-on-users.md)
   * [Enumerate Domain Users](smb-protocol/enumeration/enumerate-domain-users.md)
@@ -48,6 +50,7 @@
 * [Authentication](smb-protocol/authentication/README.md)
   * [Checking Credentials (Domain)](smb-protocol/authentication/checking-credentials-domain.md)
   * [Checking Credentials (Local)](smb-protocol/authentication/checking-credentials-local.md)
+  * [🆕 Delegation](smb-protocol/authentication/delegation.md)
 * [Command Execution](smb-protocol/command-execution/README.md)
   * [Executing Remote Commands](smb-protocol/command-execution/execute-remote-command/README.md)
     * [Process Injection (pi module)](smb-protocol/command-execution/execute-remote-command/process-injection-pi-module.md)
@@ -59,18 +62,26 @@
   * [Dump LSA](smb-protocol/obtaining-credentials/dump-lsa.md)
   * [Dump NTDS.dit](smb-protocol/obtaining-credentials/dump-ntds.dit.md)
   * [Dump LSASS](smb-protocol/obtaining-credentials/dump-lsass.md)
+  * [Dump DPAPI](smb-protocol/obtaining-credentials/dump-dpapi.md)
+  * [🆕 Dump SCCM](smb-protocol/obtaining-credentials/dump-sccm.md)
   * [Dump WIFI password](smb-protocol/obtaining-credentials/dump-wifi-password.md)
   * [Dump KeePass](smb-protocol/obtaining-credentials/dump-keepass.md)
-  * [🆕 Dump DPAPI](smb-protocol/obtaining-credentials/dump-dpapi.md)
-* [🆕 Defeating LAPS](smb-protocol/defeating-laps.md)
+  * [Dump Veeam](smb-protocol/obtaining-credentials/dump-veeam.md)
+  * [Dump WinSCP](smb-protocol/obtaining-credentials/dump-winscp.md)
+  * [🆕 Dump PuTTY](smb-protocol/obtaining-credentials/dump-putty.md)
+  * [🆕 Dump VNC](smb-protocol/obtaining-credentials/dump-vnc.md)
+  * [🆕 Dump mRemoteNG](smb-protocol/obtaining-credentials/dump-mremoteng.md)
+  * [🆕 Dump Remote Desktop Credential Manager](smb-protocol/obtaining-credentials/dump-rdcman.md)
+* [Defeating LAPS](smb-protocol/defeating-laps.md)
 * [Checking for Spooler & WebDav](smb-protocol/spooler-webdav-running.md)
-* [🆕 Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
+* [Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
 * [🆕 Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
 
 ## LDAP protocol
 
 * [Authentication](ldap-protocol/authentication.md)
 * [Enumerate Users](ldap-protocol/enumerate-users.md)
+* [🆕 Query LDAP](ldap-protocol/query-ldap.md)
 * [ASREPRoast](ldap-protocol/asreproast.md)
 * [Find Domain SID](ldap-protocol/find-domain-sid.md)
 * [Kerberoasting](ldap-protocol/kerberoasting.md)
@@ -97,7 +108,7 @@
 
 ## MSSQL protocol
 
-* [Password Spraying](mssql-protocol/untitled.md)
+* [Password Spraying](mssql-protocol/mssql-passwordspray.md)
 * [Authentication](mssql-protocol/authentication.md)
 * [MSSQL PrivEsc](mssql-protocol/mssql-privesc.md)
 * [MSSQL Command Execution](mssql-protocol/mssql-command.md)
@@ -107,7 +118,7 @@
 ## SSH protocol
 
 * [Password Spraying](ssh-protocol/password-spraying.md)
-* [Authentication](ssh-protocol/untitled.md)
+* [Authentication](ssh-protocol/authentication.md)
 * [Command Execution](ssh-protocol/command-execution.md)
 
 ## FTP protocol

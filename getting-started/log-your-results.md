@@ -2,7 +2,7 @@
 description: Log every output and command into a file
 ---
 
-# 🆕 Logging
+# Logging
 
 There are two ways to log results:
 

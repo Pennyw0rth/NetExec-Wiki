@@ -5,7 +5,9 @@
 * Failed logins result in a \[-]
 * Successful logins result in a \[+] Domain\Username:Password
 
-Local admin access results in a (Pwn3d!) added after the login confirmation, shown below.
+{% hint style="info" %}
+Code execution results in a (Pwn3d!) added after the login confirmation. With SMB protocol, most likely your compromised user is in the local administrators group.
+{% endhint %}
 
 ```
     SMB         192.168.1.101    445    HOSTNAME          [+] DOMAIN\Username:Password (Pwn3d!)

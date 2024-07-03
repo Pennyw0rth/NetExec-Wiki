@@ -10,16 +10,16 @@ For the examples it is also assumed hosts are within a 192.168.1.0/24 IP space.
 
 If nxc isnt giving output of any kind, you probably have something wrong with the command.
 
-{% content-ref url="untitled.md" %}
-[untitled.md](untitled.md)
+{% content-ref url="enumerate-hosts.md" %}
+[enumerate-hosts.md](enumerate-hosts.md)
 {% endcontent-ref %}
 
 {% content-ref url="enumerate-null-sessions.md" %}
 [enumerate-null-sessions.md](enumerate-null-sessions.md)
 {% endcontent-ref %}
 
-{% content-ref url="enumerate-anonymous-logon.md" %}
-[enumerate-anonymous-logon.md](enumerate-anonymous-logon.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="enumerate-active-sessions.md" %}
