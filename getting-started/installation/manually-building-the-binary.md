@@ -4,7 +4,7 @@ description: >-
   you
 ---
 
-# 🛠 Manually building the binary
+# 🛠️ Manually building the binary
 
 
 
@@ -26,6 +26,7 @@ Create a virtual environment for pip, install pyinstaller and build the binary:
 ```
 virtualenv env
 source env/bin/activate
+sudo apt remove python3-pyinstaller    # Remove old apt pyinstaller
 pip install pyinstaller .
 pyinstaller netexec.spec    # This will compile the binary
 ```
@@ -56,7 +57,7 @@ Set up a virtual environment, install required packages and build the binary:
 
 ```
 python -m venv env
-source env/Scipts/activate
+source env/Scripts/activate
 pip install pyinstaller pillow .
 pyinstaller netexec.spec
 ```

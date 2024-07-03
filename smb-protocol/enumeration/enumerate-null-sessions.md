@@ -1,12 +1,13 @@
 # Enumerate Null Sessions
 
-Checking if **Null Session** is enabled on the network, can be very useful on a Domain Controller to enumerate users, groups, password policy etc
+Check if **Null Session**, also known as Anonymous session, is enabled on the network. Can be very useful on a Domain Controller to enumerate users, groups, password policies, etc.
 
 ```
 nxc smb 10.10.10.161 -u '' -p ''
-nxc smb 10.10.10.161 --pass-pol
-nxc smb 10.10.10.161 --users
-nxc smb 10.10.10.161 --groups
+nxc smb 10.10.10.161 -u '' -p '' --shares
+nxc smb 10.10.10.161 -u '' -p '' --pass-pol
+nxc smb 10.10.10.161 -u '' -p '' --users
+nxc smb 10.10.10.161 -u '' -p '' --groups
 ```
 
 You can also reproduce this behavior with `smbclient` or `rpcclient`
@@ -20,8 +21,9 @@ rpcclient -N -U "" -L \\10.10.10.161
 rpcclient $> enumdomusers
 user:[bonclay] rid:[0x46e]
 user:[zoro] rid:[0x46f]
-
 ```
+
+{% embed url="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj852200(v=ws.11)" %}
 
 ### Example
 
@@ -30,3 +32,5 @@ Forest or Monteverde machines are good examples to test **null session** authent
 {% embed url="https://www.hackthebox.eu/home/machines/profile/212" %}
 
 {% embed url="https://www.hackthebox.eu/home/machines/profile/223" %}
+
+

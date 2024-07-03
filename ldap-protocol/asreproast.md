@@ -30,7 +30,7 @@ Set the password value to '' to perform the test without authentication
 
 ### With authentication
 
-If you have one valid credential on the domain, you can retrieve all the users and hashs where the Kerberos pre-authentication is not required
+If you have one valid credential on the domain, you can retrieve all the users and hashes where the Kerberos pre-authentication is not required
 
 ```
 nxc ldap 192.168.0.104 -u harry -p pass --asreproast output.txt
