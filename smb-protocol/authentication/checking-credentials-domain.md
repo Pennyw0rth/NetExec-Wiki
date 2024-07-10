@@ -15,6 +15,10 @@ Code execution results in a (Pwn3d!) added after the login confirmation. With SM
 
 The following checks will attempt authentication to the entire /24 though a single target may also be used.
 
+{% hint style="warning" %}
+If NTLM authentication is not available, Kerberos requires the hostname and domain name instead of an IP address.
+{% endhint %}
+
 ### User/Password
 
 ```
