@@ -11,4 +11,4 @@ nxc ldap <ip> -u username -p password --query "(sAMAccountName=Administrator)" "
 nxc ldap <ip> -u username -p password --query "(sAMAccountName=Administrator)" "sAMAccountName objectClass pwdLastSet"
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Querying ldap with NetExec</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Querying ldap with NetExec</p></figcaption></figure>
