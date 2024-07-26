@@ -21,8 +21,10 @@ nxc smb 192.168.1.101 -u Administrator -p /path/to/passwords.txt
 ```
 
 {% hint style="warning" %}
-By default nxc will exit after a successful login is found. Using the **--continue-on-success** flag, it will continue spraying even after a valid password is found. Useful for spraying a single password against a large user list. Usage example:
+By default nxc will exit after a successful login is found. Using the **--continue-on-success** flag, it will continue spraying even after a valid password is found. Useful for spraying a single password against a large user list. This is incompatible with command execution.&#x20;
 {% endhint %}
+
+Usage example:
 
 ```
 nxc smb 192.168.1.101 -u /path/to/users.txt -p Summer18 --continue-on-success
