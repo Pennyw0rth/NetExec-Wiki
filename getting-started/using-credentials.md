@@ -43,7 +43,9 @@ netexec <protocol> <target(s)> -u username -p 'October2022!'
 Due to a [bug](https://bugs.python.org/issue9334) in Python's argument parsing library, credentials beginning with a dash (`-`) will throw an `expected at least one argument` error message. To get around this, specify the credentials by using the 'long' argument format (note the `=` sign):
 {% endhint %}
 
-`netexec <protocol> <target(s)> -u='-username' -p='-`October2022`'`
+```
+netexec <protocol> <target(s)> -u='-username' -p='-October2022'
+```
 
 ## Using a Credential Set From the Database
 
@@ -110,7 +112,7 @@ user2 -> pass2
 ```
 
 {% hint style="info" %}
-By default nxc will exit after a successful login is found. Using the --continue-on-success flag will continue spraying even after a valid password is found. Usefull for spraying a single password against a large user list.
+By default nxc will exit after a successful login is found. Using the --continue-on-success flag will continue spraying even after a valid password is found. Usefull for spraying a single password against a large user list. The --continue-on-success flag is incompatible with command execution.
 {% endhint %}
 
 ```
