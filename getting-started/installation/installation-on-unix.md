@@ -26,6 +26,16 @@ apt update
 apt install netexec
 ```
 
+## Installation for BlackArch :dagger:
+
+```
+pacman -Syu netexec
+```
+
+## Availability on other Unix distributions :penguin:
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/netexec.svg)](https://repology.org/project/netexec/versions)
+
 ## Installation for development using Poetry :postal\_horn:
 
 You're going to need to install [Poetry](https://python-poetry.org/docs/#installation) which is what nxc uses to manage dependencies. To install poetry you should use [pipx](https://github.com/pypa/pipx), because our dynamic-versioning plugin will likely crash otherwise.
