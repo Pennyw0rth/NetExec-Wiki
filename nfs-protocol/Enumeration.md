@@ -33,7 +33,7 @@ NFS         <ip>  <nfs_port>  <ip>   1000       rw-      9.2GB/19.5GB    /home/u
 
 ### Enumerate the File on NFS Shares
 
-Enumerating all files and folders recursively with `--enum-shares`. Output shows target `UID, Permissions, File Size, File Path, Access List`.
+Enumerating all files and folders recursively with `--enum-shares` with a given recursion depth (default is 3 layers). The depth can be changed with `--enum-shares 5`. Output shows target `UID, Permissions, File Size, File Path, Access List`.
 
 ```
 NetExec nfs <ip> --enum-shares
