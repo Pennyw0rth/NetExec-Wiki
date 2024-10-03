@@ -41,8 +41,8 @@ NetExec nfs <ip> --put-file test2.txt /home/user/Desktop/
 # Example Output  
 NFS         <ip>  <nfs_port>  <ip>   [*] Target supported NFS versions: (3, 4)
 NFS         <ip>  <nfs_port>  <ip>   [*] Uploading from test2.txt to /home/user/Desktop/NFSShare/
-[!] test2.txt is already exist on /home/user/Desktop/NFSShare/. Do you want to overwrite it? [Y/n] Y
-NFS         <ip>  <nfs_port>  <ip>   [*] test2.txt is already exist on /home/user/Desktop/NFSShare/. Trying to overwrite it...
+[!] test2.txt already exists on /home/user/Desktop/NFSShare/. Do you want to overwrite it? [Y/n] Y
+NFS         <ip>  <nfs_port>  <ip>   [*] test2.txt already exists on /home/user/Desktop/NFSShare/. Trying to overwrite it...
 NFS         <ip>  <nfs_port>  <ip>   [*] Trying to write data from test2.txt to /home/user/Desktop/NFSShare/
 NFS         <ip>  <nfs_port>  <ip>   [+] Data from test2.txt successfully written to /home/user/Desktop/NFSShare/
 NFS         <ip>  <nfs_port>  <ip>   File test2.txt successfully uploaded to /home/user/Desktop/NFSShare/
