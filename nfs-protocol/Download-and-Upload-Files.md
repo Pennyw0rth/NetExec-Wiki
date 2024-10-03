@@ -2,7 +2,7 @@
 
 ### Download File
 
-Get a remote file(s) with using NetExec. Flag works like `--get-file FILE FILE  Download remote NFS file. Example: --get-file remote_file local_file`
+Get a remote file(s) using NetExec. Example usage:
 
 ```
 NetExec nfs <ip> --get-file /home/user/Desktop/test/test.txt test.txt
@@ -16,7 +16,8 @@ NFS         <ip>  <nfs_port>  <ip>   File successfully downloaded to test.txt fr
 
 ### Upload File
 
-Get a remote file(s) with using NetExec. Flag works like `--put-file FILE FILE. Example: --put-file local_file remote_file`.  Upload remote NFS file with chmod **777** permissions to the specified folder. 
+Get a remote file(s) using NetExec. Upload remote NFS file with chmod **777** permissions to the specified **folder**.
+Example usage:
 
 ```
 NetExec nfs <ip> --put-file test2.txt /home/user/Desktop/
@@ -32,7 +33,7 @@ NFS         <ip>  <nfs_port>  <ip>   File test2.txt successfully uploaded to /ho
 
 ```
 
-**If the local file already exists on the remote server, NetExec asks whether you want to overwrite it. If yes, NetExec will overwrite it.**
+**If the local file already exists on the remote server, NetExec asks whether you want to overwrite it.**
 
 ```
 NetExec nfs <ip> --put-file test2.txt /home/user/Desktop/
