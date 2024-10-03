@@ -83,6 +83,7 @@
 
 * [Authentication](ldap-protocol/authentication.md)
 * [Enumerate Users](ldap-protocol/enumerate-users.md)
+* [🆕 Enumerate Group Members](ldap-protocol/enumerate-group-members.md)
 * [🆕 Query LDAP](ldap-protocol/query-ldap.md)
 * [ASREPRoast](ldap-protocol/asreproast.md)
 * [Find Domain SID](ldap-protocol/find-domain-sid.md)
@@ -98,9 +99,8 @@
 * [Read DACL Rights](ldap-protocol/read-dacl-right.md)
 * [Extract gMSA Secrets](ldap-protocol/extract-gmsa-secrets.md)
 * [Bloodhound Ingestor](ldap-protocol/bloodhound-ingestor.md)
-* [List DC IP](ldap-protocol/list-dc-ip.md)
+* [List DC IP](ldap-protocol/dc-list.md)
 * [Enumerate Domain Trusts](ldap-protocol/enumerate-trusts.md)
-* [🆕 Enumerate Group Members](ldap-protocol/enumerate-group-members.md)
 
 ## WINRM protocol
 
@@ -141,3 +141,8 @@
 * [Password Spraying](wmi-protocol/password-spraying.md)
 * [Authentication](wmi-protocol/authentication.md)
 * [Command Execution](wmi-protocol/command-execution.md)
+
+## NFS Protocol
+
+* [🆕 Enumeration](nfs-protocol/Enumeration.md)
+* [🆕 Download and Upload Files](nfs-protocol/Download-and-Upload-Files.md)
