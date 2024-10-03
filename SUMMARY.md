@@ -100,6 +100,7 @@
 * [Bloodhound Ingestor](ldap-protocol/bloodhound-ingestor.md)
 * [List DC IP](ldap-protocol/list-dc-ip.md)
 * [Enumerate Domain Trusts](ldap-protocol/enumerate-trusts.md)
+* [🆕 Enumerate Group Members](ldap-protocol/enumerate-group-members.md)
 
 ## WINRM protocol
 
