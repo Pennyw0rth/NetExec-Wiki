@@ -15,6 +15,7 @@ description: Selecting & Using a Protocol on NetExec
 </strong><strong>rdp
 </strong><strong>vnc
 </strong><strong>mssql
+</strong><strong>nfs
 </strong></code></pre>
 
 Note that not all protocols support the same functionality, be sure to check each protocol's options
