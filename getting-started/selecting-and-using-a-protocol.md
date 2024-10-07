@@ -59,4 +59,5 @@ protocols:
     rdp                 own stuff using RDP
     vnc                 own stuff using VNC
     mssql               own stuff using MSSQL
+    nfs                 own stuff using NFS
 ```
