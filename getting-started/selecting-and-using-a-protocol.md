@@ -49,7 +49,7 @@ options:
 protocols:
   available protocols
 
-  {smb,ssh,ldap,ftp,wmi,winrm,rdp,vnc,mssql}
+  {smb,ssh,ldap,ftp,wmi,winrm,rdp,vnc,mssql,nfs}
     smb                 own stuff using SMB
     ssh                 own stuff using SSH
     ldap                own stuff using LDAP
