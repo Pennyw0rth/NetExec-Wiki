@@ -39,6 +39,13 @@ apt install netexec
 pacman -Syu netexec
 ```
 
+## Installation for ParrotSec 🦜
+
+```
+apt update
+apt install netexec
+```
+
 ## Availability on other Unix distributions :penguin:
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/netexec.svg)](https://repology.org/project/netexec/versions)
