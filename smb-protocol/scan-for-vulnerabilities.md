@@ -43,12 +43,18 @@ You can also use the `coerce_plus` module to check for one coerce method.
 `nxc smb <ip> -u '' -p '' -M coerce_plus -o METHOD=PetitPotam`
 
 {% hint style="success" %}
-Instead of the 'METHOD' option you can use 'M'. Also the short name 'L' instead of the 'LISTENER' argument.\n
-This also applies to the names of vulnerabilities in the method.\n
--M=p // Invalid, as both petitpotam and printerbug start with ‘p’ so modules gives error\n
--M=pr // Matches printerbug\n
--M=pe // Matches petitpotam\n
--M=dfs // Matches dfscoerce\n
+Instead of the 'METHOD' option you can use 'M'. Also the short name 'L' instead of the 'LISTENER' argument.
+
+This also applies to the names of vulnerabilities in the method.
+
+-M=p // Invalid, as both petitpotam and printerbug start with ‘p’ so modules gives error
+
+-M=pr // Matches printerbug
+
+-M=pe // Matches petitpotam
+
+-M=dfs // Matches dfscoerce
+
 {% endhint %}
 
 Check out what other modules are available via `nxc <protocol> -L`
