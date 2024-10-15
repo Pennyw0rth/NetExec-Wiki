@@ -1,5 +1,5 @@
 ---
-description: Check if a DC is vulnerable
+description: Check if host is vulnerable
 ---
 
 # Scan for Vulnerabilities
@@ -10,23 +10,27 @@ When you start your internal pentest, these are the first modules you should try
 
 `nxc smb <ip> -u '' -p '' -M zerologon`
 
-### PetitPotam
-
-`nxc smb <ip> -u '' -p '' -M petitpotam`
-
 ### noPAC
 
 `nxc smb <ip> -u 'user' -p 'pass' -M nopac`
 
 {% hint style="warning" %}
-You need a credential for this one
+You need a credential for noPAC vulnerability check.
 {% endhint %}
 
-Or, try them all at once! Just list each one: `-M zerologon -M petitpotam`
+### PrintNightmare
+
+`nxc smb <ip> -u '' -p '' -M printnightmare`
+
+### MS17-010 (Not tested outside LAB environment)
+
+`nxc smb <ip> -u '' -p '' -M ms17-010`
+
+Or, try them all at once! Just list each one: `-M zerologon -M printnightmare`
 
 # Scan for Coerce Vulnerabilities
 
-You can check for coerce vulnerabilities such as Petitpotam, DFSCoerce, PrinterBug, MSEven, and ShadowCoerce using the coerce_plus module.
+You can check for coerce vulnerabilities such as Petitpotam, DFSCoerce, PrinterBug, MSEven, and ShadowCoerce using the coerce_plus module. You can also use credentials to check for these vulnerabilities.
 
 `nxc smb <ip> -u '' -p '' -M coerce_plus`
 
