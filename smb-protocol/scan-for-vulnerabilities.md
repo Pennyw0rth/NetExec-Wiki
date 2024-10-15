@@ -58,7 +58,6 @@ M=pr // Matches printerbug
 M=pe // Matches petitpotam
 
 M=dfs // Matches dfscoerce
-
 {% endhint %}
 
 Check out what other modules are available via `nxc <protocol> -L`
