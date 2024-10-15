@@ -22,6 +22,10 @@ You need a credential for noPAC vulnerability check.
 
 `nxc smb <ip> -u '' -p '' -M printnightmare`
 
+### SMBGhost
+
+`nxc smb <ip> -u '' -p '' -M smbghost`
+
 ### MS17-010 (Not tested outside LAB environment)
 
 `nxc smb <ip> -u '' -p '' -M ms17-010`
