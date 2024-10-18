@@ -23,7 +23,7 @@ Updating via pipx:
 
 ```
 pipx upgrade netexec        # Will update if there is a new version
-pipx reinstall netexec     # Force download the latest commits from github
+pipx reinstall netexec      # Force download the latest commits from github
 ```
 
 ## Installation for Kali :dragon\_face:
