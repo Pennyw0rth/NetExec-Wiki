@@ -22,7 +22,7 @@ nxcdb
 Updating via pipx:
 
 ```
-pipx update netexec        # Will update if there is a new version
+pipx upgrade netexec        # Will update if there is a new version
 pipx reinstall netexec     # Force download the latest commits from github
 ```
 
