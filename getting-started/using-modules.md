@@ -46,6 +46,6 @@ nxc <protocol> <target(s)> -u Administrator -p 'P@ssw0rd' -M lsassy -o COMMAND=x
 
 ### 🆕 Running Multiple Modules
 
-Simply define all the modules you want, each proceeded by a `-m` option flag:
+Simply define all the modules you want, each proceeded by a `-M` option flag:
 
 `nxc <protocol> <target(s)> -u Administrator -p 'P@ssw0rd' -M spooler -M printnightmare -M shadowcoerce -M petitpotam`
