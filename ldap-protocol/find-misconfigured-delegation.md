@@ -3,11 +3,10 @@
 NetExec allows you to retrieve the list of all misconfigured delegations
 
 ```
-nxc ldap 192.168.0.104 -u harry -p pass --find-delegation
+nxc ldap 192.168.56.11 -u eddard.stark -p FightP3aceAndHonor! --find-delegation
 
 # Example Output
 
-nxc ldap 192.168.56.11 -u eddard.stark -p FightP3aceAndHonor! --find-delegation
 SMB    192.168.56.11    445    WINTERFELL
 LDAP   192.168.56.11    389    WINTERFELL
 LDAP   192.168.56.11    389    WINTERFELL    [+] Windows 10 / Server 2019 Build 17763 x64 (name:WINTERFELL) (domain:north.sevenkingdoms.local) (signing:True) (SMBv1:False)
