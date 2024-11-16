@@ -1,4 +1,4 @@
-# Find Misconfigured Delegation
+# 🆕 Find Misconfigured Delegation
 
 NetExec allows you to retrieve the list of all misconfigured delegations
 
@@ -17,5 +17,3 @@ LDAP   192.168.56.11   389   WINTERFELL   jon.snow     Person      Resource-Base
 LDAP   192.168.56.11   389   WINTERFELL   CASTELBLACK$ Computer    Constrained                        HTTP/winterfell, HTTP/winterfell.north.sevenkingdoms.local
 LDAP   192.168.56.11   389   WINTERFELL   пользователь Person      Resource-Based Constrained         WINTERFELL$
 ```
-
-
