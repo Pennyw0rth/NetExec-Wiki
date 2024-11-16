@@ -33,6 +33,7 @@
 
 * [Scan for Vulnerabilities](smb-protocol/scan-for-vulnerabilities.md)
 * [Enumeration](smb-protocol/enumeration/README.md)
+  * [Generate hosts file](smb-protocol/enumeration/generate-hosts-file.md)
   * [Enumerate Hosts](smb-protocol/enumeration/enumerate-hosts.md)
   * [Enumerate Null Sessions](smb-protocol/enumeration/enumerate-null-sessions.md)
   * [Enumerate Guest Logon](smb-protocol/enumeration/enumerate-guest-logon.md)
