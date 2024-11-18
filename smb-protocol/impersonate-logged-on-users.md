@@ -28,6 +28,20 @@ nxc smb <ip> -u <localAdmin> -p <password> -M schtask_as -o USER=<logged-on-user
 
 <figure><img src="../.gitbook/assets/schtask_as.png" alt=""><figcaption></figcaption></figure>
 
+
+other options: 
+```
+TASK - Change the task name
+FILE - Change the file name
+LOCATION change the location where files will be written to on the host
+```
+
+Example:
+```
+nxc smb [] -u [] -p [] --local-auth -M schtask_as -o USER=[target] CMD="whoami" TASK="Windows Update Service" FILE="update.log" LOCATION="\\Windows\\Tasks\\"
+```
+
+
 Custom command to add a user to the domain admin group for easy copy\&pasting:&#x20;
 
 ```
