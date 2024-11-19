@@ -29,7 +29,7 @@ nxc smb <ip> -u <localAdmin> -p <password> -M schtask_as -o USER=<logged-on-user
 <figure><img src="../.gitbook/assets/schtask_as.png" alt=""><figcaption></figcaption></figure>
 
 
-other options: 
+### 3. Module options: 
 ```
 TASK - Change the task name
 FILE - Change the file name
