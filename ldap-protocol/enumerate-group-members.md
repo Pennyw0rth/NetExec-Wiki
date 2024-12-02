@@ -1,4 +1,4 @@
-# 🆕 Enumerate Group Members
+# Enumerate Group Members
 
 To enumerate all members in specific group via LDAP:
 
