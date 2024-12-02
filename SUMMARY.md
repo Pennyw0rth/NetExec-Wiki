@@ -85,7 +85,7 @@
 
 * [Authentication](ldap-protocol/authentication.md)
 * [Enumerate Users](ldap-protocol/enumerate-users.md)
-* [🆕 Enumerate Group Members](ldap-protocol/enumerate-group-members.md)
+* [Enumerate Group Members](ldap-protocol/enumerate-group-members.md)
 * [🆕 Query LDAP](ldap-protocol/query-ldap.md)
 * [ASREPRoast](ldap-protocol/asreproast.md)
 * [Find Domain SID](ldap-protocol/find-domain-sid.md)
@@ -104,6 +104,7 @@
 * [Bloodhound Ingestor](ldap-protocol/bloodhound-ingestor.md)
 * [List DC IP](ldap-protocol/dc-list.md)
 * [Enumerate Domain Trusts](ldap-protocol/enumerate-trusts.md)
+* [🆕 Enumerate SCCM](ldap-protocol/enumerate-sccm.md)
 
 ## WINRM protocol
 
