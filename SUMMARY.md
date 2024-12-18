@@ -67,6 +67,7 @@
   * [Dump LSASS](smb-protocol/obtaining-credentials/dump-lsass.md)
   * [Dump DPAPI](smb-protocol/obtaining-credentials/dump-dpapi.md)
   * [🆕 Dump SCCM](smb-protocol/obtaining-credentials/dump-sccm.md)
+  * [Dump Token Broker Cache](smb-protocol/obtaining-credentials/dump-token-broker-cache.md)
   * [Dump WIFI password](smb-protocol/obtaining-credentials/dump-wifi-password.md)
   * [Dump KeePass](smb-protocol/obtaining-credentials/dump-keepass.md)
   * [Dump Veeam](smb-protocol/obtaining-credentials/dump-veeam.md)

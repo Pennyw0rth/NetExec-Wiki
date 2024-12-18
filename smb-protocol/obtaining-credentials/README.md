@@ -30,6 +30,10 @@ The following examples use a username and plaintext password, although user/hash
 [dump-veeam.md](dump-veeam.md)
 {% endcontent-ref %}
 
+{% content-ref url="dump-token-broker-cache.md" %}
+[dump-token-broker-cache.md](dump-token-broker-cache.md)
+{% endcontent-ref %}
+
 {% content-ref url="dump-wifi-password.md" %}
 [dump-wifi-password.md](dump-wifi-password.md)
 {% endcontent-ref %}
