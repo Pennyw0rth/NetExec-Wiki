@@ -129,6 +129,7 @@
 * [Password Spraying](ssh-protocol/password-spraying.md)
 * [Authentication](ssh-protocol/authentication.md)
 * [Command Execution](ssh-protocol/command-execution.md)
+* [Get and Put Files](ssh-protocol/get-and-put-files.md)
 
 ## FTP protocol
 
