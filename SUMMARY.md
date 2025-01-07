@@ -21,6 +21,7 @@
 * [Target Formats](getting-started/target-formats.md)
 * [Using Credentials](getting-started/using-credentials.md)
 * [Using Kerberos](getting-started/using-kerberos.md)
+* [Using Certificates](getting-started/using-certificates.md)
 * [Using Modules](getting-started/using-modules.md)
 * [🆕 DNS options](getting-started/dns-options.md)
 * [Database General Usage](getting-started/database-general-usage.md)
