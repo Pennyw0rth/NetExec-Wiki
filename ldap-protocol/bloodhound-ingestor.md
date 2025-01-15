@@ -5,3 +5,10 @@ NetExec has a build in bloodhound collector. To configure the name server, dns t
 ```
 nxc ldap <ip> -u user -p pass --bloodhound --collection All
 ```
+
+#### Specifying Bloodhound collection methods
+```
+nxc ldap <ip> -u user -p pass --bloodhound --collection Method1,Method2
+```
+
+The other collection methods can be found at the official Bloodhound.py docs [here](https://github.com/dirkjanm/BloodHound.py/blob/master/README.md#usage).
