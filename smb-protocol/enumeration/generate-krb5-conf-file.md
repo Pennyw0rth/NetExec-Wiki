@@ -1,6 +1,6 @@
 # Generate krb5 conf file
 
-Generate a valid kbr5 conf file using NetExec with option `--generate-krb5-file` path\_to\_file
+Generate a valid krb5 conf file using NetExec with option `--generate-krb5-file` path\_to\_file
 
 
 
