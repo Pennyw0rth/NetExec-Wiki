@@ -17,7 +17,7 @@ netexec smb 192.168.0.1 --pfx-base64 user.pfx -u user
 ```
 
 ```
-netexec smb 192.168.0.1 --cert-pem user.pem --key-pem key.pem -u user 
+netexec smb 192.168.0.1 --pem-cert user.pem --pem-key key.pem -u user 
 ```
 
 {% hint style="info" %}
