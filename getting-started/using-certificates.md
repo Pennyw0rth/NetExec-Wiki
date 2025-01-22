@@ -5,11 +5,11 @@ description: Using Certificates authentication with NetExec
 # Using Certificates
 
 ```
-netexec smb 192.168.0.1 --cert-pfx user.pfx -u user 
+netexec smb 192.168.0.1 --pfx-cert user.pfx -u user 
 ```
 
 ```
-netexec smb 192.168.0.1 --cert-pfx user.pfx --pfx-pass password -u user 
+netexec smb 192.168.0.1 --pfx-cert user.pfx --pfx-pass password -u user 
 ```
 
 ```
