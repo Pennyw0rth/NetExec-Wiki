@@ -40,7 +40,7 @@
   * [Enumerate Null Sessions](smb-protocol/enumeration/enumerate-null-sessions.md)
   * [Enumerate Guest Logon](smb-protocol/enumeration/enumerate-guest-logon.md)
   * [Enumerate Hosts with SMB Signing Not Required](smb-protocol/enumeration/smb-signing-not-required.md)
-  * [Enumerate Active Sessions](smb-protocol/enumeration/enumerate-active-sessions.md)
+  * [Enumerate Active SMB Sessions](smb-protocol/enumeration/enumerate-active-sessions.md)
   * [Enumerate Shares and Access](smb-protocol/enumeration/enumerate-shares-and-access.md)
   * [🆕 Enumerate Network Interfaces](smb-protocol/enumeration/enumerate-network-interfaces.md)
   * [Enumerate Disks](smb-protocol/enumeration/enumerate-disks.md)
