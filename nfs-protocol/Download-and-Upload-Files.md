@@ -1,14 +1,18 @@
-# 🆕 Download and Upload Files from NFS Server
+# Download and Upload Files
+
+{% hint style="info" %}
+For both `--get-file` and `--put-file` you need to specify the export share with `--share` if you do not want to use the root fs escape method (see [escape to root file system](../escape-to-root-file-system.md)).
+{% endhint %}
 
 ### Download File
 
-Get a remote file(s) using NetExec. Example usage:
+Example usage:
 
 ```
 NetExec nfs <ip> --get-file /home/user/Desktop/test/test.txt test.txt
 
 # Example Output                                                          
-NFS         <ip>  <nfs_port>  <ip>   [*] Target supported NFS versions: (3, 4)
+NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
 NFS         <ip>  <nfs_port>  <ip>   [*] Downloading /home/user/Desktop/test/roottest.txt to roottest.txt
 NFS         <ip>  <nfs_port>  <ip>   File successfully downloaded to test.txt from /home/user/Desktop/test/test.txt
 
@@ -16,14 +20,13 @@ NFS         <ip>  <nfs_port>  <ip>   File successfully downloaded to test.txt fr
 
 ### Upload File
 
-Get a remote file(s) using NetExec. Upload remote NFS file with chmod **777** permissions to the specified **folder**.
-Example usage:
+Uploaded files are created with chmod **777** permissions. If folders in the specified path do not exist yet, they will be created as well. Example usage:
 
 ```
 NetExec nfs <ip> --put-file test2.txt /home/user/Desktop/
 
 # Example Output                                                          
-NFS         <ip>  <nfs_port>  <ip>   [*] Target supported NFS versions: (3, 4)
+NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
 NFS         <ip>  <nfs_port>  <ip>   [*] Uploading from test2.txt to /home/user/Desktop/NFSShare/
 NFS         <ip>  <nfs_port>  <ip>   [*] Trying to create /home/user/Desktop/NFSShare/test2.txt
 NFS         <ip>  <nfs_port>  <ip>   [+] test2.txt successfully created
@@ -39,7 +42,7 @@ NFS         <ip>  <nfs_port>  <ip>   File test2.txt successfully uploaded to /ho
 NetExec nfs <ip> --put-file test2.txt /home/user/Desktop/
 
 # Example Output  
-NFS         <ip>  <nfs_port>  <ip>   [*] Target supported NFS versions: (3, 4)
+NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
 NFS         <ip>  <nfs_port>  <ip>   [*] Uploading from test2.txt to /home/user/Desktop/NFSShare/
 [!] test2.txt already exists on /home/user/Desktop/NFSShare/. Do you want to overwrite it? [Y/n] Y
 NFS         <ip>  <nfs_port>  <ip>   [*] test2.txt already exists on /home/user/Desktop/NFSShare/. Trying to overwrite it...
@@ -47,4 +50,3 @@ NFS         <ip>  <nfs_port>  <ip>   [*] Trying to write data from test2.txt to 
 NFS         <ip>  <nfs_port>  <ip>   [+] Data from test2.txt successfully written to /home/user/Desktop/NFSShare/
 NFS         <ip>  <nfs_port>  <ip>   File test2.txt successfully uploaded to /home/user/Desktop/NFSShare/
 ```
-
