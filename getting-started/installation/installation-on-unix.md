@@ -26,6 +26,10 @@ pipx upgrade netexec        # Will update if there is a new version
 pipx reinstall netexec      # Force download the latest commits from github
 ```
 
+#### Failed building wheel for aardwolf
+
+If pip fails to build aardwolf you need to [install rust](https://www.rust-lang.org/tools/install). Don't forget to reload your shell so rust is added to your PATH!
+
 ## Installation for Kali :dragon\_face:
 
 ```
@@ -70,21 +74,6 @@ cd NetExec
 poetry install
 poetry run NetExec
 ```
-
-## Installing NetExec with pip :no\_entry:
-
-{% hint style="warning" %}
-Using pipx over pip is recommended
-{% endhint %}
-
-<pre><code><strong>sudo apt install python3 python3-pip
-</strong>git clone https://github.com/Pennyw0rth/NetExec
-cd NetExec
-python3 -m venv .
-source bin/activate
-pip install .
-NetExec
-</code></pre>
 
 ## Binaries
 
