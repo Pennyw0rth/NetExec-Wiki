@@ -4,6 +4,28 @@
 For both `--get-file` and `--put-file` you need to specify the export share with `--share` if you do not want to use the root fs escape method (see [escape to root file system](../escape-to-root-file-system.md)).
 {% endhint %}
 
+Example usage:
+
+```
+# Share name is "/home/user/Desktop/NFSShare"
+NetExec nfs <ip> --share /home/user/Desktop/NFSShare/ --get-file as.txt as.txt
+
+# Example Output                                                          
+NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
+NFS         <ip>  <nfs_port>  <ip>   [*] Downloading as.txt to as.txt
+NFS         <ip>  <nfs_port>  <ip>   File successfully downloaded from as.txt to as.txt
+
+NetExec nfs <ip> --share /home/user/Desktop/NFSShare/ --put-file aa.txt aa.txt
+
+# Example Output                                                          
+NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
+NFS         <ip>  <nfs_port>  <ip>   [*] Uploading from aa.txt to aa.txt
+NFS         <ip>  <nfs_port>  <ip>   [*] Trying to create aa.txtaa.txt
+NFS         <ip>  <nfs_port>  <ip>   [+] aa.txt successfully created
+NFS         <ip>  <nfs_port>  <ip>   [+] Data from aa.txt successfully written to aa.txt with permissions 777
+NFS         <ip>  <nfs_port>  <ip>   File aa.txt successfully uploaded to aa.txt
+```
+
 ### Download File
 
 Example usage:
