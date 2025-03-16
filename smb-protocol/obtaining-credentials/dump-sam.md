@@ -9,3 +9,9 @@ You need at least local admin privilege on the remote target, use option **--loc
 ```
 #~ nxc smb 192.168.1.0/24 -u UserName -p 'PASSWORDHERE' --sam
 ```
+
+If this command fail you can also try the old method (similar to secretdump)
+
+```
+#~ nxc smb 192.168.1.0/24 -u UserName -p 'PASSWORDHERE' --sam secdump
+```
