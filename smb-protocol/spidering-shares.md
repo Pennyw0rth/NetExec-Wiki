@@ -10,7 +10,7 @@ Options for spidering shares of remote systems. Example, Spider the C drive for 
 
 Notice the '$' character has to be escaped. (example shown can be used as-is in a kali linux terminal)
 
-```
+```bash
 nxc SMB <IP> -u USER -p PASSWORD --spider C\$ --pattern txt
 ```
 
@@ -20,7 +20,7 @@ The module `spider_plus` allows you to list and dump all files from all readable
 
 ### List all readable files
 
-```
+```bash
 nxc smb 10.10.10.10 -u 'user' -p 'pass' -M spider_plus
 ```
 
@@ -28,6 +28,6 @@ nxc smb 10.10.10.10 -u 'user' -p 'pass' -M spider_plus
 
 Using the option `-o DOWNLOAD_FLAG=True` all files will be copied on the host
 
-```
+```bash
 nxc smb 10.10.10.10 -u 'user' -p 'pass' -M spider_plus -o DOWNLOAD_FLAG=True
 ```

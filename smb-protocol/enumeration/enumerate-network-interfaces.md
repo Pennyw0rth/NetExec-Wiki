@@ -6,7 +6,7 @@ You need at least local admin privilege on the remote target, use option **--loc
 
 Enumerate network interfaces on a host:
 
-```
+```bash
 nxc smb 192.168.56.11 -u USERNAME -p 'PASSWORDHERE' --interfaces
 ```
 

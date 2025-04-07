@@ -4,7 +4,7 @@ By default, NFS exports do not restrict access to files outside the exported dir
 
 NetExec automatically checks for this "escape to root" on connection, as can be seen by the flag:
 
-```
+```bash
 NFS         <ip>  <port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:False)
 ```
 
@@ -18,8 +18,8 @@ NetExec will automatically try to use the root escape if no share was specified 
 
 Example for  `--ls`:
 
-```
-NetExec nfs <ip> --ls '/'
+```bash
+nxc nfs <ip> --ls '/'
 
 # Example Output
 NFS         <ip>  <port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
