@@ -23,7 +23,7 @@ RDP         192.168.133.157 3389   DC01             [+] poudlard.wizard\rubeus:O
 #### Password spraying (without bruteforce)
 
 ```
-#~ poetry run NetExec rdp 192.168.1.0/24 -u userfile -p passwordfile --no-bruteforce
+#~ nxc rdp 192.168.1.0/24 -u userfile -p passwordfile --no-bruteforce
 ```
 
 Expected Results:
