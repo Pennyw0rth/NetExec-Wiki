@@ -11,13 +11,13 @@ description: >-
 List files in a specific directory using FTP.
 
 ```
-netexec ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --ls [DIRECTORY]
+nxc ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --ls [DIRECTORY]
 ```
 
 Example:
 
 ```
-netexec ftp 10.10.176.246 -u frank -p D2xc9CgD --ls
+nxc ftp 10.10.176.246 -u frank -p D2xc9CgD --ls
 FTP         10.10.176.246   21     10.10.176.246    [*] Banner: (vsFTPd 3.0.3)
 FTP         10.10.176.246   21     10.10.176.246    [+] frank:D2xc9CgD
 FTP         10.10.176.246   21     10.10.176.246    [*] Directory Listing
@@ -31,13 +31,13 @@ FTP         10.10.176.246   21     10.10.176.246    -rw-rw-r--    1 1001     100
 Download a file from the FTP server.
 
 ```
-netexec ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --get [FILE]
+nxc ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --get [FILE]
 ```
 
 Example:
 
 ```
-netexec ftp 10.10.176.246 -u frank -p D2xc9CgD --get ftp_flag.thm
+nxc ftp 10.10.176.246 -u frank -p D2xc9CgD --get ftp_flag.thm
 FTP         10.10.176.246   21     10.10.176.246    [*] Banner: (vsFTPd 3.0.3)
 FTP         10.10.176.246   21     10.10.176.246    [+] frank:D2xc9CgD
 FTP         10.10.176.246   21     10.10.176.246    [+] Downloaded: ftp_flag.thm
@@ -48,13 +48,13 @@ FTP         10.10.176.246   21     10.10.176.246    [+] Downloaded: ftp_flag.thm
 Upload a file to the FTP server providing you have relevant permissions
 
 ```
-netexec ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --put [LOCAL_FILE] [REMOTE_FILE]
+nxc ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --put [LOCAL_FILE] [REMOTE_FILE]
 ```
 
 Example:
 
 ```
- netexec ftp 10.10.176.246 -u frank -p D2xc9CgD --put test.txt test.txt
+ nxc ftp 10.10.176.246 -u frank -p D2xc9CgD --put test.txt test.txt
 FTP         10.10.176.246   21     10.10.176.246    [*] Banner: (vsFTPd 3.0.3)
 FTP         10.10.176.246   21     10.10.176.246    [+] frank:D2xc9CgD
 FTP         10.10.176.246   21     10.10.176.246    [-] Failed to upload file. Response: (550 Permission denied.)
