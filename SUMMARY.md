@@ -155,7 +155,4 @@
 
 * [🆕 Enumeration](nfs-protocol/Enumeration.md)
 * [Download and Upload Files](nfs-protocol/Download-and-Upload-Files.md)
-
-***
-
-* [🆕 Escape to root file system](escape-to-root-file-system.md)
+* [🆕 Escape to root file system](nfs-protocol/escape-to-root-file-system.md)

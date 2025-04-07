@@ -2,7 +2,7 @@
 
 ### Enumerate NFS Servers
 
-Detect remote NFS server, enumerate available versions and check for the root escape (see [escape to root file system](../escape-to-root-file-system.md)).
+Detect remote NFS server, enumerate available versions and check for the root escape (see [escape to root file system](escape-to-root-file-system.md)).
 
 ```
 NetExec nfs <ip> 
@@ -29,7 +29,7 @@ NFS         <ip>  <nfs_port>  <ip>   1000       rw-      9.2GB/19.5GB    /home/u
 
 ### List files on a share
 
-Use the `--ls` option to list files on the target system. Chose the target share with the `--share` flag. To use the root fs escape see "[escape to root file system](../escape-to-root-file-system.md)".
+Use the `--ls` option to list files on the target system. Chose the target share with the `--share` flag. To use the root fs escape see "[escape to root file system](escape-to-root-file-system.md)".
 
 ```
 NetExec nfs <ip> --share '/var/nfs/general' --ls '/'
