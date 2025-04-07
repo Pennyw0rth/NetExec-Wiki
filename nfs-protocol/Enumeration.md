@@ -5,7 +5,7 @@
 Detect remote NFS server, enumerate available versions and check for the root escape (see [escape to root file system](escape-to-root-file-system.md)).
 
 ```
-NetExec nfs <ip> 
+nxc nfs <ip> 
 
 # Example Output                                                          
 NFS         <ip>  <port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
@@ -16,7 +16,7 @@ NFS         <ip>  <port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape
 Use the flag `--shares` to enumerate exported NFS shares. Output shows target `UID, Permissions, Storage Usage, Access List`.
 
 ```
-NetExec nfs <ip> --shares
+nxc nfs <ip> --shares
 
 # Example Output
 NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:False)
@@ -32,7 +32,7 @@ NFS         <ip>  <nfs_port>  <ip>   1000       rw-      9.2GB/19.5GB    /home/u
 Use the `--ls` option to list files on the target system. Chose the target share with the `--share` flag. To use the root fs escape see "[escape to root file system](escape-to-root-file-system.md)".
 
 ```
-NetExec nfs <ip> --share '/var/nfs/general' --ls '/'
+nxc nfs <ip> --share '/var/nfs/general' --ls '/'
 
 # Example Output
 NFS         <ip>  <port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:False)
@@ -52,7 +52,7 @@ NFS         <ip>  <port>  <ip>   0          dr--   4.0KB         /var/nfs/genera
 Enumerate all files and folders recursively with `--enum-shares` with a given recursion depth (default is 3 layers). The depth can be changed with `--enum-shares 5`. Output shows target `UID, Permissions, File Size, File Path, Access List`.
 
 ```
-NetExec nfs <ip> --enum-shares
+nxc nfs <ip> --enum-shares
 
 # Example Output
 NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:False)
