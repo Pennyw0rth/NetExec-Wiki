@@ -1,7 +1,7 @@
 # Download and Upload Files
 
 {% hint style="info" %}
-For both `--get-file` and `--put-file` you need to specify the export share with `--share` if you do not want to use the root fs escape method (see [escape to root file system](../escape-to-root-file-system.md)).
+For both `--get-file` and `--put-file` you need to specify the export share with `--share` if you do not want to use the root fs escape method (see [escape to root file system](escape-to-root-file-system.md)).
 {% endhint %}
 
 Example usage:

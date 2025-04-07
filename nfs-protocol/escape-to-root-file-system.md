@@ -39,7 +39,7 @@ NFS         <ip>  <port>  <ip>   0          dr--   12.0KB        /etc
 
 As mentioned above, when the options `(rw,no_root_squash)` are set, you can simply download the files `/etc/shadow` and `/etc/passwd`, add yourself and reupload them:
 
-<figure><img src=".gitbook/assets/nfs_create_backdoor.png" alt=""><figcaption><p>Owning a system with NFS</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/nfs_create_backdoor.png" alt=""><figcaption><p>Owning a system with NFS</p></figcaption></figure>
 
 ### Additional sources:
 
