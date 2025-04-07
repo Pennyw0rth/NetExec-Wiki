@@ -6,6 +6,6 @@ Get the WIFI password register in Windows
 You need at least local admin privilege on the remote target, use option **--local-auth** if your user is a local account
 {% endhint %}
 
-```
+```bash
 nxc smb <ip> -u user -p pass -M wifi
 ```

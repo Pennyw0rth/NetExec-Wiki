@@ -10,7 +10,9 @@ If LAPS is used inside the domain, is can be hard to use NetExec to execute a co
 
 Therefore, a new core option has been added `--laps`! If you have compromised an accout that can read LAPS password you can use NetExec like this
 
-`nxc winrm <ip> -u user-can-read-laps -p pass --laps`
+```bash
+nxc winrm <ip> -u user-can-read-laps -p pass --laps
+```
 
 {% hint style="info" %}
 If the default administrator name is not "administrator" add the user after the option
