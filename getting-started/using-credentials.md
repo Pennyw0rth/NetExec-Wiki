@@ -97,8 +97,8 @@ nxc <protocol> <target(s)> -u ~/file_containing_usernames -H ~/file_containing_n
 ## Password Spraying Without Bruteforce
 
 Can be usefull for protocols like WinRM and MSSQL. This option avoid the bruteforce when you use files (-u file -p file)
-bash
-```
+
+```bash
 nxc <protocol> <target(s)> -u ~/file_containing_usernames -H ~/file_containing_ntlm_hashes --no-bruteforce
 ```
 
