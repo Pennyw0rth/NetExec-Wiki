@@ -6,12 +6,12 @@
 You need at least local admin privilege on the remote target, use option **--local-auth** if your user is a local account
 {% endhint %}
 
-```
-#~ nxc smb 192.168.1.0/24 -u UserName -p 'PASSWORDHERE' --sam
+```bash
+nxc smb 192.168.1.0/24 -u UserName -p 'PASSWORDHERE' --sam
 ```
 
 If this command fail you can also try the old method (similar to secretdump)
 
-```
-#~ nxc smb 192.168.1.0/24 -u UserName -p 'PASSWORDHERE' --sam secdump
+```bash
+nxc smb 192.168.1.0/24 -u UserName -p 'PASSWORDHERE' --sam secdump
 ```

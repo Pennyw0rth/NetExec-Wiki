@@ -8,7 +8,7 @@ description: Get a remote file or send a remote file using NetExec
 
 Send a local file to the remote target
 
-```
+```bash
 nxc ssh 172.16.251.152 -u user -p pass --put-file file.txt /tmp/file.txt
 ```
 
@@ -16,6 +16,6 @@ nxc ssh 172.16.251.152 -u user -p pass --put-file file.txt /tmp/file.txt
 
 Get a remote file on the remote target
 
-```
+```bash
 nxc ssh 172.16.251.152 -u user -p pass --get-file /tmp/file.txt file.txt
 ```

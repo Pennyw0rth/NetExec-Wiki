@@ -30,7 +30,7 @@ Then use those options: `nxc <protocol> <protocol options>`
 
 Running `nxc --help` will list general options and protocols that are available (Notice the 'protocols' section below):
 
-```
+```bash
 #~ nxc --help
 usage: nxc [-h] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--no-progress] [--verbose] [--debug] [--version] {smb,ssh,ldap,ftp,wmi,winrm,rdp,vnc,mssql} ...
 

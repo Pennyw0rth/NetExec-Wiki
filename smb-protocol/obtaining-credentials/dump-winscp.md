@@ -16,6 +16,6 @@ WinSCP allows to store credentials for connections in the following locations:
 
 These are automatically checked for stored credentials for all users on the system. If there is a saved session and no master password is set, the module will attempt to extract the credentials:
 
-```
+```bash
 nxc smb 192.168.56.24 -u eddard.stark -p FightP3aceAndHonor! -M winscp
 ```

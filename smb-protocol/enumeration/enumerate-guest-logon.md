@@ -6,7 +6,7 @@ Using a random username and password you can check if the target accepts guest l
 Make sure the password is empty
 {% endhint %}
 
-```
+```bash
 nxc smb 10.10.10.178 -u 'a' -p '' 
 nxc smb 10.10.10.178 -u 'a' -p '' --shares
 ```

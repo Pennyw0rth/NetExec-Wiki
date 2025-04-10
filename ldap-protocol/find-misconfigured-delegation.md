@@ -2,7 +2,7 @@
 
 NetExec allows you to retrieve the list of all misconfigured delegations
 
-```
+```bash
 nxc ldap 192.168.56.11 -u eddard.stark -p FightP3aceAndHonor! --find-delegation
 
 # Example Output

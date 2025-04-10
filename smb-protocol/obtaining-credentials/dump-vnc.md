@@ -10,6 +10,6 @@ You need at least local admin privilege on the remote target, use option **--loc
 
 RealVNC or TightVNC allow users to store credentials for connections. This module will automatically look for these credentials and extract them if found.
 
-```
+```bash
 nxc smb 192.168.56.11 -u eddard.stark -p FightP3aceAndHonor! -M vnc
 ```

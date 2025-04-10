@@ -4,7 +4,7 @@ System Center Configuration Manager (SCCM) or also called MECM nowadays is a man
 
 This module implements the LDAP enumeration part of the [Misconfiguration-Manager](https://github.com/subat0mik/Misconfiguration-Manager) ([RECON-1](https://github.com/subat0mik/Misconfiguration-Manager/blob/main/attack-techniques/RECON/RECON-1/recon-1_description.md)) to assist with initial discovery of SCCM entities in the AD environment. It will find SCCM Site-Servers, SCCM Sites, SCCM Management Points and Users, Computers or Groups related to SCCM.
 
-```
+```bash
 nxc ldap 192.168.33.10 u alice -p whiteRabbit -M sccm -o REC_RESOLVE=TRUE
 ```
 
