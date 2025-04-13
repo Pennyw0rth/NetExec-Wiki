@@ -48,4 +48,6 @@ nxc <protocol> <target(s)> -u Administrator -p 'P@ssw0rd' -M lsassy -o COMMAND=x
 
 Simply define all the modules you want, each proceeded by a `-M` option flag:
 
-`nxc <protocol> <target(s)> -u Administrator -p 'P@ssw0rd' -M spooler -M printnightmare -M shadowcoerce -M petitpotam`
+```bash	
+nxc <protocol> <target(s)> -u Administrator -p 'P@ssw0rd' -M spooler -M iis -M lsassy -M winscp
+```

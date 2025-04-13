@@ -14,7 +14,7 @@ All workspaces and their relative databases are stored in `~/.nxc/workspaces`
 
 nxc ships with a secondary command line script `nxcdb` which abstracts interacting with the back-end database. Typing the command `nxcdb` will drop you into a command shell:
 
-```
+```bash
 #~ nxcdb
 nxcdb (default) >
 ```
@@ -23,7 +23,7 @@ nxcdb (default) >
 
 At anytime, just type "help" for a list of commands:
 
-```
+```bash
 nxcdb (default)(smb) > help
 
 Documented commands (type help <topic>):
@@ -41,7 +41,7 @@ The default workspace name is called 'default' (as represented within the prompt
 
 To create a workspace:
 
-```
+```bash
 nxcdb (default) > workspace create test
 [*] Creating workspace 'test'
 <-- CUT -->
@@ -50,14 +50,14 @@ nxcdb (test) >
 
 To switch workspace:
 
-```
+```bash
 nxcdb (test) > workspace default
 nxcdb (default) >
 ```
 
 To list workspaces:
 
-```
+```bash
 nxcdb (test) > workspace list
 [*] Enumerating Workspaces
 default
@@ -68,7 +68,7 @@ default
 
 To access a protocol's database simply run `proto <protocol>`, for example:
 
-```
+```bash
 nxcdb (test) > proto smb
 nxcdb (test)(smb) >
 ```
@@ -79,7 +79,7 @@ Please refer to the appropriate wiki section for details and usage of a specific
 
 To switch protocol database:
 
-```
+```bash
 nxcdb (test)(smb) > back
 nxcdb (test) > proto http
 nxcdb (test)(http) >
@@ -89,13 +89,13 @@ nxcdb (test)(http) >
 
 You can export information from the database in a few different ways
 
-```
+```bash
 nxcdb (test)(smb) > export shares detailed file.csv
 ```
 
 For all of the up to date options, type `help export`
 
-```
+```bash
 nxcdb (default)(smb) > help export
 
 export [creds|hosts|local_admins|shares|signing|keys] [simple|detailed|*] [filename]
