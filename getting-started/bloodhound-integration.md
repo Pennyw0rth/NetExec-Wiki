@@ -4,7 +4,7 @@ NetExec will set user as 'owned' on BloodHound when an account is found ! Very u
 
 First you need to configure your config file in you home folder: `~/.nxc/nxc.conf` and add the following lines:
 
-```
+```bash
 [BloodHound]
 bh_enabled = True
 bh_uri = 127.0.0.1
