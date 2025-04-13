@@ -6,17 +6,18 @@ description: Selecting & Using a Protocol on NetExec
 
 ## Available Protocols
 
-<pre><code><strong>smb
-</strong><strong>ssh
-</strong><strong>ldap
-</strong><strong>ftp
-</strong><strong>wmi
-</strong><strong>winrm
-</strong><strong>rdp
-</strong><strong>vnc
-</strong><strong>mssql
-</strong><strong>nfs
-</strong></code></pre>
+```bash
+smb
+ssh
+ldap
+ftp
+wmi
+winrm
+rdp
+vnc
+mssql
+nfs
+```
 
 Note that not all protocols support the same functionality, be sure to check each protocol's options
 
