@@ -17,10 +17,11 @@ Set up git, Rust and C++:\
 
 Install pipx and install NetExec directly from the repository:
 
-<pre><code><strong>pip install pipx
-</strong>python -m pipx ensurepath
+```bash
+pip install pipx
+python -m pipx ensurepath
 python -m pipx install git+https://github.com/Pennyw0rth/NetExec
-</code></pre>
+```
 
 Restart your command line and you should be able to execute NetExec:
 
