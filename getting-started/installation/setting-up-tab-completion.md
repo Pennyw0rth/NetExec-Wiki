@@ -10,8 +10,8 @@ Once you've installed nxc globally, do the following:
 Installing with pipx is recommended for global install
 {% endhint %}
 
-{% code overflow="wrap" fullWidth="false" %}
-```
+
+```bash
 sudo apt install python3-argcomplete
 
 # For Bash
@@ -20,11 +20,10 @@ register-python-argcomplete nxc >> ~/.bashrc
 # For Zsh
 register-python-argcomplete nxc >> ~/.zshrc
 ```
-{% endcode %}
 
 Open a new shell and you are ready to go:
 
-```
+```bash
 NetExec
 netexec
 nxc

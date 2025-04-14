@@ -12,7 +12,7 @@ Run `nxc <protocol> -L` to view available modules for the specified protocol.
 
 For example to view all modules for the SMB protocol:
 
-```
+```bash
 nxc smb -L
 ```
 
@@ -22,7 +22,7 @@ Run `nxc <protocol> <target(s)> -M <module name>`.
 
 For example to run the SMB Mimikatz module:
 
-```
+```bash
 nxc smb <target(s)> -u Administrator -p 'October2022' -M lsassy
 ```
 
@@ -30,7 +30,7 @@ nxc smb <target(s)> -u Administrator -p 'October2022' -M lsassy
 
 Run `nxc <protocol> -M <module name> --options` to view a modules supported options, e.g:
 
-```
+```bash
 nxc smb -M lsassy --options
 ```
 
@@ -40,7 +40,7 @@ Module options are specified with the `-o` flag. All options are specified in th
 
 Example:
 
-```
+```bash
 nxc <protocol> <target(s)> -u Administrator -p 'P@ssw0rd' -M lsassy -o COMMAND=xxxxxxxxug'
 ```
 
@@ -48,4 +48,6 @@ nxc <protocol> <target(s)> -u Administrator -p 'P@ssw0rd' -M lsassy -o COMMAND=x
 
 Simply define all the modules you want, each proceeded by a `-M` option flag:
 
-`nxc <protocol> <target(s)> -u Administrator -p 'P@ssw0rd' -M spooler -M printnightmare -M shadowcoerce -M petitpotam`
+```bash	
+nxc <protocol> <target(s)> -u Administrator -p 'P@ssw0rd' -M spooler -M iis -M lsassy -M winscp
+```
