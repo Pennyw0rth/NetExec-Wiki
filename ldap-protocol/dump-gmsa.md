@@ -10,6 +10,6 @@ Using the protocol LDAP you can extract the password of a gMSA account if you ha
 LDAPS is required to retrieve the password, using the --gmsa LDAPS is automatically selected
 {% endhint %}
 
-```
-$ nxc ldap <ip> -u <user> -p <pass> --gmsa
+```bash
+nxc ldap <ip> -u <user> -p <pass> --gmsa
 ```

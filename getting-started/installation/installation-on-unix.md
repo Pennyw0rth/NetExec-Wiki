@@ -4,24 +4,22 @@
 
 Using [pipx ](https://github.com/pypa/pipx)to install NetExec is recommended. This allows you to use NetExec and the nxcdb system-wide.
 
-{% code overflow="wrap" fullWidth="false" %}
-```
+```bash
 sudo apt install pipx git
 pipx ensurepath
 pipx install git+https://github.com/Pennyw0rth/NetExec
 ```
-{% endcode %}
 
 Open a new shell and you are ready to go:
 
-```
+```bash
 NetExec
 nxcdb
 ```
 
 Updating via pipx:
 
-```
+```bash
 pipx upgrade netexec        # Will update if there is a new version
 pipx reinstall netexec      # Force download the latest commits from github
 ```
@@ -32,20 +30,20 @@ If pip fails to build aardwolf you need to [install rust](https://www.rust-lang.
 
 ## Installation for Kali :dragon\_face:
 
-```
+```bash
 apt update
 apt install netexec
 ```
 
 ## Installation for BlackArch :dagger:
 
-```
+```bash
 pacman -Syu netexec
 ```
 
 ## Installation for ParrotSec 🦜
 
-```
+```bash
 apt update
 apt install netexec
 ```
@@ -58,7 +56,7 @@ apt install netexec
 
 You're going to need to install [Poetry](https://python-poetry.org/docs/#installation) which is what nxc uses to manage dependencies. To install poetry you should use [pipx](https://github.com/pypa/pipx), because our dynamic-versioning plugin will likely crash otherwise.
 
-```
+```bash
 apt install pipx git
 pipx ensurepath
 pipx install poetry
@@ -68,7 +66,7 @@ poetry dynamic-versioning enable
 
 Now that poetry is set, up and we can download the NetExec repository and install its dependencies:
 
-```
+```bash
 git clone https://github.com/Pennyw0rth/NetExec
 cd NetExec
 poetry install

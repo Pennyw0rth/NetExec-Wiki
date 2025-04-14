@@ -6,7 +6,7 @@ For both `--get-file` and `--put-file` you need to specify the export share with
 
 Example usage:
 
-```
+```bash
 # Share name is "/home/user/Desktop/NFSShare"
 nxc nfs <ip> --share /home/user/Desktop/NFSShare/ --get-file as.txt as.txt
 
@@ -30,7 +30,7 @@ NFS         <ip>  <nfs_port>  <ip>   File aa.txt successfully uploaded to aa.txt
 
 Example usage:
 
-```
+```bash
 nxc nfs <ip> --get-file /home/user/Desktop/test/test.txt test.txt
 
 # Example Output                                                          
@@ -44,7 +44,7 @@ NFS         <ip>  <nfs_port>  <ip>   File successfully downloaded to test.txt fr
 
 Uploaded files are created with chmod **777** permissions. If folders in the specified path do not exist yet, they will be created as well. Example usage:
 
-```
+```bash
 nxc nfs <ip> --put-file test2.txt /home/user/Desktop/
 
 # Example Output                                                          
@@ -60,7 +60,7 @@ NFS         <ip>  <nfs_port>  <ip>   File test2.txt successfully uploaded to /ho
 
 **If the local file already exists on the remote server, NetExec asks whether you want to overwrite it.**
 
-```
+```bash
 nxc nfs <ip> --put-file test2.txt /home/user/Desktop/
 
 # Example Output  

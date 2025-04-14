@@ -4,7 +4,7 @@
 
 Do directory listings on valid authentication by using the `--ls` option:
 
-```
+```bash
 nxc ftp 192.168.0.10 -u 'marshall' -p 'badpassword' --ls
 FTP         192.168.0.10   21     192.168.0.10    [*] Banner: (vsFTPd 3.0.5)
 FTP         192.168.0.10   21     192.168.0.10    [+] marshall:badpassword
