@@ -30,7 +30,7 @@ Code execution results in a (**Pwn3d!**) added after the login confirmation. Wit
 | WMI      | Most likely local admin :white\_check\_mark:           |
 
 {% hint style="info" %}
-When using usernames or passwords that contain special symbols (especially exclaimation points!), wrap them in single quotes to make your shell interprets them as a string.
+When using usernames or passwords that contain special symbols (especially exclaimation points!), wrap them in single quotes to make sure your shell interprets them as a string.
 {% endhint %}
 
 Example:
