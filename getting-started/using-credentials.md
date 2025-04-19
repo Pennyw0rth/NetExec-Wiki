@@ -15,7 +15,7 @@ nxc <protocol> <target(s)> -u username -p password
 ```
 
 {% hint style="success" %}
-Code execution results in a (**Pwn3d!**) added after the login confirmation. With SMB protocol, most likely your compromised users are in the local administrators group.
+Code execution results in a (**Pwn3d!**) added after the login confirmation. With the SMB protocol, your compromised users are most likely in the local administrators group.
 {% endhint %}
 
 | Protocol | See Pwn3d! in output                                   |
@@ -30,7 +30,7 @@ Code execution results in a (**Pwn3d!**) added after the login confirmation. Wit
 | WMI      | Most likely local admin :white\_check\_mark:           |
 
 {% hint style="info" %}
-When using usernames or passwords that contain special symbols (especially exclaimation points!), wrap them in single quotes to make your shell interpret them as a string.
+When using usernames or passwords that contain special symbols (especially exclaimation points!), wrap them in single quotes to make sure your shell interprets them as a string.
 {% endhint %}
 
 Example:
@@ -49,7 +49,7 @@ nxc <protocol> <target(s)> -u='-username' -p='-October2022'
 
 ## Using a Credential Set From the Database
 
-By specifying a credential ID (or multiple credential IDs) with the `-id` flag nxc will automatically pull that credential from the back-end database and use it to authenticate (saves a lot of typing):
+By specifying a credential ID (or multiple credential IDs) with the `-id` flag, nxc will automatically pull that credential from the back-end database and use it to authenticate (saves a lot of typing):
 
 ```bash
 nxc <protocol> <target(s)> -id <cred ID(s)>
@@ -96,7 +96,7 @@ nxc <protocol> <target(s)> -u ~/file_containing_usernames -H ~/file_containing_n
 
 ## Password Spraying Without Bruteforce
 
-Can be usefull for protocols like WinRM and MSSQL. This option avoid the bruteforce when you use files (-u file -p file)
+Can be useful for protocols like WinRM and MSSQL. This option avoids bruteforcing when you use files (-u file -p file).
 
 ```bash
 nxc <protocol> <target(s)> -u ~/file_containing_usernames -H ~/file_containing_ntlm_hashes --no-bruteforce
@@ -112,7 +112,7 @@ user2 -> pass2
 ```
 
 {% hint style="info" %}
-By default nxc will exit after a successful login is found. Using the --continue-on-success flag will continue spraying even after a valid password is found. Usefull for spraying a single password against a large user list. The --continue-on-success flag is incompatible with command execution.
+By default nxc will exit after a successful login is found. Using the --continue-on-success flag will continue spraying even after a valid password is found. Useful for spraying a single password against a large user list. The --continue-on-success flag is incompatible with command execution.
 {% endhint %}
 
 ```bash
