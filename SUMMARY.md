@@ -6,6 +6,7 @@
   * [🔧 v1.1.0 - nxc4u](news/v1.1.0-nxc4u.md)
   * [📡 v1.2.0 - ItsAlwaysDNS](news/v1.2.0-ItsAlwaysDNS.md)
   * [🏎️ v1.3.0 - NeedForSpeed](news/v1.3.0-NeedForSpeed.md)
+  * [🧈 v1.4.0 - SmoothOpetator](news/v1.4.0-SmoothOperator.md)
 * [Logo & Banner](logo-and-banner.md)
 * [Changelog](changelog.md)
 
