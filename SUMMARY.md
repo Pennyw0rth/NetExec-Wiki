@@ -32,10 +32,11 @@
 
 ## SMB protocol
 
+* [Generate hosts file](smb-protocol/generate-hosts-file.md)
+* [Generate krb5.conf file](smb-protocol/generate-krb5.conf-file.md)
+* [Generate TGT](smb-protocol/generate-tgt.md)
 * [Scan for Vulnerabilities](smb-protocol/scan-for-vulnerabilities.md)
 * [Enumeration](smb-protocol/enumeration/README.md)
-  * [Generate hosts file](smb-protocol/enumeration/generate-hosts-file.md)
-  * [Generate krb5 conf file](smb-protocol/enumeration/generate-krb5-conf-file.md)
   * [Enumerate Hosts](smb-protocol/enumeration/enumerate-hosts.md)
   * [Enumerate Null Sessions](smb-protocol/enumeration/enumerate-null-sessions.md)
   * [Enumerate Guest Logon](smb-protocol/enumeration/enumerate-guest-logon.md)
@@ -83,6 +84,7 @@
 * [Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
 * [🆕 Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
 * [🆕 Dump User Local Security Questions](smb-protocol/dump-user-local-security-questions.md)
+* [Generate krb5 conf file](smb-protocol/generate-krb5-conf-file.md)
 
 ## LDAP protocol
 
