@@ -85,7 +85,6 @@
 * [🆕 Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
 * [🆕 Change User Password](smb-protocol/change-user-password.md)
 * [🆕 Dump User Local Security Questions](smb-protocol/dump-user-local-security-questions.md)
-* [Generate krb5 conf file](smb-protocol/generate-krb5-conf-file.md)
 
 ## LDAP protocol
 
