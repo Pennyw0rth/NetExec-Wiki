@@ -6,14 +6,13 @@ description: Using Kerberos authentication with NetExec
 
 ## Using Kerberos
 
-nxc does support Kerberos authentication There is two option, directly using a password/hash or using a ticket and using the `KRB5CCNAME` env name to specify the ticket.
+NetExec does support Kerberos authentication. There are two options:&#x20;
 
-{% hint style="info" %}
-when using the option `-k or`--use-kcache, you need to specify the same hostname (FQDN) as the one from the kerberos ticket
-{% endhint %}
+* Using password/hash which automatically takes care of handling the TGT/ST
+* Using an existing ticket by specifying the file via the `KRB5CCNAME` environment variable
 
 ```bash
-$ nxc smb zoro.gold.local -k -u bonclay -p Ocotober2022
+$ nxc smb zoro.gold.local -u bonclay -p Ocotober2022 -k
 SMB         zoro.gold.local 445    ZORO             [*] Windows 10.0 Build 14393 (name:ZORO) (domain:gold.local) (signing:False) (SMBv1:False)
 SMB         zoro.gold.local 445    ZORO             [+] gold.local\bonclay
 ```
