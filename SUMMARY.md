@@ -7,7 +7,6 @@
   * [📡 v1.2.0 - ItsAlwaysDNS](news/v1.2.0-ItsAlwaysDNS.md)
   * [🏎️ v1.3.0 - NeedForSpeed](news/v1.3.0-NeedForSpeed.md)
 * [Logo & Banner](logo-and-banner.md)
-* [Changelog](changelog.md)
 
 ## Getting Started
 
