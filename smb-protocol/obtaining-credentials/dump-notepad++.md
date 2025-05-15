@@ -10,10 +10,10 @@ You need at least local admin privilege on the remote target, use option **--loc
 
 Finding credentials in text files never happens, right? Right??
 
-Well, even typing in sensible content into unsaved notepad++ documents can be dangerous, as they still leave traces on the system.
+Well, even typing in sensible content into unsaved notepad++ documents can be dangerous, as they still leave traces on the system. This module dumps currently unsaved notepad++ documents:
 
 ```bash
 nxc smb <ip> -u username -p password -M notepad++
 ```
 
-Made by [@Dfte](https://x.com/Defte_)
+![Dumping unsaved notepad++ documents](https://github.com/user-attachments/assets/462b4dc3-1d7e-4fca-9292-04e4e4c39156)
