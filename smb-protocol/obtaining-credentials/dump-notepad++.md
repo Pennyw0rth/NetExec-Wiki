@@ -15,3 +15,5 @@ Well, even typing in sensible content into unsaved notepad++ documents can be da
 ```bash
 nxc smb <ip> -u username -p password -M notepad++
 ```
+
+Made by [@Dfte](https://x.com/Defte_)
