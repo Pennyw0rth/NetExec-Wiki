@@ -78,6 +78,7 @@
   * [🆕 Dump PuTTY](smb-protocol/obtaining-credentials/dump-putty.md)
   * [🆕 Dump VNC](smb-protocol/obtaining-credentials/dump-vnc.md)
   * [🆕 Dump mRemoteNG](smb-protocol/obtaining-credentials/dump-mremoteng.md)
+  * [🆕 Dump Notepad](smb-protocol/obtaining-credentials/dump-notepad.md)
   * [🆕 Dump Notepad++](smb-protocol/obtaining-credentials/dump-notepad++.md)
   * [🆕 Dump Remote Desktop Credential Manager](smb-protocol/obtaining-credentials/dump-rdcman.md)
 * [Defeating LAPS](smb-protocol/defeating-laps.md)
