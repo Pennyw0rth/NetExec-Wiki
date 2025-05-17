@@ -85,6 +85,7 @@
 * [Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
 * [🆕 Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
 * [🆕 Change User Password](smb-protocol/change-user-password.md)
+* [🆕 Add User Group](smb-protocol/add-user-group.md)
 * [🆕 Dump User Local Security Questions](smb-protocol/dump-user-local-security-questions.md)
 
 ## LDAP protocol
