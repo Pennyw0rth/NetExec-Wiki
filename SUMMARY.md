@@ -70,6 +70,7 @@
   * [Dump NTDS.dit](smb-protocol/obtaining-credentials/dump-ntds.dit.md)
   * [Dump LSASS](smb-protocol/obtaining-credentials/dump-lsass.md)
   * [Dump DPAPI](smb-protocol/obtaining-credentials/dump-dpapi.md)
+  * [🆕 Dump with BackupOperator Priv](smb-protocol/obtaining-credentials/dump-backupop.md)
   * [🆕 Dump SCCM](smb-protocol/obtaining-credentials/dump-sccm.md)
   * [🆕 Dump Token Broker Cache](smb-protocol/obtaining-credentials/dump-token-broker-cache.md)
   * [Dump WIFI password](smb-protocol/obtaining-credentials/dump-wifi-password.md)
