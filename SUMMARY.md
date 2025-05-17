@@ -45,6 +45,7 @@
   * [Enumerate Shares and Access](smb-protocol/enumeration/enumerate-shares-and-access.md)
   * [🆕 Enumerate Network Interfaces](smb-protocol/enumeration/enumerate-network-interfaces.md)
   * [Enumerate Disks](smb-protocol/enumeration/enumerate-disks.md)
+  * [Enumerate Disks](smb-protocol/enumeration/enumerate-bitlocker.md)
   * [Enumerate Logged on Users](smb-protocol/enumeration/enumerate-logged-on-users.md)
   * [Enumerate Domain Users](smb-protocol/enumeration/enumerate-domain-users.md)
   * [Enumerate Users by Bruteforcing RID](smb-protocol/enumeration/enumerate-users-by-bruteforcing-rid.md)
