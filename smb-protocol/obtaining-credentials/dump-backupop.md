@@ -1,12 +1,10 @@
-# Dump SAM, SYSTEM, SECURITY, NTDS with SeBackupPrivilege 
+# 🆕 Dump with BackupOperator Priv
 
-### Dump hashes using with BackupOperators 
-
-{% hint style="warning" %}
+{% hint style="success" %}
 You don't need to local admin privilege on the remote target if you are in SeBackupPrivilege
 {% endhint %}
 
-If the user controled has SeBackupPrivilege, It can dump SAM, SYSTEM, SECURITY, NTDS on the target system where it has the privs without local admin or domain admin privs.
+If the controlled user has the SeBackupPrivilege, it can dump SAM, SYSTEM, SECURITY and therefore the NTDS.dit on the target system. No admin privs needed!
 
 ```bash
 nxc smb <ip> -u username -p password -M backup_operator
