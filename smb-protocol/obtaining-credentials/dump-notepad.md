@@ -1,5 +1,5 @@
 ---
-description: Dump Notepad unsaved documents
+description: Dump unsaved Notepad documents
 ---
 
 # 🆕 Dump Notepad
@@ -8,7 +8,7 @@ description: Dump Notepad unsaved documents
 You need at least local admin privilege on the remote target, use option **--local-auth** if your user is a local account
 {% endhint %}
 
-Finding credentials in unsaved Notepad files. 
+Finding credentials in unsaved Notepad files.
 
 Sensible content into unsaved notepad documents can be dangerous, as they still leave traces on the system. This module dumps currently unsaved notepad app's documents:
 
