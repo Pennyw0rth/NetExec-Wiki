@@ -86,6 +86,7 @@
 * [🆕 Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
 * [🆕 Change User Password](smb-protocol/change-user-password.md)
 * [🆕 Dump User Local Security Questions](smb-protocol/dump-user-local-security-questions.md)
+* [🆕 Event Log Creds(4688)](smb-protocol/eventlog-creds.md)
 
 ## LDAP protocol
 
