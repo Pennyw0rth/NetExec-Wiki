@@ -1,5 +1,9 @@
 # Enumerate BitLocker
 
+{% hint style="warning" %}
+You need at least local admin privilege on the remote target
+{% endhint %}
+
 Enumerate BitLocker Status on the remote target
 
 ```bash
