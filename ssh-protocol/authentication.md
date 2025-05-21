@@ -16,5 +16,5 @@ SSH         127.0.0.1       22     127.0.0.1        [+] user:password
 #### Specify Ports
 
 ```bash
-nxc http 192.168.1.0/24 --port 2222
+nxc ssh 192.168.1.0/24 --port 2222
 ```
