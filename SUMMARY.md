@@ -93,7 +93,7 @@
 ## LDAP protocol
 
 * [Authentication](ldap-protocol/authentication.md)
-* [Scan For Vulns and Informations](scan-for-vulns-and-infos.md)
+* [Scan For Vulns and Informations](ldap-protocol/scan-for-vulns-and-infos.md)
 * [Enumerate Domain Users](ldap-protocol/enumerate-users.md)
 * [Enumerate Domain Groups](ldap-protocol/enumerate-group-members.md)
 * [🆕 Query LDAP](ldap-protocol/query-ldap.md)
