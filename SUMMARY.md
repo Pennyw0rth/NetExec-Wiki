@@ -107,7 +107,7 @@
 * [Dump gMSA](ldap-protocol/dump-gmsa.md)
 * [Exploit ESC8 (ADCS)](ldap-protocol/exploit-esc8-adcs.md)
 * [Extract Subnet](ldap-protocol/extract-subnet.md)
-* [Check LDAP Signing](ldap-protocol/check-ldap-signing.md)
+* [🛠️ Check LDAP Signing](ldap-protocol/check-ldap-signing.md)
 * [Read DACL Rights](ldap-protocol/read-dacl-right.md)
 * [Extract gMSA Secrets](ldap-protocol/extract-gmsa-secrets.md)
 * [Bloodhound Ingestor](ldap-protocol/bloodhound-ingestor.md)
