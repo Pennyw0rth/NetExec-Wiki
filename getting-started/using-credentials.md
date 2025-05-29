@@ -128,7 +128,7 @@ Authentication throttling works on a per-host basis! Keep this in mind if you ar
 If there is a need to throttle authentications during brute forcing, you can use the jitter functionality. The length of the timeout (in seconds) between requests is randomly selected from an interval unless otherwise specified. If you want to hardcode the timeout, set the upper and lower bounds of the interval to the same value. The syntax is as follows:
 
 ```bash
-nxc <protocol> --jitter 3 <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
-nxc <protocol> --jitter 2-5 <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
-nxc <protocol> --jitter 4-4 <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
+nxc <protocol> <target> --jitter 3 -u ~/file_containing_usernames -p ~/file_containing_passwords
+nxc <protocol> <target> --jitter 2-5 -u ~/file_containing_usernames -p ~/file_containing_passwords
+nxc <protocol> <target> --jitter 4-4 -u ~/file_containing_usernames -p ~/file_containing_passwords
 ```
