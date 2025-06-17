@@ -16,4 +16,4 @@ Sensible content into unsaved notepad documents can be dangerous, as they still 
 nxc smb <ip> -u username -p password -M notepad
 ```
 
-![image](https://github.com/user-attachments/assets/a49b0ab3-e892-4754-8812-4844f4f3a18a)
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption><p>Extract credentials from (unsaved) notepad files</p></figcaption></figure>
