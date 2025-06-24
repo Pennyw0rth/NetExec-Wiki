@@ -26,10 +26,6 @@ nxc ldap 192.168.0.104 -u harry -p '' --no-preauth kerberoastable.list --kerbero
 * `-u`: AS-REP roastable user (no pre-auth required).
 * `--no-preauth`: Single user or file containing list of users to target with Kerberoasting.
 
-{% hint style="info" %}
-This technique can be used even if the AS-REP roastable user has an empty password, provided you can authenticate or have valid TGT access.
-{% endhint %}
-
 ### Cracking with hashcat
 
 ```bash
