@@ -21,17 +21,17 @@ Usage: -M dns -o <options>
 ACTIONS (specify with -o ACTION=<action> or A=<action>):
 
   add:          Adds a new A record. Requires RECORD and DATA.
-    Example: -M dns -o ACTION=add RECORD=new-pc.winterfell.local DATA=10.4.10.100
+    Example: -M dns -o ACTION=add RECORD=new-pc DATA=10.4.20.05
   modify:       Modifies an existing A record. Requires RECORD and DATA.
-    Example: -M dns -o ACTION=modify RECORD=new-pc.winterfell.local DATA=10.4.10.101
+    Example: -M dns -o ACTION=modify RECORD=new-pc DATA=10.4.20.05
   query:        Queries an existing record. Requires RECORD.
-    Example: -M dns -o A=query R=new-pc.winterfell.local
+    Example: -M dns -o A=query R=new-pc
   remove:       Removes a record by tombstoning it. Requires RECORD and optionally DATA.
-    Example: -M dns -o ACTION=remove RECORD=new-pc.winterfell.local DATA=10.4.10.101
+    Example: -M dns -o ACTION=remove RECORD=new-pc DATA=10.4.10.101
   ldapdelete:   Deletes a record object directly from LDAP. Requires RECORD.
-    Example: -M dns -o A=ldapdelete R=new-pc.winterfell.local
+    Example: -M dns -o A=ldapdelete R=new-pc
   resurrect:    Resurrects a tombstoned record object. Requires RECORD.
-    Example: -M dns -o ACTION=resurrect RECORD=tombstoned-pc.winterfell.local
+    Example: -M dns -o ACTION=resurrect RECORD=tombstoned-pc
   list:         Lists all DNS zones. (Default action if no options are given)
     Example: -M dns
   list-dn:      Lists all DNS zones with their Distinguished Names.
@@ -60,10 +60,10 @@ netexec ldap <DC_IP> -u <user> -p <pass> -M dns
 
 **Output:**
 ```
-LDAP        192.168.1.10:389      DC01      [+] winterfell.local\User:Password123!
+LDAP        192.168.1.10:389      DC01      [+] lodosdomain.local\Lodos:2005
 DNS         192.168.1.10:389      DC01      Found 2 domain DNS zones:
-DNS         192.168.1.10:389      DC01          _msdcs.winterfell.local
-DNS         192.168.1.10:389      DC01          winterfell.local
+DNS         192.168.1.10:389      DC01          _msdcs.lodosdomain.local
+DNS         192.168.1.10:389      DC01          lodosdomain.local
 ```
 {% endtab %}
 
@@ -77,12 +77,12 @@ Adds a new `A` record.
 
 **Command:**
 ```bash
-netexec ldap <DC_IP> -u <user> -p <pass> -M dns -o ACTION=add RECORD=new-pc.winterfell.local DATA=10.10.10.100
+netexec ldap <DC_IP> -u <user> -p <pass> -M dns -o ACTION=add RECORD=new-pc DATA=10.10.10.100
 ```
 
 **Output:**
 ```
-LDAP        192.168.1.10:389      DC01      [+] winterfell.local\User:Password123!
+LDAP        192.168.1.10:389      DC01      [+] lodosdomain.local\Lodos:2005
 DNS         192.168.1.10:389      DC01      Adding new record
 DNS         192.168.1.10:389      DC01      LDAP operation completed successfully
 ```
@@ -97,14 +97,14 @@ Queries an existing DNS record.
 
 **Command:**
 ```bash
-netexec ldap <DC_IP> -u <user> -p <pass> -M dns -o A=query R=new-pc.winterfell.local
+netexec ldap <DC_IP> -u <user> -p <pass> -M dns -o A=query R=new-pc
 ```
 
 **Output:**
 ```
-LDAP        192.168.1.10:389      DC01      [+] winterfell.local\User:Password123!
+LDAP        192.168.1.10:389      DC01      [+] lodosdomain.local\Lodos:2005
 DNS         192.168.1.10:389      DC01      Found record new-pc
-DNS         192.168.1.10:389      DC01      DC=new-pc,DC=winterfell.local,CN=MicrosoftDNS,DC=DomainDnsZones,DC=winterfell,DC=local
+DNS         192.168.1.10:389      DC01      DC=new-pc,DC=lodosdomain.local,CN=MicrosoftDNS,DC=DomainDnsZones,DC=winterfell,DC=local
 DNS         192.168.1.10:389      DC01      Record entry:
 DNS         192.168.1.10:389      DC01       - Type: 1 (A) (Serial: 1679412345)
 DNS         192.168.1.10:389      DC01       - Address: 10.10.10.100
@@ -121,12 +121,12 @@ Modifies the IP address of an existing `A` record.
 
 **Command:**
 ```bash
-netexec ldap <DC_IP> -u <user> -p <pass> -M dns -o ACTION=modify RECORD=new-pc.winterfell.local DATA=10.10.10.101
+netexec ldap <DC_IP> -u <user> -p <pass> -M dns -o ACTION=modify RECORD=new-pc DATA=10.10.10.101
 ```
 
 **Output:**
 ```
-LDAP        192.168.1.10:389      DC01      [+] winterfell.local\User:Password123!
+LDAP        192.168.1.10:389      DC01      [+] lodosdomain.local\Lodos:2005
 DNS         192.168.1.10:389      DC01      Modifying record
 DNS         192.168.1.10:389      DC01      LDAP operation completed successfully
 ```
@@ -142,12 +142,12 @@ Temporarily removes a DNS record by "tombstoning" it.
 
 **Command:**
 ```bash
-netexec ldap <DC_IP> -u <user> -p <pass> -M dns -o ACTION=remove RECORD=new-pc.winterfell.local
+netexec ldap <DC_IP> -u <user> -p <pass> -M dns -o ACTION=remove RECORD=new-pc
 ```
 
 **Output:**
 ```
-LDAP        192.168.1.10:389      DC01      [+] winterfell.local\User:Password123!
+LDAP        192.168.1.10:389      DC01      [+] lodosdomain.local\Lodos:2005
 DNS         192.168.1.10:389      DC01      Target has only one record, tombstoning it
 DNS         192.168.1.10:389      DC01      LDAP operation completed successfully
 ```
@@ -162,12 +162,12 @@ Permanently deletes a DNS record object directly from the LDAP database.
 
 **Command:**
 ```bash
-netexec ldap <DC_IP> -u <user> -p <pass> -M dns -o A=ldapdelete R=new-pc.winterfell.local
+netexec ldap <DC_IP> -u <user> -p <pass> -M dns -o A=ldapdelete R=new-pc
 ```
 
 **Output:**
 ```
-LDAP        192.168.1.10:389      DC01      [+] winterfell.local\User:Password123!
+LDAP        192.168.1.10:389      DC01      [+] lodosdomain.local\Lodos:2005
 DNS         192.168.1.10:389      DC01      Deleting record over LDAP
 DNS         192.168.1.10:389      DC01      LDAP operation completed successfully
 ```
