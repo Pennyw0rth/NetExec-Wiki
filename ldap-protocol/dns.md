@@ -1,11 +1,15 @@
 ---
 description: >-
-    dns module allows to manage DNS records in an Active-Directory integrated DNS over the LDAP protocol.
+    DNS module allows to manage DNS records in an Active-Directory integrated DNS over the LDAP protocol.
 ---
 
-# dns
+# DNS
 
-The `dns` module allows for the management of DNS records in an Active Directory-integrated DNS environment directly over the LDAP protocol.
+The `dns` module allows for the management of DNS records in an Active Directory-integrated DNS environment directly over the LDAP protocol. It can perform actions like adding, modifying, querying, and deleting DNS records by manipulating their corresponding objects in Active Directory.
+
+{% hint style="warning" %}
+By default, the module operates on the `DomainDnsZones` partition. However, it also supports targeting older DNS partitions via the `OPTIONS=legacy` parameter. This is useful for environments with legacy DNS configurations, typically from pre-Windows 2000 systems, where DNS data was stored in the `CN=MicrosoftDNS,CN=System` container within the domain partition.
+ {% endhint %}
 
 ## Module Options
 
