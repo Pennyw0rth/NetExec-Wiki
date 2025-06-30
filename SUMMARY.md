@@ -23,7 +23,7 @@
 * [Using Kerberos](getting-started/using-kerberos.md)
 * [Using Certificates](getting-started/using-certificates.md)
 * [Using Modules](getting-started/using-modules.md)
-* [🆕 DNS options](getting-started/dns-options.md)
+* [DNS options](getting-started/dns-options.md)
 * [Database General Usage](getting-started/database-general-usage.md)
 * [BloodHound Integration](getting-started/bloodhound-integration.md)
 * [Audit Mode](getting-started/audit-mode.md)
@@ -52,7 +52,7 @@
   * [Enumerate Domain Groups](smb-protocol/enumeration/enumerate-domain-groups.md)
   * [Enumerate Local Groups](smb-protocol/enumeration/enumerate-local-groups.md)
   * [Enumerate Domain Password Policy](smb-protocol/enumeration/enumerate-domain-password-policy-1.md)
-  * [🆕 Enumerate Anti-Virus & EDR](smb-protocol/enumeration/enumerate-antivirus-edr.md)
+  * [Enumerate Anti-Virus & EDR](smb-protocol/enumeration/enumerate-antivirus-edr.md)
 * [Password Spraying](smb-protocol/password-spraying.md)
 * [Authentication](smb-protocol/authentication/README.md)
   * [Checking Credentials (Domain)](smb-protocol/authentication/checking-credentials-domain.md)
@@ -87,9 +87,9 @@
 * [Defeating LAPS](smb-protocol/defeating-laps.md)
 * [Checking for Spooler & WebDav](smb-protocol/spooler-webdav-running.md)
 * [Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
-* [🆕 Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
-* [🆕 Change User Password](smb-protocol/change-user-password.md)
-* [🆕 Dump User Local Security Questions](smb-protocol/dump-user-local-security-questions.md)
+* [Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
+* [Change User Password](smb-protocol/change-user-password.md)
+* [Dump User Local Security Questions](smb-protocol/dump-user-local-security-questions.md)
 
 ## LDAP protocol
 
@@ -108,7 +108,7 @@
 * [Dump gMSA](ldap-protocol/dump-gmsa.md)
 * [Exploit ESC8 (ADCS)](ldap-protocol/exploit-esc8-adcs.md)
 * [Extract Subnet](ldap-protocol/extract-subnet.md)
-* [🛠️ Check LDAP Signing](ldap-protocol/check-ldap-signing.md)
+* [Check LDAP Signing](ldap-protocol/check-ldap-signing.md)
 * [Read DACL Rights](ldap-protocol/read-dacl-right.md)
 * [Extract gMSA Secrets](ldap-protocol/extract-gmsa-secrets.md)
 * [Bloodhound Ingestor](ldap-protocol/bloodhound-ingestor.md)
@@ -121,7 +121,7 @@
 * [Password Spraying](winrm-protocol/password-spraying.md)
 * [Authentication](winrm-protocol/authentication.md)
 * [Command Execution](winrm-protocol/command-execution.md)
-* [🆕 Defeating LAPS](winrm-protocol/defeating-laps.md)
+* [Defeating LAPS](winrm-protocol/defeating-laps.md)
 
 ## MSSQL protocol
 
@@ -131,7 +131,7 @@
 * [MSSQL Command Execution](mssql-protocol/mssql-command.md)
 * [MSSQL Upload & Download](mssql-protocol/mssql-upload-download.md)
 * [Execute via xp\_cmdshell](mssql-protocol/windows-command.md)
-* [🆕 Enumerate Users by Bruteforcing RID](mssql-protocol/enumerate-users-by-bruteforcing-rid.md)
+* [Enumerate Users by Bruteforcing RID](mssql-protocol/enumerate-users-by-bruteforcing-rid.md)
 
 ## SSH protocol
 
@@ -143,8 +143,8 @@
 ## FTP protocol
 
 * [Password Spraying](ftp-protocol/password-spraying.md)
-* [🆕 File Listing, etc](ftp-protocol/file-listing-etc.md)
-* [🆕 File Upload & Download](ftp-protocol/get-and-put-files.md)
+* [File Listing, etc](ftp-protocol/file-listing-etc.md)
+* [File Upload & Download](ftp-protocol/get-and-put-files.md)
 
 ## RDP Protocol
 
@@ -160,6 +160,6 @@
 
 ## NFS Protocol
 
-* [🆕 Enumeration](nfs-protocol/Enumeration.md)
+* [Enumeration](nfs-protocol/Enumeration.md)
 * [Download and Upload Files](nfs-protocol/Download-and-Upload-Files.md)
-* [🆕 Escape to root file system](nfs-protocol/escape-to-root-file-system.md)
+* [Escape to root file system](nfs-protocol/escape-to-root-file-system.md)
