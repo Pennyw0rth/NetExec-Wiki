@@ -131,7 +131,7 @@
 * [MSSQL Command Execution](mssql-protocol/mssql-command.md)
 * [MSSQL Upload & Download](mssql-protocol/mssql-upload-download.md)
 * [Execute via xp\_cmdshell](mssql-protocol/windows-command.md)
-* [Enumerate Users by Bruteforcing RID](mssql-protocol/enumerate-users-by-bruteforcing-rid.md)
+* [🆕 Enumerate Users by Bruteforcing RID](mssql-protocol/enumerate-users-by-bruteforcing-rid.md)
 
 ## SSH protocol
 
@@ -143,8 +143,8 @@
 ## FTP protocol
 
 * [Password Spraying](ftp-protocol/password-spraying.md)
-* [File Listing, etc](ftp-protocol/file-listing-etc.md)
-* [File Upload & Download](ftp-protocol/get-and-put-files.md)
+* [🆕 File Listing, etc](ftp-protocol/file-listing-etc.md)
+* [🆕 File Upload & Download](ftp-protocol/get-and-put-files.md)
 
 ## RDP Protocol
 
@@ -160,6 +160,6 @@
 
 ## NFS Protocol
 
-* [Enumeration](nfs-protocol/Enumeration.md)
+* [🆕 Enumeration](nfs-protocol/Enumeration.md)
 * [Download and Upload Files](nfs-protocol/Download-and-Upload-Files.md)
-* [Escape to root file system](nfs-protocol/escape-to-root-file-system.md)
+* [🆕 Escape to root file system](nfs-protocol/escape-to-root-file-system.md)
