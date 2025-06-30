@@ -1,12 +1,12 @@
-# EventLog Creds
+# 🆕 Dump Event Log Creds(4688)
 
-### Parses Windows Event ID 4688 Logs
+### Parses Windows Event ID 4688 and Sysmon Logs
 
 {% hint style="warning" %}
 You need at least local admin privilege on the remote target
 {% endhint %}
 
-This module parses Event ID 4688 (Also it queries sysmon logs for EVENT ID 1) logs (from "Audit Process Creation") to extract credentials from CMD and PowerShell commands. E.g. "net user username password /add"
+This module parses Windows logs for Event ID 4688, as well as sysmon logs for Event ID 1 to extract credentials from CMD and PowerShell commands. E.g. "net user username password /add":
 
 ```bash
 nxc smb <ip> -u username -p password -M eventlog_creds
