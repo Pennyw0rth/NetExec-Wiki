@@ -83,6 +83,7 @@
   * [🆕 Dump Notepad](smb-protocol/obtaining-credentials/dump-notepad.md)
   * [🆕 Dump Notepad++](smb-protocol/obtaining-credentials/dump-notepad++.md)
   * [🆕 Dump Remote Desktop Credential Manager](smb-protocol/obtaining-credentials/dump-rdcman.md)
+  * [🆕 Event Log Creds(4688)](smb-protocol/obtaining-credentials/eventlog-creds.md)
 * [Defeating LAPS](smb-protocol/defeating-laps.md)
 * [Checking for Spooler & WebDav](smb-protocol/spooler-webdav-running.md)
 * [Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
