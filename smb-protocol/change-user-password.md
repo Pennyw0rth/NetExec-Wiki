@@ -1,4 +1,4 @@
-# 🆕 Change User Password
+# Change User Password
 
 If you encounter an account with a correct password but either `STATUS_PASSWORD_MUST_CHANGE` or `STATUS_PASSWORD_EXPIRED`, you usually won't be able to use it.\
 However, with the `change-password` module, you can change the password of a target user.

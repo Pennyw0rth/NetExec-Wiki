@@ -4,13 +4,13 @@ description: >-
   schtask_as
 ---
 
-# 🆕 Impersonate logged-on Users
+# Impersonate logged-on Users
 
 {% hint style="warning" %}
 You need at least local admin privilege on the remote target
 {% endhint %}
 
-The Module `schtask_as` can execute commands on behalf of other users which have sessions on the target, thanks to the contribution from [@Defte\_](https://twitter.com/Defte\_).
+The Module `schtask_as` can execute commands on behalf of other users which have sessions on the target, thanks to the contribution from [@Defte\_](https://twitter.com/Defte_).
 
 ### 1. Enumerate logged-on users on your Target
 
