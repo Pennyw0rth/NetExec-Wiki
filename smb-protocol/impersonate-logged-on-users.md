@@ -42,9 +42,9 @@ nxc smb <ip> -u <localAdmin> -p <password> -M schtask_as -o USER=<logged-on-user
 ### Module options:
 
 ```bash
-BINARY         Upload the binary to be executed by CMD
 CMD            Command to execute
 USER           User to execute command as
+BINARY         OPTIONAL: Upload the binary to be executed by CMD
 TASK           OPTIONAL: Set a name for the scheduled task name
 FILE           OPTIONAL: Set a name for the command output file
 LOCATION       OPTIONAL: Set a location for the command output file (e.g. '\tmp\')
