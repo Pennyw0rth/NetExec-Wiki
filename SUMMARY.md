@@ -17,6 +17,8 @@
   * [🍎 Installation for Mac](getting-started/installation/installation-for-mac.md)
   * [🛠️ Manually building the binary](getting-started/installation/manually-building-the-binary.md)
   * [➡️ Post Installation Setup](getting-started/installation/setting-up-tab-completion.md)
+* [Configuration](getting-started/configuration/README.md)  
+  * [Host Exclusion](getting-started/configuration/config-hostexclusion.md)
 * [Selecting & Using a Protocol](getting-started/selecting-and-using-a-protocol.md)
 * [Target Formats](getting-started/target-formats.md)
 * [Using Credentials](getting-started/using-credentials.md)
