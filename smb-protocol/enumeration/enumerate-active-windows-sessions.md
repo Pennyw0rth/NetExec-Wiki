@@ -1,6 +1,6 @@
 # Enumerate active Windows sessions
 
-When connecting on a Windows server via GUI interface (local connection or RDP) a windows session will be created. These session can be listed using the following option
+When connecting to a Windows server via GUI interface (local connection or RDP) a windows session will be created. These session can be listed using the following option
 
 ```bash
 nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --qwinsta
