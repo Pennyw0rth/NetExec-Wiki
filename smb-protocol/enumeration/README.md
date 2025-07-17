@@ -22,8 +22,8 @@ If nxc isnt giving output of any kind, you probably have something wrong with th
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="enumerate-active-sessions.md" %}
-[enumerate-active-sessions.md](enumerate-active-sessions.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="enumerate-shares-and-access.md" %}
