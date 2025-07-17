@@ -131,7 +131,7 @@
 * [Obtaining Credentials](winrm-protocol/obtaining-credentials/README.md)
   * [Dump SAM](winrm-protocol/obtaining-credentials/dump-sam.md)
   * [Dump LSA](winrm-protocol/obtaining-credentials/dump-lsa.md)
-  * [Dump DPAPI](winrm-protocol/obtaining-credentials/dump-dpapi.md)
+  * [🆕 Dump DPAPI](winrm-protocol/obtaining-credentials/dump-dpapi.md)
 
 ## MSSQL protocol
 
