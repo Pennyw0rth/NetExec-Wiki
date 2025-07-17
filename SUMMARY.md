@@ -113,7 +113,7 @@
 * [Read DACL Rights](ldap-protocol/read-dacl-right.md)
 * [Extract gMSA Secrets](ldap-protocol/extract-gmsa-secrets.md)
 * [Bloodhound Ingestor](ldap-protocol/bloodhound-ingestor.md)
-* [List DC IP](ldap-protocol/dc-list.md)
+* [🆕 List DC IP / Enum Trust](ldap-protocol/dc-list.md)
 * [Enumerate Domain Trusts](ldap-protocol/enumerate-trusts.md)
 * [🆕 Enumerate SCCM](ldap-protocol/enumerate-sccm.md)
 * [🆕 Enumerate Entra ID](ldap-protocol/enumerate-entra-id.md)
