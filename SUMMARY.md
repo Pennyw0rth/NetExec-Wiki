@@ -118,6 +118,10 @@
 * [🆕 Enumerate SCCM](ldap-protocol/enumerate-sccm.md)
 * [🆕 Enumerate Entra ID](ldap-protocol/enumerate-entra-id.md)
 
+***
+
+* [🆕 Dump PSO](dump-pso.md)
+
 ## WINRM protocol
 
 * [Password Spraying](winrm-protocol/password-spraying.md)
