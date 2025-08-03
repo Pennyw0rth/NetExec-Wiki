@@ -14,7 +14,7 @@ The Module `schtask_as` can execute commands on behalf of other users which have
 
 ### 1. Enumerate logged-on users on your Target
 
-There are two ways you can enumerate logged on users on a Windows machine:
+There are three ways you can enumerate logged on users on a Windows machine:
 
 * --loggedon-user
 
@@ -28,8 +28,17 @@ nxc smb <ip> -u <localAdmin> -p <password> --loggedon-users
 nxc smb <ip> -u <localAdmin> -p <password> --qwinsta
 ```
 
-Note that these two options do not output the same result at all. Indeed --loggedon-users returns the list of logged users as well as to which DC they connected to.
-The --qwinsta returns the windows interactive sessions that are running on the system. Having a loggedon users doesn't necessarly mean that you can impersonate it via schtask_as, indeed that module requires the user you are targetting to have a Windows interactive session. As such, if you really want to be sure you can impersonate someone with that module, run the --qwinsta option.
+* --reg-sessions
+
+```bash
+nxc smb <ip> -u <user> -p <password> --reg-sessions
+```
+
+**Note that these options do not output the same information.**
+
+Indeed, `--loggedon-users` returns the list of logged users as well as to which DC they connected to. `--reg-sessions` shows any user whose login context is currently loaded in the registry. Both do not confirm that users have an active interactive session, which is required to use `schtask_as`.
+
+On the other hand, `--qwinsta` returns the windows interactive sessions that are running on the system. As such, if you really want to be sure you can impersonate someone with that module, run the `--qwinsta` option.
 
 ### 2. Execute commands on behalf of other users
 
