@@ -41,7 +41,7 @@
   * [Enumerate Null Sessions](smb-protocol/enumeration/enumerate-null-sessions.md)
   * [Enumerate Guest Logon](smb-protocol/enumeration/enumerate-guest-logon.md)
   * [Enumerate Hosts with SMB Signing Not Required](smb-protocol/enumeration/smb-signing-not-required.md)
-  * [Enumerate Active Windows Sessions](smb-protocol/enumeration/enumerate-active-windows-sessions.md)
+  * [🆕 Enumerate Active Windows Sessions](smb-protocol/enumeration/enumerate-active-windows-sessions.md)
   * [🆕 Enumerate Logged-On Users with the Remote Registry Service](smb-protocol/enumeration/enumerate-logged-on-users-winreg.md)
   * [Enumerate Logged-On Users with the Workstation Service](smb-protocol/enumeration/enumerate-logged-on-users-wkssvc.md)
   * [Enumerate Shares and Access](smb-protocol/enumeration/enumerate-shares-and-access.md)
