@@ -1,4 +1,4 @@
-# Enumerate Logged on Users
+# Enumerate Logged-On Users with the Workstation Service
 
 To enumerate logged on users on a remote target, the following option can be used:
 
