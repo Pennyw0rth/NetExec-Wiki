@@ -4,6 +4,8 @@ description: Detect Windows lock screen backdoors by checking FileDescriptions o
 
 # Detect lock screen backdoors
 
+{% hint style="warning" %} You need (local) admin privileges on the remote target, use option **--local-auth** if your user is a local account {% endhint %}
+
 Attackers can modify binaries in Windows to spawn an SYSTEM-level shell by replacing accessibility executables (e.g. `utilman.exe`, `sethc.exe`) with binaries like `cmd.exe` or `powershell.exe`. These backdoors can be used from the lock screen without authentication.
 
 Attackers can replace accessibility executables in Windows (e.g. `utilman.exe`, `sethc.exe`) with binaries like `cmd.exe` or `powershell.exe` to spawn a SYSTEM-level shell. These backdoors can be triggered from the lock screen without authentication.
@@ -38,4 +40,6 @@ The following screenshot shows all three possibilities:
 * A suspicious system with unexpected descriptions,
 * A system with known backdoored files.
 
-<figure><img src="../../.gitbook/assets/lockscreendoors.png" alt=""><figcaption><p>Clean system, suspicious descriptions, and known backdoored executables</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/lockscreendoors.png" alt=""><figcaption><p>Known backdoored executables, suspicious descriptions and a clean system</p></figcaption></figure>suspicious descriptions
+
+{% hint style="warning" %} This method is not bulletproof, an attacker can modify the FileDescription metadata and true positives can be missed {% endhint %}
