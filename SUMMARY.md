@@ -55,6 +55,7 @@
   * [Enumerate Domain Password Policy](smb-protocol/enumeration/enumerate-domain-password-policy-1.md)
   * [Enumerate Anti-Virus & EDR](smb-protocol/enumeration/enumerate-antivirus-edr.md)
   * [Enumerate remote processes](smb-protocol/enumeration/enumerate-remote-processes.md)
+  * [🆕 Enumerate changed lockscreen executables](smb-protocol/enumeration/enumerate-lockscreen-backdoors.md)
 * [Password Spraying](smb-protocol/password-spraying.md)
 * [Authentication](smb-protocol/authentication/README.md)
   * [Checking Credentials (Domain)](smb-protocol/authentication/checking-credentials-domain.md)
