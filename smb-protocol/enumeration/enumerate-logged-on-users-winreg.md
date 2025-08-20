@@ -1,4 +1,4 @@
-# Enumerate Logged-On Users with the Remote Registry Service
+# 🆕 Enumerate Logged-On Users with the Remote Registry Service
 
 This option uses the **Remote Registry Service** through the `\\winreg` pipe to check which user profiles are currently loaded in the user registry hive `HKEY_USERS`.
 
@@ -12,7 +12,7 @@ Having a user listed by `--reg-sessions` does not guarantee that you can imperso
 
 ## Filtering by username(s)
 
-In case you want to hunt a specific user, you can specify a username: 
+In case you want to hunt a specific user, you can specify a username:
 
 ```bash
 nxc smb $TARGET/24 -u $USER -p $PASSWORD --reg-sessions 'admin_user'
