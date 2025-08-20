@@ -34,8 +34,8 @@ If nxc isnt giving output of any kind, you probably have something wrong with th
 [enumerate-disks.md](enumerate-disks.md)
 {% endcontent-ref %}
 
-{% content-ref url="enumerate-logged-on-users.md" %}
-[enumerate-logged-on-users.md](enumerate-logged-on-users.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="enumerate-domain-users.md" %}
