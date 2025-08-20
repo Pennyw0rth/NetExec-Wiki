@@ -159,6 +159,7 @@
 * [Password Spraying](rdp-protocol/password-spraying.md)
 * [Screenshot (connected)](rdp-protocol/screenshot-connected.md)
 * [Screenshot Without NLA (not connected)](rdp-protocol/screenshot-without-nla-not-connected.md)
+* [🆕 Command Execution](rdp-protocol/command-execution.md)
 
 ## WMI Protocol
 
