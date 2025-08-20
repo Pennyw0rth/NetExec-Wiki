@@ -12,7 +12,9 @@ You can also add the flag `--cmd-delay` and `--clipboard-delay` to increase the 
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-
+{% hint style="warning" %}
+The use of -x option will disconnect the target user if connected (like a lock), not logoff therefore no work is lost and no application is closed.
+{% endhint %}
 
 
 
