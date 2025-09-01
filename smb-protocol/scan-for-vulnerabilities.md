@@ -42,16 +42,6 @@ nxc smb <ip> -u '' -p '' -M smbghost
 nxc smb <ip> -u '' -p '' -M ms17-010
 ```
 
-#### NTLM reflection (CVE-2025-33073)
-
-```bash
-nxc smb <ip> -u 'user' -p 'pass' -M nopac
-```
-
-{% hint style="warning" %}
-You need credentials for CVE-2025-33073 vulnerability check.
-{% endhint %}
-
 Or, try them all at once! Just list each one: `-M zerologon -M printnightmare`
 
 ## Scan for Coerce Vulnerabilities
