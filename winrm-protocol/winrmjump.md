@@ -5,12 +5,12 @@ It can be used to execute commands on a relayed target by authenticating through
 
 Options structure is as follows
 ```bash
-REMOTE=<hostname or IP>:<username>:<password>:<domain name>
+REMOTE=<hostname or IP> <username> <password> <domain name>
 ```
 
 For more than one relay
 ```bash
-REMOTE=<hostname or IP>:<username>:<password>:<domain name>,REMOTE=<hostname or IP>:<username>:<password>:<domain name>,REMOTE=<hostname or IP>:<username>:<password>:<domain name>
+REMOTE=<hostname or IP> <username> <password> <domain name>,REMOTE=<hostname or IP> <username> <password> <domain name>,REMOTE=<hostname or IP> <username> <password> <domain name>
 ```
 ---
 
@@ -38,7 +38,7 @@ domain\user1
 ### Relay Alternate Usernames and Passwords Along with Alternate Domain (multiple relays)
 
 ```bash
-nxc winrm 192.168.56.11 -u vagrant -p vagrant -x hostname -M winrm_relay -o REMOTE='192.168.56.12:admin:P@ssw0rd!:ESSOS.LOCAL','KINGSLANDING:admin:P@ssw0rd!:sevenkingdoms.local'
+nxc winrm 192.168.56.11 -u vagrant -p vagrant -x hostname -M winrm_relay -o REMOTE='192.168.56.12 admin P@ssw0rd! ESSOS.LOCAL','KINGSLANDING admin P@ssw0rd! sevenkingdoms.local'
 ```
 
 ### Expected Response
