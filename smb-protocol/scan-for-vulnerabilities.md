@@ -45,7 +45,7 @@ nxc smb <ip> -u '' -p '' -M ms17-010
 #### NTLM reflection (CVE-2025-33073)
 
 ```bash
-nxc smb <ip> -u 'user' -p 'pass' -M nopac
+nxc smb <ip> -u 'user' -p 'pass' -M ntlm_reflection
 ```
 
 {% hint style="warning" %}
