@@ -1,9 +1,9 @@
 # 🆕 Enumerate Primary Site Server and Distribution Point via recon6
 
-The **Primary Site Servers** and **Distribution Points** of an SCCM infrastructure expose information to remote authenticated users via the registry hive **HKLM\SOFTWARE\Microsoft\SMS**.
+This module extracts information from **Primary Site Servers** and **Distribution Points** of an SCCM infrastructure via the registry hive **HKLM\SOFTWARE\Microsoft\SMS**. This method is known as RECON 6.
 
 ```bash
-nxc smb IP_PSS -u username -p password -M sccm-recon6
+nxc smb ip_pss -u username -p password -M sccm-recon6
 ```
 
 ## Information Collected
