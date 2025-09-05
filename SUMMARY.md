@@ -56,7 +56,7 @@
   * [Enumerate Anti-Virus & EDR](smb-protocol/enumeration/enumerate-antivirus-edr.md)
   * [Enumerate remote processes](smb-protocol/enumeration/enumerate-remote-processes.md)
   * [🆕 Enumerate changed lockscreen executables](smb-protocol/enumeration/enumerate-lockscreen-backdoors.md)
-  * [🆕 Enumerate Primary Site Server and Distribution Point via recon6](smb-protocol/enumeration/eenumerate-sccm-primarysiteserver-and-distributionpoint.md)
+  * [🆕 Enumerate Primary Site Server and Distribution Point via recon6](smb-protocol/enumeration/enumerate-sccm-primarysiteserver-and-distributionpoint.md)
 * [Password Spraying](smb-protocol/password-spraying.md)
 * [Authentication](smb-protocol/authentication/README.md)
   * [Checking Credentials (Domain)](smb-protocol/authentication/checking-credentials-domain.md)
