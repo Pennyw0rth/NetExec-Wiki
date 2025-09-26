@@ -131,6 +131,7 @@
 * [Authentication](winrm-protocol/authentication.md)
 * [Command Execution](winrm-protocol/command-execution.md)
 * [Defeating LAPS](winrm-protocol/defeating-laps.md)
+* [WSUS Configuration Enumeration](winrm-protocol/wsus-configuration-enumeration.md)
 
 ## MSSQL protocol
 
