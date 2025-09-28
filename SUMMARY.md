@@ -41,12 +41,13 @@
   * [Enumerate Null Sessions](smb-protocol/enumeration/enumerate-null-sessions.md)
   * [Enumerate Guest Logon](smb-protocol/enumeration/enumerate-guest-logon.md)
   * [Enumerate Hosts with SMB Signing Not Required](smb-protocol/enumeration/smb-signing-not-required.md)
-  * [Enumerate Active Windows Sessions](smb-protocol/enumeration/enumerate-active-windows-sessions.md)
+  * [🆕 Enumerate Active Windows Sessions](smb-protocol/enumeration/enumerate-active-windows-sessions.md)
+  * [🆕 Enumerate Logged-On Users with the Remote Registry Service](smb-protocol/enumeration/enumerate-logged-on-users-winreg.md)
+  * [Enumerate Logged-On Users with the Workstation Service](smb-protocol/enumeration/enumerate-logged-on-users-wkssvc.md)
   * [Enumerate Shares and Access](smb-protocol/enumeration/enumerate-shares-and-access.md)
   * [🆕 Enumerate Network Interfaces](smb-protocol/enumeration/enumerate-network-interfaces.md)
   * [Enumerate Disks](smb-protocol/enumeration/enumerate-disks.md)
   * [Enumerate Bitlocker](smb-protocol/enumeration/enumerate-bitlocker.md)
-  * [Enumerate Logged on Users](smb-protocol/enumeration/enumerate-logged-on-users.md)
   * [Enumerate Domain Users](smb-protocol/enumeration/enumerate-domain-users.md)
   * [Enumerate Users by Bruteforcing RID](smb-protocol/enumeration/enumerate-users-by-bruteforcing-rid.md)
   * [Enumerate Domain Groups](smb-protocol/enumeration/enumerate-domain-groups.md)
@@ -54,6 +55,8 @@
   * [Enumerate Domain Password Policy](smb-protocol/enumeration/enumerate-domain-password-policy-1.md)
   * [Enumerate Anti-Virus & EDR](smb-protocol/enumeration/enumerate-antivirus-edr.md)
   * [Enumerate remote processes](smb-protocol/enumeration/enumerate-remote-processes.md)
+  * [🆕 Enumerate changed lockscreen executables](smb-protocol/enumeration/enumerate-lockscreen-backdoors.md)
+  * [🆕 Enumerate Primary Site Server and Distribution Point via recon6](smb-protocol/enumeration/enumerate-sccm-primarysiteserver-and-distributionpoint.md)
 * [Password Spraying](smb-protocol/password-spraying.md)
 * [Authentication](smb-protocol/authentication/README.md)
   * [Checking Credentials (Domain)](smb-protocol/authentication/checking-credentials-domain.md)
@@ -161,6 +164,7 @@
 * [Password Spraying](rdp-protocol/password-spraying.md)
 * [Screenshot (connected)](rdp-protocol/screenshot-connected.md)
 * [Screenshot Without NLA (not connected)](rdp-protocol/screenshot-without-nla-not-connected.md)
+* [🆕 Command Execution](rdp-protocol/command-execution.md)
 
 ## WMI Protocol
 
