@@ -32,4 +32,4 @@ WINRM       192.168.255.131 5985   192.168.255.131  [+] GOLD\user:password (Pwn3
 
 Monteverde machine is a good example to test **WinRM** procotol with NetExec
 
-{% embed url="https://www.hackthebox.eu/home/machines/profile/223" %}
+{% embed url="https://www.hackthebox.com/machines/monteverde" %}

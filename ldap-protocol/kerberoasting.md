@@ -36,7 +36,7 @@ hashcat -m13100 output.txt wordlist.txt
 
 Active machine is a good example to test **Kerberoasting** with NetExec
 
-{% embed url="https://www.hackthebox.eu/home/machines/profile/148" %}
+{% embed url="https://www.hackthebox.com/machines/active" %}
 
 ### Useful ressources:
 
