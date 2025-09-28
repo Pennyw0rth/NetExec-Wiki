@@ -56,7 +56,7 @@ hashcat -m18200 output.txt wordlist
 
 Forest machine is a good example to test **ASREPRoast** with NetExec
 
-{% embed url="https://www.hackthebox.eu/home/machines/profile/212" %}
+{% embed url="https://www.hackthebox.com/machines/forest" %}
 
 ### Ressources
 
