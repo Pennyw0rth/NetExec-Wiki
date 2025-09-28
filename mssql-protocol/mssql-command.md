@@ -33,4 +33,4 @@ When playing with MSSQL, you can use the tool [MSDAT ](https://github.com/quenti
 
 Mantis machine is a good example to test **MSSQL** procotol with NetExec
 
-{% embed url="https://www.hackthebox.eu/home/machines/profile/98" %}
+{% embed url="https://www.hackthebox.com/machines/mantis" %}

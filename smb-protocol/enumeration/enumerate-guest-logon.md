@@ -25,4 +25,4 @@ Note that if the domain guest account is available you will be able to use to la
 
 Nest machine is a good example of **guest logon** with NetExec
 
-{% embed url="https://www.hackthebox.eu/home/machines/profile/225" %}
+{% embed url="https://www.hackthebox.com/machines/nest" %}
