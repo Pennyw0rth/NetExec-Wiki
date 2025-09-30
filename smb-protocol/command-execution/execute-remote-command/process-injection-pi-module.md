@@ -8,8 +8,8 @@ It allows impersonating authorized domain users in Active Directory.
 
 It works more stable for Server 2016/Win10 and above.
 
-```
-#~ NetExec <IP> -u username -p password -M pi -o PID=<target_process_pid> EXEC=<command>
+```bash
+nxc <IP> -u username -p password -M pi -o PID=<target_process_pid> EXEC=<command>
 ```
 
 For more information on the creation of the `pi` module, see the developer's blog post here: [https://medium.com/@mehmetcantopal/development-and-implementation-of-the-pi-smb-module-for-netexec-crackmapexec-83eac92ded8f](https://medium.com/@mehmetcantopal/development-and-implementation-of-the-pi-smb-module-for-netexec-crackmapexec-83eac92ded8f)

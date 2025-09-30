@@ -16,24 +16,24 @@ This process can vary from time to time as dependencies change, resulting in pot
 
 Clone the repository:
 
-```
+```bash
 git clone https://github.com/Pennyw0rth/NetExec.git
 cd NetExec
 ```
 
 Create a virtual environment for pip, install pyinstaller and build the binary:
 
-```
+```bash
 virtualenv env
 source env/bin/activate
-sudo apt remove python3-pyinstaller    # Remove old apt pyinstaller
+sudo apt remove python3-pyinstaller     # Remove old apt pyinstaller
 pip install pyinstaller .
-pyinstaller netexec.spec    # This will compile the binary
+pyinstaller netexec.spec                # This will compile the binary
 ```
 
 You should now have compiled binaries:
 
-```
+```bash
 ./dist/nxc
 ```
 
@@ -48,14 +48,14 @@ Go to the Rust installation page and follow the installation instructions:\
 
 With Rust installed clone the repository:
 
-```
+```bash
 git clone https://github.com/Pennyw0rth/NetExec.git
 cd NetExec
 ```
 
 Set up a virtual environment, install required packages and build the binary:
 
-```
+```bash
 python -m venv env
 source env/Scripts/activate
 pip install pyinstaller pillow .
@@ -64,6 +64,6 @@ pyinstaller netexec.spec
 
 You should now have compiled binary:
 
-```
+```bash
 ./dist/nxc.exe
 ```

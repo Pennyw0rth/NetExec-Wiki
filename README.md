@@ -1,20 +1,6 @@
 ---
 cover: .gitbook/assets/NetExec-Logo-Color (1).png
 coverY: 10.04061416542843
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Welcome

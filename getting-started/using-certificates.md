@@ -4,20 +4,20 @@ description: Using Certificates authentication with NetExec
 
 # Using Certificates
 
-```
-netexec smb 192.168.0.1 --pfx-cert user.pfx -u user 
-```
-
-```
-netexec smb 192.168.0.1 --pfx-cert user.pfx --pfx-pass password -u user 
+```bash
+nxc smb 192.168.0.1 --pfx-cert user.pfx -u user 
 ```
 
-```
-netexec smb 192.168.0.1 --pfx-base64 user.pfx -u user 
+```bash
+nxc smb 192.168.0.1 --pfx-cert user.pfx --pfx-pass password -u user 
 ```
 
+```bash
+nxc smb 192.168.0.1 --pfx-base64 user.pfx -u user 
 ```
-netexec smb 192.168.0.1 --pem-cert user.pem --pem-key key.pem -u user 
+
+```bash
+nxc smb 192.168.0.1 --pem-cert user.pem --pem-key key.pem -u user 
 ```
 
 {% hint style="info" %}

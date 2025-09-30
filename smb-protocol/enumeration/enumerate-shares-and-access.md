@@ -2,8 +2,8 @@
 
 Enumerate permissions on all shares
 
-```
-nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --shares
+```bash
+nxc smb 192.168.1.0/24 -u user -p 'PASSWORDHERE' --shares
 ```
 
 {% hint style="info" %}
@@ -12,6 +12,8 @@ By far one of the most useful feature of nxc
 
 If you want to filter only by readable or writable share
 
-```
-#~ nxc smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --shares --filter-shares READ WRITE
+```bash
+nxc smb 192.168.1.0/24 -u user -p 'PASSWORDHERE' --shares READ,WRITE
+nxc smb 192.168.1.0/24 -u user -p 'PASSWORDHERE' --shares READ
+nxc smb 192.168.1.0/24 -u user -p 'PASSWORDHERE' --shares WRITE
 ```

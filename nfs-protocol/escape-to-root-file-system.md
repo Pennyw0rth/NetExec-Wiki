@@ -4,7 +4,7 @@ By default, NFS exports do not restrict access to files outside the exported dir
 
 NetExec automatically checks for this "escape to root" on connection, as can be seen by the flag:
 
-```
+```bash
 NFS         <ip>  <port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:False)
 ```
 
@@ -18,8 +18,8 @@ NetExec will automatically try to use the root escape if no share was specified 
 
 Example for  `--ls`:
 
-```
-NetExec nfs <ip> --ls '/'
+```bash
+nxc nfs <ip> --ls '/'
 
 # Example Output
 NFS         <ip>  <port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
@@ -39,7 +39,7 @@ NFS         <ip>  <port>  <ip>   0          dr--   12.0KB        /etc
 
 As mentioned above, when the options `(rw,no_root_squash)` are set, you can simply download the files `/etc/shadow` and `/etc/passwd`, add yourself and reupload them:
 
-<figure><img src=".gitbook/assets/nfs_create_backdoor.png" alt=""><figcaption><p>Owning a system with NFS</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/nfs_create_backdoor.png" alt=""><figcaption><p>Owning a system with NFS</p></figcaption></figure>
 
 ### Additional sources:
 

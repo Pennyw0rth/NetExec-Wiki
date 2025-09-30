@@ -1,21 +1,21 @@
 # Download and Upload Files
 
 {% hint style="info" %}
-For both `--get-file` and `--put-file` you need to specify the export share with `--share` if you do not want to use the root fs escape method (see [escape to root file system](../escape-to-root-file-system.md)).
+For both `--get-file` and `--put-file` you need to specify the export share with `--share` if you do not want to use the root fs escape method (see [escape to root file system](escape-to-root-file-system.md)).
 {% endhint %}
 
 Example usage:
 
-```
+```bash
 # Share name is "/home/user/Desktop/NFSShare"
-NetExec nfs <ip> --share /home/user/Desktop/NFSShare/ --get-file as.txt as.txt
+nxc nfs <ip> --share /home/user/Desktop/NFSShare/ --get-file as.txt as.txt
 
 # Example Output                                                          
 NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
 NFS         <ip>  <nfs_port>  <ip>   [*] Downloading as.txt to as.txt
 NFS         <ip>  <nfs_port>  <ip>   File successfully downloaded from as.txt to as.txt
 
-NetExec nfs <ip> --share /home/user/Desktop/NFSShare/ --put-file aa.txt aa.txt
+nxc nfs <ip> --share /home/user/Desktop/NFSShare/ --put-file aa.txt aa.txt
 
 # Example Output                                                          
 NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
@@ -30,8 +30,8 @@ NFS         <ip>  <nfs_port>  <ip>   File aa.txt successfully uploaded to aa.txt
 
 Example usage:
 
-```
-NetExec nfs <ip> --get-file /home/user/Desktop/test/test.txt test.txt
+```bash
+nxc nfs <ip> --get-file /home/user/Desktop/test/test.txt test.txt
 
 # Example Output                                                          
 NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
@@ -44,8 +44,8 @@ NFS         <ip>  <nfs_port>  <ip>   File successfully downloaded to test.txt fr
 
 Uploaded files are created with chmod **777** permissions. If folders in the specified path do not exist yet, they will be created as well. Example usage:
 
-```
-NetExec nfs <ip> --put-file test2.txt /home/user/Desktop/
+```bash
+nxc nfs <ip> --put-file test2.txt /home/user/Desktop/
 
 # Example Output                                                          
 NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)
@@ -60,8 +60,8 @@ NFS         <ip>  <nfs_port>  <ip>   File test2.txt successfully uploaded to /ho
 
 **If the local file already exists on the remote server, NetExec asks whether you want to overwrite it.**
 
-```
-NetExec nfs <ip> --put-file test2.txt /home/user/Desktop/
+```bash
+nxc nfs <ip> --put-file test2.txt /home/user/Desktop/
 
 # Example Output  
 NFS         <ip>  <nfs_port>  <ip>   [*] Supported NFS versions: (3, 4) (root escape:True)

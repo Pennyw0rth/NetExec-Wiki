@@ -2,6 +2,6 @@
 
 Using the protocol you can perform RDP screenshot !
 
-```
-NetExec rdp <ip> -u <user> -p <password> --screenshot --screentime <second>
+```bash
+nxc rdp <ip> -u <user> -p <password> --screenshot --screentime <second>
 ```

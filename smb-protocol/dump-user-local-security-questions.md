@@ -1,4 +1,4 @@
-# 🆕 Dump User Local Security Questions
+# Dump User Local Security Questions
 
 {% hint style="warning" %}
 You need at least local admin privilege on the remote target
@@ -6,6 +6,6 @@ You need at least local admin privilege on the remote target
 
 New NetExec module to dump a local user's security questions if they have them.
 
-```
-$ nxc smb <ip> -u user -p pass -M security-questions
+```bash
+nxc smb <ip> -u user -p pass -M security-questions
 ```

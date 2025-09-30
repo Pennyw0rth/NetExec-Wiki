@@ -6,13 +6,13 @@ description: Execute MSSQL command using NetExec
 
 ### Execute MSSQL commands
 
-```
+```bash
 nxc mssql 10.10.10.52 -u admin -p 'm$$ql_S@_P@ssW0rd!' --local-auth -q 'SELECT name FROM master.dbo.sysdatabases;'
 ```
 
 Expected Results:
 
-```
+```bash
 MSSQL       10.10.10.52     1433   None             [+] admin:m$$ql_S@_P@ssW0rd! (Pwn3d!)
 MSSQL       10.10.10.52     1433   None             name
 MSSQL       10.10.10.52     1433   None             --------------------------------------------------------------------------------------------------------------------------------
@@ -33,4 +33,4 @@ When playing with MSSQL, you can use the tool [MSDAT ](https://github.com/quenti
 
 Mantis machine is a good example to test **MSSQL** procotol with NetExec
 
-{% embed url="https://www.hackthebox.eu/home/machines/profile/98" %}
+{% embed url="https://www.hackthebox.com/machines/mantis" %}

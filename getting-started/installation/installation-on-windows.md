@@ -17,14 +17,15 @@ Set up git, Rust and C++:\
 
 Install pipx and install NetExec directly from the repository:
 
-<pre><code><strong>pip install pipx
-</strong>python -m pipx ensurepath
+```bash
+pip install pipx
+python -m pipx ensurepath
 python -m pipx install git+https://github.com/Pennyw0rth/NetExec
-</code></pre>
+```
 
 Restart your command line and you should be able to execute NetExec:
 
-```
+```bash
 NetExec
 ```
 
@@ -48,8 +49,12 @@ Not all functionalities have been tested
 
 If you got this error
 
-`FileNotFoundError: [Errno 2] No such file or directory: 'C:\Users\Admin.shiv\nxc_51b7721208fc3d0af7e301aa9a56e1da0a38e9ec5bc08bfe8cc9ba14853ac5d1.tmp\site-packages\nxc\data\powersploit\CodeExecution\Invoke-ReflectivePEInjection_Resources\DemoDLL_RemoteProcess\DemoDLL_RemoteProcess\DemoDLL_RemoteProcess.vcxproj.filters`
+```bash
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\Users\Admin.shiv\nxc_51b7721208fc3d0af7e301aa9a56e1da0a38e9ec5bc08bfe8cc9ba14853ac5d1.tmp\site-packages\nxc\data\powersploit\CodeExecution\Invoke-ReflectivePEInjection_Resources\DemoDLL_RemoteProcess\DemoDLL_RemoteProcess\DemoDLL_RemoteProcess.vcxproj.filters
+```
 
 Add the following registry key:
 
-`REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f`
+```Bash
+REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
+```
