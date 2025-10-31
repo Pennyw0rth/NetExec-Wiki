@@ -20,10 +20,11 @@ MSSQL_AUDIT 10.10.10.52     1433   SQL01            [+] Sysadmin Access:        
 MSSQL_AUDIT 10.10.10.52     1433   SQL01            [+] xp_dirtree:               EXPLOITABLE
 MSSQL_AUDIT 10.10.10.52     1433   SQL01            [+] xp_fileexist:             EXPLOITABLE
 MSSQL_AUDIT 10.10.10.52     1433   SQL01            [+] MSSQL Relay:              EXPLOITABLE (Extended Protection: OFF)
-MSSQL_AUDIT 10.10.10.52     1433   SQL01            [+] Linked servers found:
-MSSQL_AUDIT 10.10.10.52     1433   SQL01            [+]   → PROD-SQL (Remote Login: sa) [SA, RPC]
 MSSQL_AUDIT 192.168.56.12   1433   SQL01            [*] Impersonation:            1 user(s) can impersonate
 MSSQL_AUDIT 192.168.56.12   1433   SQL01              → test_user can impersonate sa
+MSSQL_AUDIT 10.10.10.52     1433   SQL01            [+] Linked servers found:
+MSSQL_AUDIT 10.10.10.52     1433   SQL01            [+]   → PROD-SQL (Remote Login: sa) [SA, RPC]
+
 ```
 ___
 
