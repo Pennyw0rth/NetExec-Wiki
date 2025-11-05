@@ -16,7 +16,6 @@ The KDC responds with:
 * `KDC_ERR_C_PRINCIPAL_UNKNOWN` → User does not exist.
 * `KDC_ERR_CLIENT_REVOKED` → User exists but is disabled.
 
-
 For a single user:
 ```bash
 nxc kerberos <DC_IP> -u $user
@@ -26,6 +25,13 @@ For a list of users (like `kerbrute`):
 ```bash
 nxc kerberos <DC_IP> -d <DOMAIN> -u <userlist.txt> [--threads <N>]
 ```
+
+{% hint style="info" %}
+Use the `names.withletters` trick to create `name.a`, `name.b` variants:
+```shell
+awk '/^[[:space:]]*$/ {next} { gsub(/^[ \t]+|[ \t]+$/,""); for(i=97;i<=122;i++) printf "%s.%c\n", $0, i }' /usr/share/seclists/Usernames/Names/names.txt | tee /tmp/names.txt > /dev/null
+```
+{% endhint %}
 
 To export all users to a file:
 ```bash
