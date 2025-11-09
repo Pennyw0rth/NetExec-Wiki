@@ -47,10 +47,6 @@ nxc smb <DC_IP> -d <DOMAIN> -u <username> -k
 
 ```bash
 nxc smb <DC_IP> -d <DOMAIN> -u <userlist.txt> -k
-
-Export valid users to a file:
-```bash
-nxc smb <DC_IP> -d <DOMAIN> -u <userlist.txt> -k --users-export output.txt
 ```
 
 {% hint style="info" %}
