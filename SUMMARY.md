@@ -8,6 +8,7 @@
   * [🏎️ v1.3.0 - NeedForSpeed](news/v1.3.0-NeedForSpeed.md)
   * [🧈 v1.4.0 - SmoothOperator](news/v1.4.0-SmoothOperator.md)
 * [Logo & Banner](logo-and-banner.md)
+* [Netexec Lab](netexec-lab.md)
 
 ## Getting Started
 
