@@ -5,11 +5,11 @@ icon: flask-vial
 
 # Netexec Lab
 
-NetExec doesn't come only with with the tool but a full set of 3 lab, aiming to help you mastering NetExec for your next pentest engagement by allowing you to build the workshop of your choice and experiment with it.
+With NetExec, you get more than just the tool, you get three complete labs built to accelerate your mastery of NetExec for real-world pentest engagements. Create the workshop setup you want and explore every feature hands-on. You’ll find a write-up link in every workshop’s readme, and we’re looking forward to receiving yours!
 
-All labs can be build on your own infra (vmware / virtualbox / Ludus).
+You can deploy all labs on your own infrastructure (VMware, VirtualBox, or Ludus).
 
-We recommend [Ludus](https://ludus.cloud/) but you can choose what you want :fire:
+We recommend [Ludus](https://ludus.cloud/) for the best experience, but the choice is entirely yours 🔥
 
 1. First Lab: LeHack 2024 - Rome
 2. Second Lab: Barbhack 2024 - Batman
