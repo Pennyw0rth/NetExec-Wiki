@@ -1,22 +1,21 @@
-# 🆕 Raisechild
+# 🆕 Abuse Domain Trust: Raisechild
 
-Abuses an **intra-forest transitive trust** (child ↔ parent) to forge a **Golden Ticket** containing an **extra SID** from the other domain (e.g. *Enterprise Admins*).
-This allows authenticating to the **target domain** with elevated privileges.
+Abuses an **intra-forest transitive trust** (child ↔ parent) to forge a **Golden Ticket** containing an **extra SID** from the other domain (e.g. _Enterprise Admins_). This allows authenticating to the **target domain** with elevated privileges.
 
-Works **child → parent** *and* **parent → child**.
+Works **child → parent** _and_ **parent → child**.
 
----
+***
 
 ## What it does
 
 1. Detects the corresponding intra-forest trust (`trustedDomain` + inbound/bidirectional).
 2. Retrieves the local domain SID (child or parent depending on where the module is executed).
-3. Forges a TGT and injects an **extra SID** from the *other* domain (parent or child).
+3. Forges a TGT and injects an **extra SID** from the _other_ domain (parent or child).
 4. Saves the ticket as `<USER>.ccache`.
 
 > Windows Server 2025 disables RC4 by default — AES support in this module allows forging tickets anyway.
 
----
+***
 
 ## Important Requirements
 
@@ -47,7 +46,7 @@ If running **from the parent**, you must instead specify:
 
 The RID must always correspond to the domain whose **krbtgt key is used to forge the ticket**.
 
----
+***
 
 ## Module Options
 
@@ -58,7 +57,7 @@ The RID must always correspond to the domain whose **krbtgt key is used to forge
 | `RID`     | Extra SID RID injected from the **other domain** | 519 (Enterprise Admins) |
 | `ETYPE`   | rc4 / aes128 / aes256                            | rc4                     |
 
----
+***
 
 ## Usage Examples
 
@@ -86,7 +85,7 @@ Change the injected extra SID:
 nxc ldap <ip> -u <user> -p <pass> -M raisechild -o RID=512
 ```
 
----
+***
 
 ## Using the forged ticket
 
@@ -97,8 +96,9 @@ export KRB5CCNAME=Administrator.ccache
 Then authenticate to the **target domain**:
 
 ```bash
-nxc ldap <parent_or_child_dc> -k --use-kcache
+nxc ldap <parent_or_child_dc> --use-kcache
 ```
 
 <figure><img src="../.gitbook/assets/raisechild.png" alt=""><figcaption><p>Raisechild Module</p></figcaption></figure>
----
+
+\---
