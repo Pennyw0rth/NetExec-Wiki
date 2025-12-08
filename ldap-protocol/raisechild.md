@@ -1,5 +1,4 @@
-
-# 🆕 raisechild
+# 🆕 Raisechild
 
 Abuses an **intra-forest transitive trust** (child ↔ parent) to forge a **Golden Ticket** containing an **extra SID** from the other domain (e.g. *Enterprise Admins*).
 This allows authenticating to the **target domain** with elevated privileges.
@@ -101,4 +100,5 @@ Then authenticate to the **target domain**:
 nxc ldap <parent_or_child_dc> -k --use-kcache
 ```
 
+<figure><img src="../.gitbook/assets/raisechild.png" alt=""><figcaption><p>Raisechild Module</p></figcaption></figure>
 ---
