@@ -147,6 +147,7 @@
 * [MSSQL Upload & Download](mssql-protocol/mssql-upload-download.md)
 * [Execute via xp\_cmdshell](mssql-protocol/windows-command.md)
 * [🆕 Enumerate Users by Bruteforcing RID](mssql-protocol/enumerate-users-by-bruteforcing-rid.md)
+* [MSSQL Links](mssql-protocol/mssql-links.md)
 
 ## SSH protocol
 
