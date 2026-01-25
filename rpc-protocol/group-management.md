@@ -32,32 +32,41 @@ SMB  192.168.1.100  445  DC01  [*] Removing john.doe from group IT Support
 SMB  192.168.1.100  445  DC01  [+] Removed john.doe from IT Support
 ```
 
-## Enumerate Domain Groups
+## Enumerate Groups
 ```bash
 nxc smb 192.168.1.100 -u username -p password --rpc-groups
 
-SMB  192.168.1.100  445  DC01  [+] Found 15 group(s)
-SMB  192.168.1.100  445  DC01  group:[Domain Admins] rid:[0x200]
-SMB  192.168.1.100  445  DC01  group:[Domain Users] rid:[0x201]
-SMB  192.168.1.100  445  DC01  group:[Domain Guests] rid:[0x202]
+SMB  192.168.1.100  445  DC01  [+] Domain Groups (15)
+SMB  192.168.1.100  445  DC01  RID    Group                          Members  Description
+SMB  192.168.1.100  445  DC01  512    Domain Admins                  3        Designated administrators of the domain
+SMB  192.168.1.100  445  DC01  513    Domain Users                   45       All domain users
+SMB  192.168.1.100  445  DC01  514    Domain Guests                  0        All domain guests
+
+SMB  192.168.1.100  445  DC01  [+] Builtin/Local Groups (20)
+SMB  192.168.1.100  445  DC01  RID    Group                          Members  Description
+SMB  192.168.1.100  445  DC01  544    Administrators                 4        Administrators have complete and unrestricted access
+SMB  192.168.1.100  445  DC01  545    Users                          2        Users are prevented from making accidental changes
+SMB  192.168.1.100  445  DC01  546    Guests                         1        Guests have the same access as members of the Users group
 ```
 
-## Enumerate Local Groups
+## Query Group Information 
 ```bash
-nxc smb 192.168.1.100 -u username -p password --rpc-local-groups
-
-SMB  192.168.1.100  445  DC01  [+] Found 20 alias group(s)
-SMB  192.168.1.100  445  DC01  group:[Administrators] rid:[0x220]
-SMB  192.168.1.100  445  DC01  group:[Users] rid:[0x221]
-SMB  192.168.1.100  445  DC01  group:[Guests] rid:[0x222]
-```
-
-## Query Group Information
-```bash
+# Query domain group
 nxc smb 192.168.1.100 -u username -p password --rpc-group "Domain Admins"
 
-SMB  192.168.1.100  445  DC01  Group Name: Domain Admins
-SMB  192.168.1.100  445  DC01  Description: Designated administrators of the domain
-SMB  192.168.1.100  445  DC01  Group Attributes: 7
-SMB  192.168.1.100  445  DC01  Num Members: 3
+SMB  192.168.1.100  445  DC01  [+] Group: Domain Admins
+SMB  192.168.1.100  445  DC01    Description: Designated administrators of the domain
+SMB  192.168.1.100  445  DC01    Attributes: 7
+SMB  192.168.1.100  445  DC01    Member Count: 3
+SMB  192.168.1.100  445  DC01    Members: Administrator, IT-Admin, backup
+
+# Query builtin/local group
+nxc smb 192.168.1.100 -u username -p password --rpc-group "Administrators"
+
+SMB  192.168.1.100  445  DC01  [+] Group: Administrators
+SMB  192.168.1.100  445  DC01    Description: Administrators have complete and unrestricted access to the computer/domain
+SMB  192.168.1.100  445  DC01    Attributes: 0
+SMB  192.168.1.100  445  DC01    Member Count: 4
+SMB  192.168.1.100  445  DC01    Members: Domain Admins, Administrator, Administrator, SYSTEM
 ```
+

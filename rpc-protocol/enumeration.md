@@ -4,31 +4,33 @@
 ```bash
 nxc smb 192.168.1.100 -u username -p password --rpc-users
 
-SMB  192.168.1.100  445  DC01  [+] Found 25 user(s)
-SMB  192.168.1.100  445  DC01  user:[Administrator] rid:[0x1f4]
-SMB  192.168.1.100  445  DC01  user:[Guest] rid:[0x1f5]
-SMB  192.168.1.100  445  DC01  user:[krbtgt] rid:[0x1f6]
+SMB  192.168.1.100  445  DC01  [+] Found 25 domain user(s)
+SMB  192.168.1.100  445  DC01  RID    Username             BadPW  PW Last Set          PW Can Change        Description
+SMB  192.168.1.100  445  DC01  500    Administrator        0      2021-08-31 00:51:58  2021-09-01 03:51:58  Built-in account for administering...
+SMB  192.168.1.100  445  DC01  501    Guest                0      Never                Never                Built-in account for guest access...
+SMB  192.168.1.100  445  DC01  502    krbtgt               0      2021-08-30 15:23:18  2021-08-31 15:23:18  Key Distribution Center Service...
 ```
 
-## Enumerate Domain Groups
+
+
+## Enumerate Groups
 ```bash
 nxc smb 192.168.1.100 -u username -p password --rpc-groups
 
-SMB  192.168.1.100  445  DC01  [+] Found 15 group(s)
-SMB  192.168.1.100  445  DC01  group:[Domain Admins] rid:[0x200]
-SMB  192.168.1.100  445  DC01  group:[Domain Users] rid:[0x201]
-SMB  192.168.1.100  445  DC01  group:[Domain Guests] rid:[0x202]
+SMB  192.168.1.100  445  DC01  [+] Domain Groups (15)
+SMB  192.168.1.100  445  DC01  RID    Group                          Members  Description
+SMB  192.168.1.100  445  DC01  512    Domain Admins                  3        Designated administrators of the domain
+SMB  192.168.1.100  445  DC01  513    Domain Users                   45       All domain users
+SMB  192.168.1.100  445  DC01  514    Domain Guests                  0        All domain guests
+
+SMB  192.168.1.100  445  DC01  [+] Builtin/Local Groups (20)
+SMB  192.168.1.100  445  DC01  RID    Group                          Members  Description
+SMB  192.168.1.100  445  DC01  544    Administrators                 4        Administrators have complete and unrestricted access
+SMB  192.168.1.100  445  DC01  545    Users                          2        Users are prevented from making accidental changes
+SMB  192.168.1.100  445  DC01  546    Guests                         1        Guests have the same access as members of the Users group
 ```
 
-## Enumerate Local Groups
-```bash
-nxc smb 192.168.1.100 -u username -p password --rpc-local-groups
 
-SMB  192.168.1.100  445  DC01  [+] Found 20 alias group(s)
-SMB  192.168.1.100  445  DC01  group:[Administrators] rid:[0x220]
-SMB  192.168.1.100  445  DC01  group:[Users] rid:[0x221]
-SMB  192.168.1.100  445  DC01  group:[Guests] rid:[0x222]
-```
 
 ## Query User Information
 ```bash
@@ -47,19 +49,23 @@ SMB  192.168.1.100  445  DC01  Account Flags: 0x210
 ```bash
 nxc smb 192.168.1.100 -u username -p password --rpc-user-groups Administrator
 
-SMB  192.168.1.100  445  DC01  [+] User Administrator is a member of 3 group(s)
-SMB  192.168.1.100  445  DC01  [*]   rid:[0x200] group:[Domain Admins]
-SMB  192.168.1.100  445  DC01  [*]   rid:[0x201] group:[Domain Users]
+SMB  192.168.1.100  445  DC01  [+] Groups for user Administrator (3 groups)
+SMB  192.168.1.100  445  DC01    RID      ATTR   Name
+SMB  192.168.1.100  445  DC01    -------- ------ ------------------------------
+SMB  192.168.1.100  445  DC01    512      7      Domain Admins
+SMB  192.168.1.100  445  DC01    513      7      Domain Users
+SMB  192.168.1.100  445  DC01    520      7      Group Policy Creator Owners
 ```
 
 ## Query Group Information
 ```bash
 nxc smb 192.168.1.100 -u username -p password --rpc-group "Domain Admins"
 
-SMB  192.168.1.100  445  DC01  Group Name: Domain Admins
-SMB  192.168.1.100  445  DC01  Description: Designated administrators of the domain
-SMB  192.168.1.100  445  DC01  Group Attributes: 7
-SMB  192.168.1.100  445  DC01  Num Members: 3
+SMB  192.168.1.100  445  DC01  [+] Group: Domain Admins
+SMB  192.168.1.100  445  DC01    Description: Designated administrators of the domain
+SMB  192.168.1.100  445  DC01    Attributes: 7
+SMB  192.168.1.100  445  DC01    Member Count: 3
+SMB  192.168.1.100  445  DC01    Members: Administrator, IT-Admin, backup
 ```
 
 ## Query Domain Information
@@ -96,21 +102,16 @@ SMB  192.168.1.100  445  DC01  PARTNER.COM (external, forest: PARTNER.COM)
 nxc smb 192.168.1.100 -u username -p password --rpc-shares
 
 SMB  192.168.1.100  445  DC01  [+] Found 6 share(s)
-SMB  192.168.1.100  445  DC01  share:[ADMIN$] type:[DISKTREE] comment:[Remote Admin]
-SMB  192.168.1.100  445  DC01  share:[C$] type:[DISKTREE] comment:[Default share]
-SMB  192.168.1.100  445  DC01  share:[IPC$] type:[IPC] comment:[Remote IPC]
+SMB  192.168.1.100  445  DC01  Share           Type       Perms        Remark                         Path
+SMB  192.168.1.100  445  DC01  ----------------------------------------------------------------------------------------------------
+SMB  192.168.1.100  445  DC01  ADMIN$          Disk       READ,WRITE   Remote Admin                   C:\Windows
+SMB  192.168.1.100  445  DC01  C$              Disk       READ,WRITE   Default share                  C:\
+SMB  192.168.1.100  445  DC01  IPC$            IPC                     Remote IPC
+SMB  192.168.1.100  445  DC01  NETLOGON        Disk       READ         Logon server share             C:\Windows\SYSVOL\sysvol\contoso.local\SCRIPTS
+SMB  192.168.1.100  445  DC01  SYSVOL          Disk       READ         Logon server share             C:\Windows\SYSVOL\sysvol
 ```
 
-## Query Share Information
-```bash
-nxc smb 192.168.1.100 -u username -p password --rpc-share NETLOGON
 
-SMB  192.168.1.100  445  DC01  Share NETLOGON:
-SMB  192.168.1.100  445  DC01    Type: DISKTREE
-SMB  192.168.1.100  445  DC01    Comment: Logon server share
-SMB  192.168.1.100  445  DC01    Current users: 0
-SMB  192.168.1.100  445  DC01    Path: C:\Windows\SYSVOL\sysvol\contoso.local\SCRIPTS
-```
 
 ## Enumerate Sessions
 ```bash
