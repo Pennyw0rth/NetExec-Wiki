@@ -68,6 +68,7 @@
     * [Process Injection (pi module)](smb-protocol/command-execution/execute-remote-command/process-injection-pi-module.md)
   * [Getting Shells 101](smb-protocol/command-execution/getting-shells-101.md)
 * [Spidering Shares](smb-protocol/spidering-shares.md)
+* [Recycle Bin](smb-protocol/recycle-bin.md)
 * [Get and Put Files](smb-protocol/get-and-put-files.md)
 * [Obtaining Credentials](smb-protocol/obtaining-credentials/README.md)
   * [Dump SAM](smb-protocol/obtaining-credentials/dump-sam.md)
