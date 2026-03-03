@@ -47,6 +47,7 @@
   * [Enumerate Logged-On Users with the Workstation Service](smb-protocol/enumeration/enumerate-logged-on-users-wkssvc.md)
   * [Enumerate Shares and Access](smb-protocol/enumeration/enumerate-shares-and-access.md)
   * [🆕 Enumerate Network Interfaces](smb-protocol/enumeration/enumerate-network-interfaces.md)
+  * [Enumerate NTLMv1](smb-protocol/enumeration/enumerate-ntlmv1.md)
   * [Enumerate Disks](smb-protocol/enumeration/enumerate-disks.md)
   * [Enumerate Bitlocker](smb-protocol/enumeration/enumerate-bitlocker.md)
   * [Enumerate Domain Users](smb-protocol/enumeration/enumerate-domain-users.md)
