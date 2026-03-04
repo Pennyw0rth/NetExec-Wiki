@@ -15,7 +15,7 @@ nxc <protocol> <target(s)> -u username -p password
 ```
 
 {% hint style="success" %}
-Code execution results in a (**Pwn3d!**) added after the login confirmation. With the SMB protocol, your compromised users are most likely in the local administrators group.
+Code execution results in a (**Pwn3d!**) added after the login confirmation. With the SMB protocol, your compromised users are most likely in the (local) administrators group.
 {% endhint %}
 
 | Protocol | See Pwn3d! in output                                   |
@@ -24,7 +24,7 @@ Code execution results in a (**Pwn3d!**) added after the login confirmation. Wit
 | SSH      | root (otherwise specific message) :white\_check\_mark: |
 | WINRM    | Code execution at least :space\_invader:               |
 | LDAP     | Path to domain admin :crown:                           |
-| SMB      | Most likely local admin :white\_check\_mark:           |
+| SMB      | Most likely (local) admin :white\_check\_mark:         |
 | RDP      | Code execution at least :space\_invader:               |
 | VNC      | Code execution at least :space\_invader:               |
 | WMI      | Most likely local admin :white\_check\_mark:           |

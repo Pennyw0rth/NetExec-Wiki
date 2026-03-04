@@ -29,8 +29,8 @@ user:[zoro] rid:[0x46f]
 
 Forest or Monteverde machines are good examples to test **null session** authentication with NetExec
 
-{% embed url="https://www.hackthebox.eu/home/machines/profile/212" %}
+{% embed url="https://www.hackthebox.com/machines/forest" %}
 
-{% embed url="https://www.hackthebox.eu/home/machines/profile/223" %}
+{% embed url="https://www.hackthebox.com/machines/monteverde" %}
 
 

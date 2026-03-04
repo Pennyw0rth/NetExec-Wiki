@@ -8,6 +8,7 @@
   * [🏎️ v1.3.0 - NeedForSpeed](news/v1.3.0-NeedForSpeed.md)
   * [🧈 v1.4.0 - SmoothOperator](news/v1.4.0-SmoothOperator.md)
 * [Logo & Banner](logo-and-banner.md)
+* [NetExec Lab](netexec-lab.md)
 
 ## Getting Started
 
@@ -43,18 +44,23 @@
   * [Enumerate Null Sessions](smb-protocol/enumeration/enumerate-null-sessions.md)
   * [Enumerate Guest Logon](smb-protocol/enumeration/enumerate-guest-logon.md)
   * [Enumerate Hosts with SMB Signing Not Required](smb-protocol/enumeration/smb-signing-not-required.md)
-  * [Enumerate Active SMB Sessions](smb-protocol/enumeration/enumerate-active-sessions.md)
+  * [🆕 Enumerate Active Windows Sessions](smb-protocol/enumeration/enumerate-active-windows-sessions.md)
+  * [🆕 Enumerate Logged-On Users with the Remote Registry Service](smb-protocol/enumeration/enumerate-logged-on-users-winreg.md)
+  * [Enumerate Logged-On Users with the Workstation Service](smb-protocol/enumeration/enumerate-logged-on-users-wkssvc.md)
   * [Enumerate Shares and Access](smb-protocol/enumeration/enumerate-shares-and-access.md)
   * [🆕 Enumerate Network Interfaces](smb-protocol/enumeration/enumerate-network-interfaces.md)
+  * [Enumerate NTLMv1](smb-protocol/enumeration/enumerate-ntlmv1.md)
   * [Enumerate Disks](smb-protocol/enumeration/enumerate-disks.md)
   * [Enumerate Bitlocker](smb-protocol/enumeration/enumerate-bitlocker.md)
-  * [Enumerate Logged on Users](smb-protocol/enumeration/enumerate-logged-on-users.md)
   * [Enumerate Domain Users](smb-protocol/enumeration/enumerate-domain-users.md)
   * [Enumerate Users by Bruteforcing RID](smb-protocol/enumeration/enumerate-users-by-bruteforcing-rid.md)
   * [Enumerate Domain Groups](smb-protocol/enumeration/enumerate-domain-groups.md)
   * [Enumerate Local Groups](smb-protocol/enumeration/enumerate-local-groups.md)
   * [Enumerate Domain Password Policy](smb-protocol/enumeration/enumerate-domain-password-policy-1.md)
   * [Enumerate Anti-Virus & EDR](smb-protocol/enumeration/enumerate-antivirus-edr.md)
+  * [Enumerate remote processes](smb-protocol/enumeration/enumerate-remote-processes.md)
+  * [🆕 Enumerate changed lockscreen executables](smb-protocol/enumeration/enumerate-lockscreen-backdoors.md)
+  * [🆕 Enumerate Primary Site Server and Distribution Point via recon6](smb-protocol/enumeration/enumerate-sccm-primarysiteserver-and-distributionpoint.md)
 * [Password Spraying](smb-protocol/password-spraying.md)
 * [Authentication](smb-protocol/authentication/README.md)
   * [Checking Credentials (Domain)](smb-protocol/authentication/checking-credentials-domain.md)
@@ -108,16 +114,19 @@
 * [Machine Account Quota](ldap-protocol/machine-account-quota.md)
 * [Get User Descriptions](ldap-protocol/get-user-descriptions.md)
 * [Dump gMSA](ldap-protocol/dump-gmsa.md)
+* [Pre2k Computer Account Abuse](ldap-protocol/pre2k.md)
 * [Exploit ESC8 (ADCS)](ldap-protocol/exploit-esc8-adcs.md)
 * [Extract Subnet](ldap-protocol/extract-subnet.md)
 * [Check LDAP Signing](ldap-protocol/check-ldap-signing.md)
 * [Read DACL Rights](ldap-protocol/read-dacl-right.md)
 * [Extract gMSA Secrets](ldap-protocol/extract-gmsa-secrets.md)
 * [Bloodhound Ingestor](ldap-protocol/bloodhound-ingestor.md)
-* [List DC IP](ldap-protocol/dc-list.md)
+* [🆕 List DC IP / Enum Trust](ldap-protocol/dc-list.md)
+* [🆕 Abuse Domain Trust: Raisechild](ldap-protocol/raisechild.md)
 * [Enumerate Domain Trusts](ldap-protocol/enumerate-trusts.md)
 * [🆕 Enumerate SCCM](ldap-protocol/enumerate-sccm.md)
 * [🆕 Enumerate Entra ID](ldap-protocol/enumerate-entra-id.md)
+* [🆕 Dump PSO](dump-pso.md)
 
 ## WINRM protocol
 
@@ -125,6 +134,10 @@
 * [Authentication](winrm-protocol/authentication.md)
 * [Command Execution](winrm-protocol/command-execution.md)
 * [Defeating LAPS](winrm-protocol/defeating-laps.md)
+* [Obtaining Credentials](winrm-protocol/obtaining-credentials/README.md)
+  * [Dump SAM](winrm-protocol/obtaining-credentials/dump-sam.md)
+  * [Dump LSA](winrm-protocol/obtaining-credentials/dump-lsa.md)
+  * [🆕 Dump DPAPI](winrm-protocol/obtaining-credentials/dump-dpapi.md)
 
 ## MSSQL protocol
 
@@ -135,6 +148,7 @@
 * [MSSQL Upload & Download](mssql-protocol/mssql-upload-download.md)
 * [Execute via xp\_cmdshell](mssql-protocol/windows-command.md)
 * [🆕 Enumerate Users by Bruteforcing RID](mssql-protocol/enumerate-users-by-bruteforcing-rid.md)
+* [MSSQL Linked Servers](mssql-protocol/mssql-linked-servers.md)
 
 ## SSH protocol
 
@@ -154,6 +168,7 @@
 * [Password Spraying](rdp-protocol/password-spraying.md)
 * [Screenshot (connected)](rdp-protocol/screenshot-connected.md)
 * [Screenshot Without NLA (not connected)](rdp-protocol/screenshot-without-nla-not-connected.md)
+* [🆕 Command Execution](rdp-protocol/command-execution.md)
 
 ## WMI Protocol
 
@@ -166,3 +181,7 @@
 * [🆕 Enumeration](nfs-protocol/Enumeration.md)
 * [Download and Upload Files](nfs-protocol/Download-and-Upload-Files.md)
 * [🆕 Escape to root file system](nfs-protocol/escape-to-root-file-system.md)
+
+## VNC Protocol
+
+* [Authentication](vnc-protocol/authentication.md)
