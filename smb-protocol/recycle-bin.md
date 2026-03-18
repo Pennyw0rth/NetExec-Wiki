@@ -8,9 +8,9 @@ description: List and download files in the Recycle Bin
 This module requires administrator privileges.
 {% endhint %}
 
-This module lists deleted files in the Recycle Bin for every user. It shows the original location/filename of the deleted file as well as the date when it was deleted.
+This module lists deleted files in the Recycle Bin for every user. It shows the original location, filename and size of the deleted file as well as the date when it was deleted.
 
-List files in the Recycle Bin on the remote target:
+List files in all the Recycle Bins on the remote target:
 
 ```bash
 nxc smb 192.168.1.10 -u USER -p PASSWORD -M recyclebin
@@ -18,13 +18,13 @@ nxc smb 192.168.1.10 -u USER -p PASSWORD -M recyclebin
 
 <figure><img src="../.gitbook/assets/Recycle_bin_listing-files.png" alt=""><figcaption><p>Listing Recycle Bin files</p></figcaption></figure>
 
-List and download all files in the Recycle Bin on the remote target:
+List and download all files in all Recycle Bins on the remote target:
 
 ```bash
 nxc smb 192.168.1.10 -u USER -p PASSWORD -M recyclebin -o DOWNLOAD=true
 ```
 
-List and download only specific files using a filter on the original name (file name) value:
+List and download only specific files using a filter on the original name (filename) value:
 
 {% hint style="info" %}
 The below command only downloads files that contain the word "pass" in their original filename.
@@ -34,7 +34,7 @@ The below command only downloads files that contain the word "pass" in their ori
 nxc smb 192.168.1.10 -u USER -p PASSWORD -M recyclebin -o DOWNLOAD=true FILTER=pass
 ```
 
-<figure><img src="../.gitbook/assets/Recycle_bin_filter-on-filename.png" alt=""><figcaption><p>Download files with names that contain the word "pass"</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Recycle_bin_filter-on-filename.png" alt=""><figcaption><p>Download files with names that contain the word "alice-passwords"</p></figcaption></figure>
 
 ## Module Options
 
