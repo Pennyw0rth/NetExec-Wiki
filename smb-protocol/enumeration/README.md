@@ -58,10 +58,6 @@ If nxc isnt giving output of any kind, you probably have something wrong with th
 [enumerate-domain-password-policy-1.md](enumerate-domain-password-policy-1.md)
 {% endcontent-ref %}
 
-{% content-ref url="smb-signing-not-required.md" %}
-[smb-signing-not-required.md](smb-signing-not-required.md)
-{% endcontent-ref %}
-
 {% content-ref url="enumerate-sccm-primarysiteserver-and-distributionpoint.md" %}
 [enumerate-sccm-primarysiteserver-and-distributionpoint.md](enumerate-sccm-primarysiteserver-and-distributionpoint.md)
 {% endcontent-ref %}

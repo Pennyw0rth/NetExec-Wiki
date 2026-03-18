@@ -3,7 +3,7 @@
 ## Installing NetExec with pipx :saxophone:
 
 {% hint style="info" %}
-We do recomand to install rust before to make sure everything will work properly
+We do recommend to install rust before to make sure everything will work properly
 
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -74,7 +74,7 @@ pipx ensurepath
 pipx install uv
 ```
 
-Now that UV is set, up and we can download the NetExec repository and install its dependencies:
+Now that UV is set up, we can download the NetExec repository and install its dependencies:
 
 ```
 git clone https://github.com/Pennyw0rth/NetExec
@@ -86,7 +86,7 @@ uv run netexec
 ## Installation for development using Poetry :postal\_horn:
 
 {% hint style="warning" %}
-We do not recommand to install poetry via APT on kali
+We do not recommend to install poetry via APT on kali
 {% endhint %}
 
 You're going to need to install [Poetry](https://python-poetry.org/docs/#installation) which is what nxc uses to manage dependencies. To install poetry you should use [pipx](https://github.com/pypa/pipx), because our dynamic-versioning plugin will likely crash otherwise.
