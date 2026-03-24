@@ -139,7 +139,9 @@
 
 ## MSSQL protocol
 
-* [Enumeration](mssql-protocol/enumeration.md)
+* [Enumeration](mssql-protocol/enumeration/README.md)
+  * [🆕 Enumerating encryption settings](mssql-protocol/enumeration/enumerating-encryption-settings.md)
+  * [🆕 Enumerating Channel Binding configuration](mssql-protocol/enumeration/enumerating-channel-binding-configuration.md)
 * [Password Spraying](mssql-protocol/mssql-passwordspray.md)
 * [Authentication](mssql-protocol/authentication.md)
 * [MSSQL PrivEsc](mssql-protocol/mssql-privesc.md)
