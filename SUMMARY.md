@@ -139,6 +139,7 @@
 
 ## MSSQL protocol
 
+* [Enumeration](mssql-protocol/enumeration.md)
 * [Password Spraying](mssql-protocol/mssql-passwordspray.md)
 * [Authentication](mssql-protocol/authentication.md)
 * [MSSQL PrivEsc](mssql-protocol/mssql-privesc.md)
