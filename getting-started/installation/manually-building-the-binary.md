@@ -6,12 +6,9 @@ description: >-
 
 # 🛠️ Manually building the binary
 
-
-
 {% hint style="warning" %}
 This process can vary from time to time as dependencies change, resulting in potential errors. If you don't need to compile the binaries yourself for a specific reason it is recommended to use the precompiled binaries from [GitHub](https://github.com/Pennyw0rth/NetExec/releases).
 {% endhint %}
-
 ## Linux
 
 Clone the repository:
@@ -36,7 +33,6 @@ You should now have compiled binaries:
 ```bash
 ./dist/nxc
 ```
-
 ## Windows
 
 {% hint style="warning" %}
@@ -57,7 +53,7 @@ Set up a virtual environment, install required packages and build the binary:
 
 ```bash
 python -m venv env
-source env/Scripts/activate
+source env/Scripts/activate        # or .env\Scripts\activate
 pip install pyinstaller pillow .
 pyinstaller netexec.spec
 ```
