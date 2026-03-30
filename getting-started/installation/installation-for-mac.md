@@ -25,7 +25,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 ```
 
-## Installing Netexec with pipx 
+## Installing Netexec with pipx
 
 ```bash
 brew install pipx
