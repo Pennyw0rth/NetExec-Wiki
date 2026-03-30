@@ -3,7 +3,7 @@
 ## Installing Docker for Windows/Mac
 
 {% hint style="warning" %}
-For Windows and Mac (x86_64/arm64) we recommend installing Docker Desktop. Especially Mac, as installation tends to be flaky via other means. 
+For Windows and Mac (x86_64/arm64) we recommend installing Docker Desktop. Especially Mac, as installation tends to be flaky via other means.
 {% endhint %}
 
 Download Docker Desktop:
@@ -32,8 +32,8 @@ systemctl enable docker
 ## Installing Docker for Arch Linux
 
 ```bash
-pacman -S docker 
-systemctl start docker 
+pacman -S docker
+systemctl start docker
 systemctl enable docker
 ```
 
@@ -60,6 +60,6 @@ docker run --rm -it netexec --help
 Building and running the image from [Docker Hub](https://hub.docker.com/r/parrotsec/netexec)
 
 ```bash
-docker pull parrotsec/netexec 
+docker pull parrotsec/netexec
 docker run --rm -it parrotsec/netexec --help
 ```
