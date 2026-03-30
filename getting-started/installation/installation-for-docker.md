@@ -13,12 +13,12 @@ https://www.docker.com/products/docker-desktop/
 Requires Windows 10/11 Pro, Enterprise, or Education and CPU virtualization enabled in BIOS (Intel VT-x / AMD-V)
 {% endhint %}
 
-After installation, the Docker Desktop process needs to be running and can be backgrounded 
+After installation, the Docker Desktop process needs to be running and can be backgrounded
 
 ## Installing Docker for Unix
 
 {% hint style="success" %}
-Docker can be installed on WSL2, as this version does not treat Docker as a nested hypervisor 
+Docker can be installed on WSL2, as this version does not treat Docker as a nested hypervisor
 {% endhint %}
 
 ## Installing Docker for Ubuntu/Debian
