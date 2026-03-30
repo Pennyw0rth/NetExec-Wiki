@@ -9,6 +9,7 @@ description: >-
 {% hint style="warning" %}
 This process can vary from time to time as dependencies change, resulting in potential errors. If you don't need to compile the binaries yourself for a specific reason it is recommended to use the precompiled binaries from [GitHub](https://github.com/Pennyw0rth/NetExec/releases).
 {% endhint %}
+
 ## Linux
 
 Clone the repository:
@@ -33,6 +34,7 @@ You should now have compiled binaries:
 ```bash
 ./dist/nxc
 ```
+
 ## Windows
 
 {% hint style="warning" %}
