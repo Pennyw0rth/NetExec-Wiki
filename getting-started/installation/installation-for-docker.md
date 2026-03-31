@@ -54,12 +54,3 @@ Building and running the container
 docker build -t netexec .
 docker run --rm -it netexec --help
 ```
-
-## Pulling NetExec Image from Docker Hub
-
-Building and running the image from [Docker Hub](https://hub.docker.com/r/parrotsec/netexec)
-
-```bash
-docker pull parrotsec/netexec
-docker run --rm -it parrotsec/netexec --help
-```
