@@ -51,6 +51,8 @@ usermod -aG docker $USER
 Building and running the container
 
 ```bash
+git clone https://github.com/Pennyw0rth/NetExec
+cd NetExec
 docker build -t netexec .
 docker run --rm -it netexec --help
 ```
