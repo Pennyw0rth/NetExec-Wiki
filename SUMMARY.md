@@ -16,7 +16,7 @@
   * [🐧 Installation for Unix](getting-started/installation/installation-on-unix.md)
   * [🪟 Installation for Windows](getting-started/installation/installation-on-windows.md)
   * [🍎 Installation for Mac](getting-started/installation/installation-for-mac.md)
-  * [🐋 Using Docker](using-docker.md)
+  * [🐋 Using Docker](getting-started/installation/using-docker.md)
   * [🛠️ Manually building the binary](getting-started/installation/manually-building-the-binary.md)
   * [➡️ Post Installation Setup](getting-started/installation/setting-up-tab-completion.md)
 * [Selecting & Using a Protocol](getting-started/selecting-and-using-a-protocol.md)
