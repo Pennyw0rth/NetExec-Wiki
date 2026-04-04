@@ -1,4 +1,4 @@
-# 🆕 Add User Group
+# 🆕 Modify Group
 
 If a user with capabilities such as AddMember, AddSelf, etc. has control, this module can add or remove users from the target group.
 
