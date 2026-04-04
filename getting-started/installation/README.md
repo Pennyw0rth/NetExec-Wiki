@@ -16,8 +16,8 @@ description: NetExec installation
 [installation-for-mac.md](installation-for-mac.md)
 {% endcontent-ref %}
 
-{% content-ref url="installation-for-docker.md" %}
-[installation-for-docker.md](installation-for-docker.md)
+{% content-ref url="using-docker.md" %}
+[using-docker.md](using-docker.md)
 {% endcontent-ref %}
 
 {% content-ref url="manually-building-the-binary.md" %}
