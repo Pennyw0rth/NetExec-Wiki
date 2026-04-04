@@ -1,7 +1,10 @@
-# 🐋 Installation for Docker
+# 🐋 Using Docker
 
 ## Installing Docker for Windows/Mac
 
+{% hint style="success" %}
+If Python is available it is recommended to install NetExec with pipx
+{% endhint %}
 {% hint style="warning" %}
 For Windows and Mac (x86_64/arm64) we recommend installing Docker Desktop. Especially Mac, as installation tends to be flaky via other means.
 {% endhint %}
