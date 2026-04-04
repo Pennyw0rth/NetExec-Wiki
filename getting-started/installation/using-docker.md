@@ -10,7 +10,7 @@ For Windows and Mac (x86_64/arm64) we recommend installing Docker Desktop. Espec
 {% endhint %}
 
 Download Docker Desktop:
-https://www.docker.com/products/docker-desktop/
+[https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 
 {% hint style="info" %}
 Requires Windows 10/11 Pro, Enterprise, or Education and CPU virtualization enabled in BIOS (Intel VT-x / AMD-V)
