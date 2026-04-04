@@ -8,10 +8,12 @@ Only need to specify target user and target group name.
 
 
 ```bash
-nxc smb <ip> -u user -p pass -M add-group -o USER=TargetUser Group=TargetGroup
+nxc smb <ip> -u user -p pass -M modify-group -o USER=TargetUser GROUP=TargetGroup
 ```
+
+### Remove User from Group
 
 If want to remove the target user to group, just need to specify REMOVE true value.
 ```bash
-nxc smb <ip> -u user -p pass -M add-group -o USER=TargetUser Group=TargetGroup REMOVE=True
+nxc smb <ip> -u user -p pass -M modify-group -o USER=TargetUser GROUP=TargetGroup REMOVE=True
 ```
