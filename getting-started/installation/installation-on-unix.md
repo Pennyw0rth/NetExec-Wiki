@@ -3,14 +3,17 @@
 ## Installing NetExec with pipx :saxophone:
 
 {% hint style="info" %}
-We do recomand to install rust before to make sure everything will work properly
+We do recommend to install rust before to make sure everything will work properly
 
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+
+Also, on some distributions, python headers may not be installed with python but are needed for [arc4 dependency](https://pypi.org/project/arc4/) build. To [install them](https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory#answer-21530768) if you encounter `arc4.c:2:10: fatal error: Python.h: No such file or directory` error.
+
 {% endhint %}
 
-Using [pipx ](https://github.com/pypa/pipx)to install NetExec is recommended. This allows you to use NetExec and the nxcdb system-wide.
+Using [pipx](https://github.com/pypa/pipx)to install NetExec is recommended. This allows you to use NetExec and the nxcdb system-wide.
 
 ```bash
 sudo apt install pipx git
@@ -71,7 +74,7 @@ pipx ensurepath
 pipx install uv
 ```
 
-Now that UV is set, up and we can download the NetExec repository and install its dependencies:
+Now that UV is set up, we can download the NetExec repository and install its dependencies:
 
 ```
 git clone https://github.com/Pennyw0rth/NetExec
@@ -83,7 +86,7 @@ uv run netexec
 ## Installation for development using Poetry :postal\_horn:
 
 {% hint style="warning" %}
-We do not recommand to install poetry via APT on kali
+We do not recommend to install poetry via APT on kali
 {% endhint %}
 
 You're going to need to install [Poetry](https://python-poetry.org/docs/#installation) which is what nxc uses to manage dependencies. To install poetry you should use [pipx](https://github.com/pypa/pipx), because our dynamic-versioning plugin will likely crash otherwise.

@@ -1,4 +1,4 @@
-# 🆕 Dump User Local Security Questions
+# Dump User Local Security Questions
 
 {% hint style="warning" %}
 You need at least local admin privilege on the remote target

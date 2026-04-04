@@ -15,7 +15,7 @@ nxc <protocol> <target(s)> -u username -p password
 ```
 
 {% hint style="success" %}
-Code execution results in a (**Pwn3d!**) added after the login confirmation. With the SMB protocol, your compromised users are most likely in the local administrators group.
+Code execution results in a (**Pwn3d!**) added after the login confirmation. With the SMB protocol, your compromised users are most likely in the (local) administrators group.
 {% endhint %}
 
 | Protocol | See Pwn3d! in output                                   |
@@ -24,7 +24,7 @@ Code execution results in a (**Pwn3d!**) added after the login confirmation. Wit
 | SSH      | root (otherwise specific message) :white\_check\_mark: |
 | WINRM    | Code execution at least :space\_invader:               |
 | LDAP     | Path to domain admin :crown:                           |
-| SMB      | Most likely local admin :white\_check\_mark:           |
+| SMB      | Most likely (local) admin :white\_check\_mark:         |
 | RDP      | Code execution at least :space\_invader:               |
 | VNC      | Code execution at least :space\_invader:               |
 | WMI      | Most likely local admin :white\_check\_mark:           |
@@ -128,7 +128,7 @@ Authentication throttling works on a per-host basis! Keep this in mind if you ar
 If there is a need to throttle authentications during brute forcing, you can use the jitter functionality. The length of the timeout (in seconds) between requests is randomly selected from an interval unless otherwise specified. If you want to hardcode the timeout, set the upper and lower bounds of the interval to the same value. The syntax is as follows:
 
 ```bash
-nxc --jitter 3 <protocol> <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
-nxc --jitter 2-5 <protocol> <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
-nxc --jitter 4-4 <protocol> <target> -u ~/file_containing_usernames -p ~/file_containing_passwords
+nxc <protocol> <target> --jitter 3 -u ~/file_containing_usernames -p ~/file_containing_passwords
+nxc <protocol> <target> --jitter 2-5 -u ~/file_containing_usernames -p ~/file_containing_passwords
+nxc <protocol> <target> --jitter 4-4 -u ~/file_containing_usernames -p ~/file_containing_passwords
 ```
