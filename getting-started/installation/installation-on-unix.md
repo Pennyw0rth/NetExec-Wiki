@@ -13,7 +13,7 @@ Also, on some distributions, python headers may not be installed with python but
 
 {% endhint %}
 
-Using [pipx](https://github.com/pypa/pipx)to install NetExec is recommended. This allows you to use NetExec and the nxcdb system-wide.
+Using [pipx](https://github.com/pypa/pipx) to install NetExec is recommended. This allows you to use NetExec and the nxcdb system-wide.
 
 ```bash
 sudo apt install pipx git
@@ -67,7 +67,7 @@ apt install netexec
 
 Install uv (and rust)
 
-```
+```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 apt install pipx git
 pipx ensurepath
@@ -76,7 +76,7 @@ pipx install uv
 
 Now that UV is set up, we can download the NetExec repository and install its dependencies:
 
-```
+```bash
 git clone https://github.com/Pennyw0rth/NetExec
 cd NetExec
 uv tool install .
