@@ -126,6 +126,7 @@
 * [🆕 Enumerate SCCM](ldap-protocol/enumerate-sccm.md)
 * [🆕 Enumerate Entra ID](ldap-protocol/enumerate-entra-id.md)
 * [🆕 Dump PSO](dump-pso.md)
+* [🆕 Enumerate scriptPath](ldap-protocol/get-scriptpath.md)
 
 ## WINRM protocol
 
