@@ -8,5 +8,5 @@ nxc ldap <hostname> -u <user> -p <pass> -M get-scriptpath
 
 Two options are available:
 
-- **FILTER**: Filter results to a specific user
+- **FILTER**: Filter results by scriptPath
 - **OUTPUTFILE**: Save the output to a file
