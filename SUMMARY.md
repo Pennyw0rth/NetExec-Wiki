@@ -187,3 +187,4 @@
 ## VNC Protocol
 
 * [Authentication](vnc-protocol/authentication.md)
+* [Screenshot](vnc-protocol/screenshot-screentime.md)
