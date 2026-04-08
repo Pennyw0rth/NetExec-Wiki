@@ -1,4 +1,4 @@
-# 🆕 File Listing, etc
+# File Listing, etc
 
 ## Listing Files
 
@@ -20,3 +20,10 @@ FTP         192.168.0.10   21     192.168.0.10    drwxr-xr-x    2 1000     1000 
 FTP         192.168.0.10   21     192.168.0.10    drwx------    4 1000     1000         4096 Aug 28  2022 snap
 ```
 
+#### Specify port
+
+```bash
+nxc ftp 192.168.0.10 -u 'marshall' -p 'badpassword' --port 2121
+FTP         192.168.0.10   2121   192.168.0.10    [*] Banner: (vsFTPd 3.0.5)
+FTP         192.168.0.10   2121   192.168.0.10    [+] marshall:badpassword
+```

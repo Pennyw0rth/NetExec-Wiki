@@ -4,7 +4,7 @@ description: >-
   NetExec.
 ---
 
-# 🆕 File Upload & Download
+# File Upload & Download
 
 ## List Files in a Directory
 
@@ -54,8 +54,8 @@ nxc ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --put [LOCAL_FILE] [REMOTE_FILE
 Example:
 
 ```bash
- nxc ftp 10.10.176.246 -u frank -p D2xc9CgD --put test.txt test.txt
+nxc ftp 10.10.176.246 -u frank -p D2xc9CgD --put test.txt test.txt
 FTP         10.10.176.246   21     10.10.176.246    [*] Banner: (vsFTPd 3.0.3)
 FTP         10.10.176.246   21     10.10.176.246    [+] frank:D2xc9CgD
-FTP         10.10.176.246   21     10.10.176.246    [-] Failed to upload file. Response: (550 Permission denied.)
+FTP         10.10.176.246   21     10.10.176.246    [+] Uploaded: test.txt to test.txt
 ```
