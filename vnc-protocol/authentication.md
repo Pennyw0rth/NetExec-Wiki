@@ -23,18 +23,19 @@ VNC         192.168.56.22   5900   192.168.56.22    [*] RFB 3.8
 VNC         192.168.56.22   5900   192.168.56.22    [+] Heartsbane
 ```
 
-#### Specify port
-
-```bash
-nxc vnc 192.168.56.22 --port 5901
-```
-
 #### Unauthenticated access
 
 When the VNC server doesn't require authentication, the following output can be expected.
 ```bash
 nxc vnc 192.168.56.22
 VNC         192.168.56.22   5900   192.168.56.22    [*] RFB 3.8 (No Auth:True)
+```
+
+#### Specify port
+
+```bash
+nxc vnc 192.168.56.22 --port 5901
+VNC         192.168.56.22   5901   192.168.56.22    [*] RFB 3.8
 ```
 
 #### VNC sleep
