@@ -46,7 +46,7 @@ FTP         10.10.176.246   21     10.10.176.246    [+] Downloaded: ftp_flag.thm
 Upload a file to the FTP server providing you have relevant permissions
 
 ```bash
-nxc ftp [IP_ADDRESS] -u [USERNAME] -p [PASSWORD] --put [LOCAL_FILE] [REMOTE_FILE]
+nxc ftp 10.10.176.246 -u frank -p D2xc9CgD --put test.txt test.txt
 ```
 
 Expected Results:
