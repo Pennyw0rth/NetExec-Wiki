@@ -128,6 +128,7 @@
 * [🆕 Enumerate Entra ID](ldap-protocol/enumerate-entra-id.md)
 * [🆕 Dump PSO](dump-pso.md)
 * [🆕 Enumerate scriptPath](ldap-protocol/get-scriptpath.md)
+* [🆕 Enumerate Unsecure DNS Zones](ldap-protocol/enumerate-unsecure-dns-zones.md)
 
 ## WINRM protocol
 
