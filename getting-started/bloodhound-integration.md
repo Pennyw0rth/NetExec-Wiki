@@ -1,8 +1,8 @@
 # BloodHound Integration
 
-NetExec will set user as 'owned' on BloodHound when an account is found ! Very usefull when lsassy finds 20 credentials in one dump :)
+NetExec will set user as 'owned' on BloodHound when an account is found! Very useful when lsassy finds 20 credentials in one dump :)
 
-First you need to configure your config file in you home folder: `~/.nxc/nxc.conf` and add the following lines:
+First you need to configure your config file in your home folder: `~/.nxc/nxc.conf` and add the following lines:
 
 ```bash
 [BloodHound]
