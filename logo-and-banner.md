@@ -6,7 +6,7 @@ They are below for inclusion wherever it is needed!
 
 <figure><img src=".gitbook/assets/NetExec-Banner-Github.png" alt=""><figcaption><p>NetExec Banner</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/NetExec-Logo-Color (1).png" alt=""><figcaption><p>NetExec Logo All Purple</p></figcaption></figure>
+<figure><img src=".gitbook/assets/NetExec-Logo-Color.png" alt=""><figcaption><p>NetExec Logo All Purple</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/NetExec-Logo-White-Outlined.png" alt=""><figcaption><p>NetExec Logo Purple Outline</p></figcaption></figure>
 
