@@ -1,4 +1,4 @@
-# Enumerate Unsecure DNS Zones
+# 🆕 Enumerate Unsecure DNS Zones
 
 This module enumerates DNS zones that are configured with the `Nonsecure and secure` setting for dynamic updates. This misconfiguration allows **unauthenticated users** to add DNS records and, in some cases, delete or modify existing records.
 
@@ -18,3 +18,5 @@ nsupdate
 > show
 > send
 ```
+
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>

@@ -1,5 +1,5 @@
 ---
-cover: .gitbook/assets/NetExec-Logo-Color (1).png
+cover: .gitbook/assets/NetExec-Logo-Color.png
 coverY: 10.04061416542843
 ---
 
