@@ -11,9 +11,9 @@ nxc vnc <ip> -u '' -p <password>
 Expected Results:
 
 ```bash
-nxc vnc 192.168.56.22 -u '' -p 'password'
+nxc vnc 192.168.56.22 -u '' -p 'badpassword'
 VNC         192.168.56.22   5900   192.168.56.22    [*] RFB 3.8
-VNC         192.168.56.22   5900   192.168.56.22    [+] password
+VNC         192.168.56.22   5900   192.168.56.22    [+] badpassword
 ```
 
 If the server supports username authentication, you can provide one:
