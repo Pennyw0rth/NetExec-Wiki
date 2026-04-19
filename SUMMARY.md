@@ -161,8 +161,9 @@
 
 ## FTP protocol
 
+* [Authentication](ftp-protocol/authentication.md)
 * [Password Spraying](ftp-protocol/password-spraying.md)
-* [File Listing, etc](ftp-protocol/file-listing-etc.md)
+* [File Listing](ftp-protocol/file-listing.md)
 * [File Upload & Download](ftp-protocol/get-and-put-files.md)
 
 ## RDP Protocol
