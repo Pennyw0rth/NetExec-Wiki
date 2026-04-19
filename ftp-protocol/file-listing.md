@@ -1,8 +1,8 @@
-# File Listing, etc
+# File Listing
 
 ## Listing Files
 
-Do directory listings on valid authentication by using the `--ls` option:
+Directory listings using the `--ls` flag, which includes file permissions:
 
 ```bash
 nxc ftp 192.168.0.10 -u 'marshall' -p 'badpassword' --ls
