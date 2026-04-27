@@ -100,5 +100,3 @@ nxc ldap <parent_or_child_dc> --use-kcache
 ```
 
 <figure><img src="../.gitbook/assets/raisechild.png" alt=""><figcaption><p>Raisechild Module</p></figcaption></figure>
-
-\---
