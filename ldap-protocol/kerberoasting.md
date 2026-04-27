@@ -15,6 +15,23 @@ To perfom this attack, you need an account on the domain, or an AS-REP roastable
 ```bash
 nxc ldap 192.168.0.104 -u harry -p pass --kerberoasting output.txt
 ```
+
+# Targeted Kerberoasting (`--targeted-kerberoast`)
+
+For accounts that have **no** `servicePrincipalName`, normal Kerberoasting cannot request a ST. **Targeted Kerberoasting** temporarily sets an SPN on the victim (`cifs/<sAMAccountName>`), requests a service ticket (same etype 23 hash as classic Kerberoasting), writes it to your `--kerberoasting` file, then **removes** the added SPN via LDAP.
+
+{% hint style="warning" %}
+You need LDAP **write** rights on `servicePrincipalName` for each targeted user (for example `GenericAll` on the user, `WriteProperty` on `servicePrincipalName`, or equivalent). The option **requires** `--kerberoasting` (output path).
+{% endhint %}
+
+```bash
+nxc ldap 192.168.0.104 -u harry -p pass --kerberoasting output.txt --targeted-kerberoast victim1 victim2
+nxc ldap 192.168.0.104 -u harry -p pass --kerberoasting output.txt --targeted-kerberoast users.list
+```
+
+* `--kerberoasting`: file where ST hashes are appended (mandatory with this mode).
+* `--targeted-kerberoast`: one or more `sAMAccountName` values and/or paths to files listing them.
+
 # Kerberoasting via AS-REP Roasting
 
 > You can also perform Kerberoasting by leveraging an AS-REP roastable account that does not require pre-authentication. This is possible by combining `--no-preauth-targets` and `--kerberoasting`.
