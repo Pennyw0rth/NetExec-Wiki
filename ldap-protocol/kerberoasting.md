@@ -23,7 +23,7 @@ nxc ldap 192.168.0.104 -u harry -p pass --kerberoasting output.txt
 As with typical user accounts, you cannot request service tickets (STs) for accounts that have **no** `servicePrincipalName`. **Targeted Kerberoasting** temporarily sets an SPN on the victim (`cifs/<sAMAccountName>`), requests a service ticket, writes it to your `--kerberoasting` file, and then **removes** the added SPN via LDAP.
 
 {% hint style="warning" %}
-You need LDAP **write** rights on the `servicePrincipalName` of each targeted user (for example `GenericAll` on the user, `WriteProperty` on `servicePrincipalName`, or similar).
+You need LDAP **write** privileges on the `servicePrincipalName` of each targeted user (for example `GenericAll` on the user, `WriteProperty` on `servicePrincipalName`, etc).
 {% endhint %}
 
 ```bash
