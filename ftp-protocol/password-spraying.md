@@ -49,5 +49,5 @@ FTP         127.31.0.1      21     127.31.0.1       [-] admin:admin (Response:53
 FTP         127.31.0.1      21     127.31.0.1       [+] root:toor
 FTP         127.31.0.0      21     127.31.0.0       [+] marshall:badpassword
 FTP         127.31.0.0      21     127.31.0.0       [-] admin:admin (Response:530 Login incorrect)
-FTP         127.31.0.0      21     127.31.0.0       [-] root:toor (Response:530 Login incorrect)
+FTP         127.31.0.0      21     127.31.0.0       [+] root:toor
 ```
