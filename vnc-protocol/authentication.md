@@ -13,15 +13,7 @@ Expected Results:
 ```bash
 nxc vnc 192.168.56.22 -u '' -p 'badpassword'
 VNC         192.168.56.22   5900   192.168.56.22    [*] RFB 3.8
-VNC         192.168.56.22   5900   192.168.56.22    [+] badpassword
-```
-
-If the server supports username authentication, you can provide one:
-
-```bash
-nxc vnc 192.168.56.22 -u samwell.tarly -p Heartsbane
-VNC         192.168.56.22   5900   192.168.56.22    [*] RFB 3.8
-VNC         192.168.56.22   5900   192.168.56.22    [+] Heartsbane
+VNC         192.168.56.22   5900   192.168.56.22    [+] :badpassword
 ```
 
 ## Unauthenticated access
