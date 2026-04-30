@@ -2,7 +2,7 @@
 
 ## Testing credentials
 
-VNC servers do not require a username. As such, the username field is omitted and not sent to the vnc server.
+VNC servers do not require a username. As such, the username field is omitted and not sent.
 
 ```bash
 nxc vnc <ip> -u '' -p <password>
