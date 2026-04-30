@@ -2,7 +2,7 @@
 
 ## Testing credentials
 
-Some VNC servers do not require a username. In such cases, the username field should be left empty, as illustrated in the results below.
+VNC servers do not require an username. As such, the username field is omitted and not sent to the vnc server.
 
 ```bash
 nxc vnc <ip> -u '' -p <password>
