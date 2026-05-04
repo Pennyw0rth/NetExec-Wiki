@@ -3,7 +3,7 @@
 This module enumerates DNS zones that are configured with the `Nonsecure and secure` setting for dynamic updates. This misconfiguration allows **unauthenticated users** to add DNS records and, in some cases, delete or modify existing records.
 
 ```bash
-nxc smb $DC_IP -u $USER -p $PASSWORD -M dns-nonsecure
+nxc ldap $DC_IP -u $USER -p $PASSWORD -M dns-nonsecure
 ```
 
 ## Exploitation
