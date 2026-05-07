@@ -1,8 +1,6 @@
 # Download and Upload Files
 
-{% hint style="info" %}
-For both `--get-file` and `--put-file` you need to specify the export share with `--share` if you do not want to use the root fs escape method (see [escape to root file system](escape-to-root-file-system.md)).
-{% endhint %}
+{% include "../.gitbook/includes/nfs-root-escape-banner.md" %}
 
 Example usage:
 
@@ -42,7 +40,7 @@ NFS         <ip>  <nfs_port>  <ip>   File successfully downloaded to test.txt fr
 
 ### Upload File
 
-Uploaded files are created with chmod **777** permissions. If folders in the specified path do not exist yet, they will be created as well. Example usage:
+Uploaded files are created with chmod **777** permissions (this can be changed with [\`--chmod\`](chmod.md)). If folders in the specified path do not exist yet, they will be created as well. Example usage:
 
 ```bash
 nxc nfs <ip> --put-file test2.txt /home/user/Desktop/

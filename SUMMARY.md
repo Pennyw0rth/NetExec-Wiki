@@ -183,8 +183,9 @@
 
 ## NFS Protocol
 
-* [🆕 Enumeration](nfs-protocol/Enumeration.md)
+* [Enumeration](nfs-protocol/Enumeration.md)
 * [Download and Upload Files](nfs-protocol/Download-and-Upload-Files.md)
+* [Chmod](nfs-protocol/chmod.md)
 * [🆕 Escape to root file system](nfs-protocol/escape-to-root-file-system.md)
 
 ## VNC Protocol
