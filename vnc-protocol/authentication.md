@@ -13,7 +13,7 @@ Expected Results:
 ```bash
 nxc vnc 192.168.56.22 -u '' -p 'badpassword'
 VNC         192.168.56.22   5900   192.168.56.22    [*] RFB 3.8
-VNC         192.168.56.22   5900   192.168.56.22    [+] badpassword
+VNC         192.168.56.22   5900   192.168.56.22    [+] badpassword (Pwn3d!)
 ```
 
 ## Unauthenticated access
