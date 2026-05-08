@@ -13,7 +13,7 @@ Expected Results:
 ```bash
 nxc vnc 192.168.56.22 -u samwell.tarly -p Heartsbane --screenshot
 VNC         192.168.56.22   5900   192.168.56.22    [*] RFB 3.8
-VNC         192.168.56.22   5900   192.168.56.22    [+] Heartsbane
+VNC         192.168.56.22   5900   192.168.56.22    [+] Heartsbane (Pwn3d!)
 VNC         192.168.56.22   5900   192.168.56.22    Screenshot saved /home/user/.nxc/screenshots/192.168.56.22_192.168.56.22_2026-04-09_000342.png
 ```
 
