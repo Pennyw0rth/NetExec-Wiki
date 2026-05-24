@@ -2,7 +2,7 @@
 
 ## Testing credentials
 
-Some VNC servers do not require a username. In such cases, the username field should be left empty, as illustrated in the results below.
+VNC servers may support password authentication, though this is uncommon. Currently, NetExec does not support username auth and will ignore any value provided to `--username/-u`.
 
 ```bash
 nxc vnc <ip> -u '' -p <password>
@@ -14,14 +14,6 @@ Expected Results:
 nxc vnc 192.168.56.22 -u '' -p 'badpassword'
 VNC         192.168.56.22   5900   192.168.56.22    [*] RFB 3.8
 VNC         192.168.56.22   5900   192.168.56.22    [+] badpassword
-```
-
-If the server supports username authentication, you can provide one:
-
-```bash
-nxc vnc 192.168.56.22 -u samwell.tarly -p Heartsbane
-VNC         192.168.56.22   5900   192.168.56.22    [*] RFB 3.8
-VNC         192.168.56.22   5900   192.168.56.22    [+] Heartsbane
 ```
 
 ## Unauthenticated access
