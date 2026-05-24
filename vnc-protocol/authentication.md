@@ -2,7 +2,7 @@
 
 ## Testing credentials
 
-VNC servers may support password authentication, though this is uncommon. Currently, NetExec does not support username auth and will ignore any value provided to `--username/-u`.
+VNC servers may support password authentication, though this is uncommon. Currently, NetExec does not support username auth and will omit any value provided to `--username/-u`.
 
 ```bash
 nxc vnc <ip> -u '' -p <password>
