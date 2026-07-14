@@ -34,6 +34,6 @@ pipx install git+https://github.com/Pennyw0rth/NetExec
 
 ## Using NetExec Binary
 
-1. Download the latest Windows binary on the [release ](https://github.com/Pennyw0rth/NetExec/releases) page (netexec-windows-latest)
+1. Download the latest MacOS binary on the [release ](https://github.com/Pennyw0rth/NetExec/releases) page (netexec-macos-latest)
 2. Unzip the folder
 3. Run the binary from the command line
