@@ -39,6 +39,8 @@ pipx reinstall netexec      # Force download the latest commits from github
 
 If pip fails to build aardwolf you need to [install rust](https://www.rust-lang.org/tools/install). Don't forget to reload your shell so rust is added to your PATH!
 
+If pip still fails with an error saying that _the configured Python interpreter version (3.x) is newer than PyO3's maximum supported version (3.y)"_, then set environment variable `PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1` and retry installing.
+
 ## Installation for Kali :dragon\_face:
 
 ```bash
