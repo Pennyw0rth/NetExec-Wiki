@@ -29,7 +29,7 @@ nxc smb <ip> -u user -p pass -M change-password -o USER=TargetUser NEWPASS=NewPa
 Change the NT hash of TargetUser to 10C035D527CA60BE3ADF51996E7CD7E1
 
 ```bash
-nxc smb <ip> -u user -p pass -M change-password -o USER=TargetUser NEWHASH=10C035D527CA60BE3ADF51996E7CD7E1
+nxc smb <ip> -u user -p pass -M change-password -o USER=TargetUser NEWNTHASH=10C035D527CA60BE3ADF51996E7CD7E1
 ```
 
 ![Change Hash](../.gitbook/assets/changehash.png)
