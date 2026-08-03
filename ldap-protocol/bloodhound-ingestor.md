@@ -1,6 +1,10 @@
 # Bloodhound Ingestor
 
-NetExec has a build in bloodhound collector. To configure the name server, dns timeout or to use tcp for dns resolution take a look at the NetExec command line options for [dns](../getting-started/dns-options.md).
+{% hint style="warning" %}
+Default Bloodhound ingestor is CE (Community Edition). Click [here](https://www.netexec.wiki/getting-started/installation/setting-up-tab-completion) to see how to edit nxc.conf to use legacy ingestor.
+{% endhint %}
+
+NetExec has a built-in bloodhound collector. To configure the name server, dns timeout or to use tcp for dns resolution take a look at the NetExec command line options for [dns](../getting-started/dns-options.md).
 
 ```bash
 nxc ldap <ip> -u user -p pass --bloodhound --collection All
