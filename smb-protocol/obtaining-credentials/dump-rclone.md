@@ -12,4 +12,4 @@ Rclone is a command-line program to manage files on cloud storage. This module d
 nxc smb <ip> -u username -p password -M rclone
 ```
 
-<figure><img src="../.gitbook/assets/rclone.png" alt=""><figcaption><p>Rclone Module</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
