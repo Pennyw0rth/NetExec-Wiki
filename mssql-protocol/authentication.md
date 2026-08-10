@@ -41,3 +41,9 @@ MSSQL       10.10.10.52     1433   None             [+] admin:m$$ql_S@_P@ssW0rd!
 ```bash
 nxc mssql 10.10.10.52 -u admin -p 'm$$ql_S@_P@ssW0rd!' --port 1434
 ```
+
+### Execute as other user
+
+```bash
+nxc mssql 10.10.10.52 -u user -p 'Password123!' --impersonate 'sysadmin'
+```
