@@ -8,11 +8,12 @@ nxc automatically tells you if the credential set you're using has admin access 
 
 ## Execution Methods
 
-nxc has three different command execution methods:
+nxc has four different command execution methods:
 
 * `wmiexec` executes commands via WMI
 * `atexec` executes commands by scheduling a task with windows task scheduler
 * `smbexec` executes commands by creating and running a service
+* `psexec` executes commands relying on the original PsExec.exe signed binary from Microsoft
 
 By default nxc will fail over to a different execution method if one fails. It attempts to execute commands in the following order:
 
@@ -20,7 +21,7 @@ By default nxc will fail over to a different execution method if one fails. It a
 2. `atexec`
 3. `smbexec`
 
-If you want to force nxc to use only one execution method you can specify which one using the `--exec-method` flag.
+If you want to force nxc to use only one execution method you can specify which one using the `--exec-method` or the `-em` flags.
 
 ## Executing Commands
 
