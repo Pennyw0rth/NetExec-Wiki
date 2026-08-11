@@ -7,6 +7,7 @@
   * [📡 v1.2.0 - ItsAlwaysDNS](news/v1.2.0-ItsAlwaysDNS.md)
   * [🏎️ v1.3.0 - NeedForSpeed](news/v1.3.0-NeedForSpeed.md)
   * [🧈 v1.4.0 - SmoothOperator](news/v1.4.0-SmoothOperator.md)
+  * [🎬 v1.5.0 - Yippie-Ki-Yay](news/v1.5.0-YippieKiYay.md)
 * [Logo & Banner](logo-and-banner.md)
 * [NetExec Lab](netexec-lab.md)
 
