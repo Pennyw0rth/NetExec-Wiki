@@ -42,15 +42,27 @@ nxc smb <ip> -u '' -p '' -M smbghost
 nxc smb <ip> -u '' -p '' -M ms17-010
 ```
 
-#### NTLM reflection (CVE-2025-33073)
+#### Enumerate CVEs
+
+```
+Currently supported CVEs:
+CVE-2025-33073 (NTLM Reflection)
+CVE-2025-58726 (Ghost SPN)
+CVE-2025-54918 (NTLM MIC Bypass)
+CVE-2025-53779 (BadSuccessor)
+CVE-2024-49019 (EKUwu / ESC15)
+CVE-2026-54121 (Certighost)
+CVE-2026-27912 (ResetNightmare)
+```
 
 ```bash
-nxc smb <ip> -u 'user' -p 'pass' -M ntlm_reflection
+nxc smb <ip> -u 'user' -p 'pass' -M enum_cve
 ```
 
 {% hint style="warning" %}
-You need credentials for CVE-2025-33073 vulnerability check.
+You need a credential for some of vulnerabilities check.
 {% endhint %}
+
 
 Or, try them all at once! Just list each one: `-M zerologon -M printnightmare`
 
