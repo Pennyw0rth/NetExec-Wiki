@@ -15,6 +15,6 @@ bh_pass = pass
 
 To ingest the data directly follow this page:
 
-{% content-ref url="../ldap-protocol/bloodhound-ingestor.md" %}
-[bloodhound-ingestor.md](../ldap-protocol/bloodhound-ingestor.md)
+{% content-ref url="../../ldap-protocol/bloodhound-ingestor.md" %}
+[bloodhound-ingestor.md](../../ldap-protocol/bloodhound-ingestor.md)
 {% endcontent-ref %}
