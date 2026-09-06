@@ -19,8 +19,10 @@
   * [🐋 Using Docker](getting-started/installation/using-docker.md)
   * [🛠️ Manually building the binary](getting-started/installation/manually-building-the-binary.md)
   * [➡️ Post Installation Setup](getting-started/installation/setting-up-tab-completion.md)
-* [Configuration](getting-started/configuration/README.md)  
-  * [Host Exclusion](getting-started/configuration/config-hostexclusion.md)
+* [Configuration](getting-started/configuration/README.md)
+  * [BloodHound Integration](getting-started/configuration/bloodhound-integration.md)
+  * [Audit Mode](getting-started/configuration/audit-mode.md)
+  * [🆕 Host Exclusion](getting-started/configuration/config-hostexclusion.md)
 * [Selecting & Using a Protocol](getting-started/selecting-and-using-a-protocol.md)
 * [Target Formats](getting-started/target-formats.md)
 * [Using Credentials](getting-started/using-credentials.md)
@@ -29,9 +31,6 @@
 * [Using Modules](getting-started/using-modules.md)
 * [DNS options](getting-started/dns-options.md)
 * [Database General Usage](getting-started/database-general-usage.md)
-* [BloodHound Integration](getting-started/bloodhound-integration.md)
-* [Audit Mode](getting-started/audit-mode.md)
-* [Ignore OpSec Warnings](getting-started/ignore-opsec-warnings.md)
 * [Logging](getting-started/log-your-results.md)
 
 ## SMB protocol
