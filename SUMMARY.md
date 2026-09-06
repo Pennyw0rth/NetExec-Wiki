@@ -19,7 +19,7 @@
   * [🐋 Using Docker](getting-started/installation/using-docker.md)
   * [🛠️ Manually building the binary](getting-started/installation/manually-building-the-binary.md)
   * [➡️ Post Installation Setup](getting-started/installation/setting-up-tab-completion.md)
-* [Configuration](getting-started/configuration/README.md)
+* [🆕 Configuration](getting-started/configuration/README.md)
   * [BloodHound Integration](getting-started/configuration/bloodhound-integration.md)
   * [Audit Mode](getting-started/configuration/audit-mode.md)
   * [🆕 Host Exclusion](getting-started/configuration/config-hostexclusion.md)
