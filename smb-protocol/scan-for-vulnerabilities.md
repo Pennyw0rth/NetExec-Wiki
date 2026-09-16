@@ -21,7 +21,7 @@ nxc smb <ip> -u 'user' -p 'pass' -M nopac
 ```
 
 {% hint style="warning" %}
-You need a credential for noPAC vulnerability check.
+You need a credential for noPAC a vulnerability check.
 {% endhint %}
 
 #### PrintNightmare
@@ -42,15 +42,27 @@ nxc smb <ip> -u '' -p '' -M smbghost
 nxc smb <ip> -u '' -p '' -M ms17-010
 ```
 
-#### NTLM reflection (CVE-2025-33073)
+#### Enumerate CVEs
+
+```
+Currently supported CVEs:
+CVE-2025-33073 (NTLM Reflection)
+CVE-2025-58726 (Ghost SPN)
+CVE-2025-54918 (NTLM MIC Bypass)
+CVE-2025-53779 (BadSuccessor)
+CVE-2024-49019 (EKUwu / ESC15)
+CVE-2026-54121 (Certighost)
+CVE-2026-27912 (ResetNightmare)
+```
 
 ```bash
-nxc smb <ip> -u 'user' -p 'pass' -M ntlm_reflection
+nxc smb <ip> -u 'user' -p 'pass' -M enum_cve
 ```
 
 {% hint style="warning" %}
-You need credentials for CVE-2025-33073 vulnerability check.
+You need a credential for some of the vulnerability checks.
 {% endhint %}
+
 
 Or, try them all at once! Just list each one: `-M zerologon -M printnightmare`
 
@@ -85,7 +97,7 @@ Instead of using the `METHOD` option, you can use its short form `M`. Similarly,
 
 This also applies to the names of the vulnerabilities when specifying a method.
 
-M=p // Invalid, as both petitpotam and printerbug start with ‘p’ so modules gives error
+M=p // Invalid, as both petitpotam and printerbug start with ‘p’ so modules give an error
 
 M=pr // Matches printerbug
 
