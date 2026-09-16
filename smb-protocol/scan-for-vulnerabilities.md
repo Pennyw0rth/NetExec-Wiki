@@ -21,7 +21,7 @@ nxc smb <ip> -u 'user' -p 'pass' -M nopac
 ```
 
 {% hint style="warning" %}
-You need a credential for noPAC vulnerability check.
+You need a credential for noPAC a vulnerability check.
 {% endhint %}
 
 #### PrintNightmare
@@ -60,7 +60,7 @@ nxc smb <ip> -u 'user' -p 'pass' -M enum_cve
 ```
 
 {% hint style="warning" %}
-You need a credential for some of vulnerabilities check.
+You need a credential for some of the vulnerability checks.
 {% endhint %}
 
 
@@ -97,7 +97,7 @@ Instead of using the `METHOD` option, you can use its short form `M`. Similarly,
 
 This also applies to the names of the vulnerabilities when specifying a method.
 
-M=p // Invalid, as both petitpotam and printerbug start with ‘p’ so modules gives error
+M=p // Invalid, as both petitpotam and printerbug start with ‘p’ so modules give an error
 
 M=pr // Matches printerbug
 
