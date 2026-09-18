@@ -6,7 +6,7 @@
 Check whether the DC is vulnerable:
 
 ```bash
-nxc smb <dc_ip> -u 'user' -p 'pass' -M enum_cve -o CVE=CVE-2026-27912
+nxc smb <dc_ip> -u user -p pass -M enum_cve -o CVE=CVE-2026-27912
 ```
 
 Exploit:
