@@ -15,7 +15,7 @@ Set up git, Rust and C++:\
 [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)\
 [https://visualstudio.microsoft.com/de/visual-cpp-build-tools/](https://visualstudio.microsoft.com/de/visual-cpp-build-tools/)
 
-Install pipx and install NetExec directly from the repository:
+Install pipx and NetExec directly from the repository:
 
 ```bash
 pip install pipx

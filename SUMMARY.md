@@ -16,8 +16,13 @@
   * [🐧 Installation for Unix](getting-started/installation/installation-on-unix.md)
   * [🪟 Installation for Windows](getting-started/installation/installation-on-windows.md)
   * [🍎 Installation for Mac](getting-started/installation/installation-for-mac.md)
+  * [🐋 Using Docker](getting-started/installation/using-docker.md)
   * [🛠️ Manually building the binary](getting-started/installation/manually-building-the-binary.md)
   * [➡️ Post Installation Setup](getting-started/installation/setting-up-tab-completion.md)
+* [🆕 Configuration](getting-started/configuration/README.md)
+  * [BloodHound Integration](getting-started/configuration/bloodhound-integration.md)
+  * [Audit Mode](getting-started/configuration/audit-mode.md)
+  * [🆕 Host Exclusion](getting-started/configuration/config-hostexclusion.md)
 * [Selecting & Using a Protocol](getting-started/selecting-and-using-a-protocol.md)
 * [Target Formats](getting-started/target-formats.md)
 * [Using Credentials](getting-started/using-credentials.md)
@@ -26,9 +31,6 @@
 * [Using Modules](getting-started/using-modules.md)
 * [DNS options](getting-started/dns-options.md)
 * [Database General Usage](getting-started/database-general-usage.md)
-* [BloodHound Integration](getting-started/bloodhound-integration.md)
-* [Audit Mode](getting-started/audit-mode.md)
-* [Ignore OpSec Warnings](getting-started/ignore-opsec-warnings.md)
 * [Logging](getting-started/log-your-results.md)
 
 ## SMB protocol
@@ -90,11 +92,13 @@
   * [🆕 Dump Notepad++](smb-protocol/obtaining-credentials/dump-notepad++.md)
   * [🆕 Dump Remote Desktop Credential Manager](smb-protocol/obtaining-credentials/dump-rdcman.md)
   * [🆕 Dump Event Log Creds(4688)](smb-protocol/obtaining-credentials/eventlog-creds.md)
+  * [🆕 Dump Rclone](smb-protocol/obtaining-credentials/dump-rclone.md)
 * [Defeating LAPS](smb-protocol/defeating-laps.md)
 * [Checking for Spooler & WebDav](smb-protocol/spooler-webdav-running.md)
 * [Steal Microsoft Teams Cookies](smb-protocol/steal-microsoft-teams-cookies.md)
 * [Impersonate logged-on Users](smb-protocol/impersonate-logged-on-users.md)
 * [Change User Password](smb-protocol/change-user-password.md)
+* [🆕 Modify Group](smb-protocol/modify-group.md)
 * [Dump User Local Security Questions](smb-protocol/dump-user-local-security-questions.md)
 
 ## LDAP protocol
@@ -113,6 +117,8 @@
 * [Get User Descriptions](ldap-protocol/get-user-descriptions.md)
 * [Dump gMSA](ldap-protocol/dump-gmsa.md)
 * [Pre2k Computer Account Abuse](ldap-protocol/pre2k.md)
+* [🆕 Shadow Credentials Attack](ldap-protocol/shadow-credentials.md)
+* [🆕 ResetNightmare](ldap-protocol/resetnightmare.md)
 * [Exploit ESC8 (ADCS)](ldap-protocol/exploit-esc8-adcs.md)
 * [Extract Subnet](ldap-protocol/extract-subnet.md)
 * [Check LDAP Signing](ldap-protocol/check-ldap-signing.md)
@@ -125,6 +131,8 @@
 * [🆕 Enumerate SCCM](ldap-protocol/enumerate-sccm.md)
 * [🆕 Enumerate Entra ID](ldap-protocol/enumerate-entra-id.md)
 * [🆕 Dump PSO](dump-pso.md)
+* [🆕 Enumerate scriptPath](ldap-protocol/get-scriptpath.md)
+* [🆕 Enumerate Unsecure DNS Zones](ldap-protocol/enumerate-unsecure-dns-zones.md)
 
 ## WINRM protocol
 
@@ -160,9 +168,10 @@
 
 ## FTP protocol
 
+* [Authentication](ftp-protocol/authentication.md)
 * [Password Spraying](ftp-protocol/password-spraying.md)
-* [🆕 File Listing, etc](ftp-protocol/file-listing-etc.md)
-* [🆕 File Upload & Download](ftp-protocol/get-and-put-files.md)
+* [File Listing](ftp-protocol/file-listing.md)
+* [File Upload & Download](ftp-protocol/get-and-put-files.md)
 
 ## RDP Protocol
 
@@ -179,10 +188,12 @@
 
 ## NFS Protocol
 
-* [🆕 Enumeration](nfs-protocol/Enumeration.md)
+* [Enumeration](nfs-protocol/Enumeration.md)
 * [Download and Upload Files](nfs-protocol/Download-and-Upload-Files.md)
+* [🆕 Chmod](nfs-protocol/chmod.md)
 * [🆕 Escape to root file system](nfs-protocol/escape-to-root-file-system.md)
 
 ## VNC Protocol
 
 * [Authentication](vnc-protocol/authentication.md)
+* [Screenshot](vnc-protocol/screenshot-screentime.md)
