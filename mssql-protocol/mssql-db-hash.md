@@ -21,12 +21,12 @@ SQL Server stores login password hashes using versioned formats identified by a 
 For the legacy formats, Hashcat can be invoked as follows:
 
 ```bash
-# MSSQL 2000 — 0x0100
+# MSSQL 2000 - 0x0100
 hashcat -m 131 hashes.txt wordlist.txt
 
-# MSSQL 2005 — 0x0200
+# MSSQL 2005 - 0x0200
 hashcat -m 132 hashes.txt wordlist.txt
 
-# MSSQL 2012/2014 — 0x0300
+# MSSQL 2012/2014 - 0x0300
 hashcat -m 1731 hashes.txt wordlist.txt
 ```
