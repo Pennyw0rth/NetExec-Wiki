@@ -22,7 +22,24 @@ Execute a MSSQL query specified in the COMMAND argument on the linked server spe
 nxc mssql <ip> -u user -p password -M exec_on_link -o LINKED_SERVER=BRAAVOS COMMAND='select @@servername'
 MSSQL         <ip>      1433   FQDN      [*] Windows 10 / Server 2019 Build 17763 (name:FQDN) (domain:FQDN.local) (EncryptionReq:False)
 MSSQL         <ip>      1433   FQDN      [+] FQDN\user:pass (Pwn3d!)
-EXEC_ON_LINK  <ip>      1433   FQDN      [*] Command output: [{'': 'BRAAVOS\\SQLEXPRESS'}]
+EXEC_ON_LINK  <ip>      1433   FQDN      [*] Command output:
+EXEC_ON_LINK  <ip>      1433   FQDN      BRAAVOS\SQLEXPRESS
+```
+
+If the current login has no mapping on the linked server, you can specify a local login to impersonate with `AS_LOGIN`.
+```bash
+nxc mssql <ip> -u user -p password -M exec_on_link -o LINKED_SERVER=BRAAVOS COMMAND='select @@servername'                 
+MSSQL         <ip>      1433   FQDN      [*] Windows 10 / Server 2019 Build 17763 (name:FQDN) (domain:FQDN.local) (EncryptionReq:False)
+MSSQL         <ip>      1433   FQDN      [+] FQDN\user:pass (Pwn3d!)
+EXEC_ON_LINK  <ip>      1433   FQDN      [-] No login mapping exists for the current login on linked server BRAAVOS
+EXEC_ON_LINK  <ip>      1433   FQDN      [*] Mapped local login: webapp -> webappGroup
+EXEC_ON_LINK  <ip>      1433   FQDN      [*] Retry with AS_LOGIN=webapp
+                                                                                                                                                                                                                                           
+nxc mssql <ip> -u user -p password -M exec_on_link -o LINKED_SERVER=BRAAVOS AS_LOGIN=webapp COMMAND='select @@servername'           
+MSSQL         <ip>      1433   FQDN      [*] Windows 10 / Server 2019 Build 17763 (name:FQDN) (domain:FQDN.local) (EncryptionReq:False)
+MSSQL         <ip>      1433   FQDN      [+] FQDN\user:pass (Pwn3d!)
+EXEC_ON_LINK  <ip>      1433   FQDN      [*] Command output:
+EXEC_ON_LINK  <ip>      1433   FQDN      BRAAVOS\SQLEXPRESS
 ```
 
 ## Enable xp_cmdshell on a Linked Server
