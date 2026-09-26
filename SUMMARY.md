@@ -117,6 +117,7 @@
 * [Get User Descriptions](ldap-protocol/get-user-descriptions.md)
 * [Dump gMSA](ldap-protocol/dump-gmsa.md)
 * [Pre2k Computer Account Abuse](ldap-protocol/pre2k.md)
+* [🆕 Modify Group](ldap-protocol/modify-group.md)
 * [🆕 Shadow Credentials Attack](ldap-protocol/shadow-credentials.md)
 * [🆕 ResetNightmare](ldap-protocol/resetnightmare.md)
 * [Exploit ESC8 (ADCS)](ldap-protocol/exploit-esc8-adcs.md)
