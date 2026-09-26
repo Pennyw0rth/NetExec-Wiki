@@ -106,6 +106,7 @@
 * [Authentication](ldap-protocol/authentication.md)
 * [Enumerate Domain Users](ldap-protocol/enumerate-users.md)
 * [Enumerate Domain Groups](ldap-protocol/enumerate-group-members.md)
+* [🆕 Enumerate Domain OUs](ldap-protocol/enumerate-ous.md)
 * [🆕 Query LDAP](ldap-protocol/query-ldap.md)
 * [ASREPRoast](ldap-protocol/asreproast.md)
 * [Find Domain SID](ldap-protocol/find-domain-sid.md)
