@@ -158,6 +158,8 @@
 * [Execute via xp\_cmdshell](mssql-protocol/windows-command.md)
 * [🆕 Enumerate Users by Bruteforcing RID](mssql-protocol/enumerate-users-by-bruteforcing-rid.md)
 * [MSSQL Linked Servers](mssql-protocol/mssql-linked-servers.md)
+* [🆕 Dump Database Hashes](mssql-protocol/mssql-db-hash.md)
+* [🆕 List Database Backup](mssql-protocol/mssql-list-backups.md)
 
 ## SSH protocol
 
