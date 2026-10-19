@@ -104,6 +104,7 @@
 ## LDAP protocol
 
 * [Authentication](ldap-protocol/authentication.md)
+* [🆕 DNS](ldap-protocol/dns.md)
 * [Enumerate Domain Users](ldap-protocol/enumerate-users.md)
 * [Enumerate Domain Groups](ldap-protocol/enumerate-group-members.md)
 * [🆕 Enumerate Domain OUs](ldap-protocol/enumerate-ous.md)
