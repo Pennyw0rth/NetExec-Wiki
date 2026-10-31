@@ -201,3 +201,11 @@
 
 * [Authentication](vnc-protocol/authentication.md)
 * [Screenshot](vnc-protocol/screenshot-screentime.md)
+
+## MCP protocol
+
+* [Authentication](mcp-protocol/authentication.md)
+* [List MCP features](mcp-protocol/list-features.md)
+* [Use MCP prompts](mcp-protocol/prompts.md)
+* [Use MCP resources](mcp-protocol/resources.md)
+* [Use MCP tools](mcp-protocol/tools.md)
