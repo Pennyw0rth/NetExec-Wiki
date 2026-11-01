@@ -39,7 +39,7 @@ If the KDC cannot be resolved from the domain name, specify the Domain Controlle
 The login itself is done with Kerberos, so the NT hash of the account is no longer retrieved by default. With `--unpac`, nxc additionally performs a U2U request with the PKINIT TGT and extracts the NT hash of the account from the `PAC_CREDENTIAL_INFO` structure of the PAC. The hash is displayed and stored in the nxc database.
 
 ```bash
-nxc smb 192.168.56.3 -u lambda --pfx-cert lambda.pfx --unpac
+nxc smb 192.168.0.1 --pfx-cert user.pfx -u user --unpac
 ```
 
 <figure><img src="../.gitbook/assets/pkinit-unpac.png" alt=""><figcaption><p>Recovering the NT hash of the account with --unpac</p></figcaption></figure>
