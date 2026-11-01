@@ -62,3 +62,8 @@ protocols:
     mssql               own stuff using MSSQL
     nfs                 own stuff using NFS
 ```
+
+
+#### Useful resources:
+
+{% embed url="https://en.hackita.it/articoli/netexec/" %}
