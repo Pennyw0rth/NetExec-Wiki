@@ -1,3 +1,5 @@
+# 🆕 Dump Database Hashes
+
 ```
 description: Dumb MSSQL databases local hashes
 ```

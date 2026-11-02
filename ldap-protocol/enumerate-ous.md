@@ -1,4 +1,4 @@
-# Enumerate Organizational Units
+# 🆕 Enumerate Domain OUs
 
 Enumerate all OUs in the Domain:
 

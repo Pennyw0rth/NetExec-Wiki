@@ -2,6 +2,8 @@
 description: Dumping databases backups paths and encryption status
 ---
 
+# 🆕 List Database Backup
+
 Using the --list-backups it is now possible to determine if databases were backed up, where and whether they are encrypted or not:
 
 ```bash

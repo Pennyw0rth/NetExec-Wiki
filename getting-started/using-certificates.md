@@ -2,7 +2,7 @@
 description: Using Certificates authentication with NetExec
 ---
 
-# Using Certificates
+# 🆕 Using Certificates
 
 ## PKINIT (default)
 

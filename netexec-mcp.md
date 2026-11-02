@@ -1,9 +1,36 @@
 ---
 description: Use NetExec safely with AI agents through scoped, mode-controlled MCP tools.
 icon: microchip-ai
+coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: background
+    mask: none
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
 ---
 
 # NetExec MCP
+
+<figure><img src=".gitbook/assets/netexec-mcp-overview-light.png" alt=""><figcaption></figcaption></figure>
 
 **netexec-mcp** is an [MCP](https://modelcontextprotocol.io/) server that plugs NetExec directly into an AI agent: Claude Code, Cursor, opencode, or your own. The agent calls NetExec as one of its tools, inside the scope and mode you set.
 
@@ -76,6 +103,16 @@ claude mcp add netexec \
 ```
 
 Check with `claude mcp list`, or `/mcp` inside Claude Code.
+{% endtab %}
+
+{% tab title="Codex" %}
+```toml
+codex mcp add netexec \
+  --env NXC_SCOPE=10.0.0.0/24 \
+  --env NXC_MODE=recon \
+  --env NXC_AUDIT_LOG=~/.netexec-mcp/audit.jsonl \
+  -- netexec-mcp
+```
 {% endtab %}
 
 {% tab title="Cursor" %}
