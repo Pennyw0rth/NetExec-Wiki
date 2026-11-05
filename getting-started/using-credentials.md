@@ -106,7 +106,7 @@ nxc <protocol> <target(s)> -u ~/file_containing_usernames -H ~/file_containing_n
 nxc <protocol> <target(s)> -u ~/file_containing_usernames -p ~/file_containing_passwords --no-bruteforce
 ```
 
-```
+```bash
 user1 -> pass1
 user2 -> pass2
 ```
