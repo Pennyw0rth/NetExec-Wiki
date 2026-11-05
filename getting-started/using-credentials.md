@@ -66,8 +66,8 @@ nxc <protocol> <target(s)> -u FILE -p password
 Where **FILE** is a file with usernames in this format
 
 ```bash
-DOMAIN1\user
-DOMAIN2\user
+DOMAIN1\\user
+DOMAIN2\\user
 ```
 
 ## Brute Forcing & Password Spraying
@@ -106,7 +106,7 @@ nxc <protocol> <target(s)> -u ~/file_containing_usernames -H ~/file_containing_n
 nxc <protocol> <target(s)> -u ~/file_containing_usernames -p ~/file_containing_passwords --no-bruteforce
 ```
 
-```bash
+```
 user1 -> pass1
 user2 -> pass2
 ```
@@ -132,3 +132,7 @@ nxc <protocol> <target> --jitter 3 -u ~/file_containing_usernames -p ~/file_cont
 nxc <protocol> <target> --jitter 2-5 -u ~/file_containing_usernames -p ~/file_containing_passwords
 nxc <protocol> <target> --jitter 4-4 -u ~/file_containing_usernames -p ~/file_containing_passwords
 ```
+
+## Further Reading
+
+For a broader, command-focused walkthrough of NetExec in Windows and Active Directory assessments, see the [NetExec practical guide from HackITA](https://en.hackita.it/articoli/netexec/). It covers installation, target selection, unauthenticated reconnaissance, password and hash-based authentication, password spraying, SMB/LDAP enumeration, and post-authentication workflows across several protocols.
