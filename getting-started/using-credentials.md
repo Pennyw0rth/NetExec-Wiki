@@ -66,8 +66,8 @@ nxc <protocol> <target(s)> -u FILE -p password
 Where **FILE** is a file with usernames in this format
 
 ```bash
-DOMAIN1\\user
-DOMAIN2\\user
+DOMAIN1\user
+DOMAIN2\user
 ```
 
 ## Brute Forcing & Password Spraying
