@@ -138,6 +138,20 @@
 * [🆕 Enumerate scriptPath](ldap-protocol/get-scriptpath.md)
 * [🆕 Enumerate Unsecure DNS Zones](ldap-protocol/enumerate-unsecure-dns-zones.md)
 
+## ADWS protocol
+
+* [🆕 Authentication](adws-protocol/authentication.md)
+* [🆕 Enumerate Domain Users](adws-protocol/enumerate-users.md)
+* [🆕 Enumerate Domain Computers](adws-protocol/enumerate-computers.md)
+* [🆕 Enumerate Domain Groups](adws-protocol/enumerate-groups.md)
+* [🆕 List Domain Controllers](adws-protocol/dc-list.md)
+* [🆕 Find Domain SID](adws-protocol/find-domain-sid.md)
+* [🆕 Admin Count](adws-protocol/admin-count.md)
+* [🆕 Unconstrained Delegation](adws-protocol/unconstrained-delegation.md)
+* [🆕 Find Misconfigured Delegation](adws-protocol/find-delegation.md)
+* [🆕 Password Not Required](adws-protocol/password-not-required.md)
+* [🆕 Query ADWS](adws-protocol/query-adws.md)
+
 ## WINRM protocol
 
 * [Password Spraying](winrm-protocol/password-spraying.md)
