@@ -58,6 +58,7 @@
   * [Enumerate Users by Bruteforcing RID](smb-protocol/enumeration/enumerate-users-by-bruteforcing-rid.md)
   * [Enumerate Domain Groups](smb-protocol/enumeration/enumerate-domain-groups.md)
   * [Enumerate Local Groups](smb-protocol/enumeration/enumerate-local-groups.md)
+  * [🆕 Enumerate DA and EA Group Users' Presence](smb-protocol/enumeration/presence.md)
   * [Enumerate Domain Password Policy](smb-protocol/enumeration/enumerate-domain-password-policy-1.md)
   * [Enumerate Anti-Virus & EDR](smb-protocol/enumeration/enumerate-antivirus-edr.md)
   * [Enumerate remote processes](smb-protocol/enumeration/enumerate-remote-processes.md)
