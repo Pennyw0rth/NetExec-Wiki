@@ -1,0 +1,65 @@
+---
+description: Checking NTLM Signing Enforcement (LDAP)
+---
+
+# 🆕 Checking NTLM Signing Enforcement (LDAP)
+
+This module checks whether a target **enforces NTLM signing** (`KB5135557` / `ServerRequireNtlmSign`) over **LDAP**.
+
+It performs two NTLM (sicily) binds with the same credentials, one **negotiating NTLM signing** and one **not negotiating it**:
+
+* Unsigned rejected + signed accepted = **NTLM signing is enforced**
+* Both accepted = **NTLM signing is not enforced**
+
+```bash
+nxc ldap 192.168.1.0/24 -u user -p pass -M ntlmsign
+```
+
+{% hint style="info" %}
+This module requires **valid, non-guest credentials** over **NTLM**. See [Limitations](#limitations).
+{% endhint %}
+
+#### References
+
+{% embed url="https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/11/kb5135557-ntlm-signing-security-improvements" %}
+
+## How it works
+
+For each target the module sends two sicily binds over plain `ldap://`:
+
+1. **Signed**: the NTLM Type 1 message sets the signing flag
+2. **Unsigned**: the NTLM Type 1 message does not set the signing flag
+
+The bind result code of each attempt is compared to determine whether the server rejects unsigned NTLM authentication.
+
+{% hint style="warning" %}
+Two bind attempts are made per target, so expect two logon events per host in the target's logs.
+{% endhint %}
+
+## Example output
+
+The screenshot below shows the registry query before and after enabling enforcement, each followed by a scan with the module.
+
+<figure><img src="../.gitbook/assets/On vs Off LDAP.png" alt=""><figcaption><p>ntlmsign against a DC with ServerRequireNtlmSign off vs on</p></figcaption></figure>
+
+## Limitations
+
+The check only makes sense for **NTLM authentication with a real account**. The module exits early with a failure message in the following cases.
+
+### Kerberos
+
+Kerberos authentication (`-k` / `--use-kcache`) does not use NTLM, so there is nothing to check.
+
+<!-- IMAGE HERE: Kerberos exception message -->
+
+### Schannel / certificate authentication
+
+Certificate authentication (`--pfx-cert`, `--pfx-base64`, `--pem-cert`, `--pem-key`) uses Schannel, not NTLM, so the check is not applicable.
+
+<!-- IMAGE HERE: Schannel exception message -->
+
+### Null authentication
+
+Null sessions and the `guest` account are **exempt** from `ServerRequireNtlmSign`, so a result obtained with them would be meaningless. Re-run with a non-guest account.
+
+<!-- IMAGE HERE: Null auth exception message -->
