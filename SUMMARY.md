@@ -114,6 +114,7 @@
 * [ASREPRoast](ldap-protocol/asreproast.md)
 * [Find Domain SID](ldap-protocol/find-domain-sid.md)
 * [Kerberoasting](ldap-protocol/kerberoasting.md)
+* [🆕 Password Never Expires](ldap-protocol/password-never-expires.md)
 * [🆕 Find Misconfigured Delegation](ldap-protocol/find-misconfigured-delegation.md)
 * [Unconstrained Delegation](ldap-protocol/unconstrained-delegation.md)
 * [Admin Count](ldap-protocol/admin-count.md)
