@@ -50,16 +50,16 @@ The check only makes sense for **NTLM authentication with a real account**. The 
 
 Kerberos authentication (`-k` / `--use-kcache`) does not use NTLM, so there is nothing to check.
 
-<!-- IMAGE HERE: Kerberos exception message -->
+<figure><img src="../.gitbook/assets/LDAP Kerberos Exception.png" alt=""><figcaption><p>ntlmsign against a DC with a Kerberos authentication failure</p></figcaption></figure>
 
 ### Schannel / certificate authentication
 
 Certificate authentication (`--pfx-cert`, `--pfx-base64`, `--pem-cert`, `--pem-key`) uses Schannel, not NTLM, so the check is not applicable.
 
-<!-- IMAGE HERE: Schannel exception message -->
+<figure><img src="../.gitbook/assets/LDAP Schannel Exception.png" alt=""><figcaption><p>ntlmsign against a DC with a Schannel certificate authentication failure</p></figcaption></figure>
 
 ### Null authentication
 
 Null sessions and the `guest` account are **exempt** from `ServerRequireNtlmSign`, so a result obtained with them would be meaningless. Re-run with a non-guest account.
 
-<!-- IMAGE HERE: Null auth exception message -->
+<figure><img src="../.gitbook/assets/LDAP Null Auth Exception.png" alt=""><figcaption><p>ntlmsign against a DC with a null authentication or guest account failure</p></figcaption></figure>
