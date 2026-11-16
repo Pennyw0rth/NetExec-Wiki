@@ -6,7 +6,7 @@ Use `--password-never-expires` to find LDAP accounts whose `userAccountControl` 
 nxc ldap <target> -u <username> -p <password> --password-never-expires
 ```
 
-Each result includes the account name and whether the account is enabled or disabled. Disabled accounts are included in the results.
+Only enabled accounts are included in the results. Each result shows the account name and when its password was last set. A value of `<never>` means the password has never been set.
 
 ## Resources
 
