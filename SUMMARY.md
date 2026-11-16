@@ -117,6 +117,7 @@
 * [🆕 Find Misconfigured Delegation](ldap-protocol/find-misconfigured-delegation.md)
 * [Unconstrained Delegation](ldap-protocol/unconstrained-delegation.md)
 * [Admin Count](ldap-protocol/admin-count.md)
+* [🆕 Password Never Expires](ldap-protocol/password-never-expires.md)
 * [Machine Account Quota](ldap-protocol/machine-account-quota.md)
 * [Get User Descriptions](ldap-protocol/get-user-descriptions.md)
 * [Dump gMSA](ldap-protocol/dump-gmsa.md)
