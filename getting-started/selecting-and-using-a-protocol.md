@@ -17,6 +17,7 @@ rdp
 vnc
 mssql
 nfs
+psql
 ```
 
 Note that not all protocols support the same functionality, be sure to check each protocol's options
@@ -33,7 +34,7 @@ Running `nxc --help` will list general options and protocols that are available 
 
 ```bash
 #~ nxc --help
-usage: nxc [-h] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--no-progress] [--verbose] [--debug] [--version] {smb,ssh,ldap,ftp,wmi,winrm,rdp,vnc,mssql} ...
+usage: nxc [-h] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--no-progress] [--verbose] [--debug] [--version] {smb,ssh,ldap,ftp,wmi,winrm,rdp,vnc,mssql,psql} ...
 
     <-- Banner -->   
 
@@ -50,7 +51,7 @@ options:
 protocols:
   available protocols
 
-  {smb,ssh,ldap,ftp,wmi,winrm,rdp,vnc,mssql,nfs}
+  {smb,ssh,ldap,ftp,wmi,winrm,rdp,vnc,mssql,nfs,psql}
     smb                 own stuff using SMB
     ssh                 own stuff using SSH
     ldap                own stuff using LDAP
@@ -61,4 +62,5 @@ protocols:
     vnc                 own stuff using VNC
     mssql               own stuff using MSSQL
     nfs                 own stuff using NFS
+    psql                own stuff using PostgreSQL
 ```

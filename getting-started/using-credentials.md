@@ -28,6 +28,7 @@ Code execution results in a (**Pwn3d!**) added after the login confirmation. Wit
 | RDP      | Code execution at least :space\_invader:               |
 | VNC      | Code execution at least :space\_invader:               |
 | WMI      | Most likely local admin :white\_check\_mark:           |
+| PSQL     | Code execution at least :space\_invader:               |
 
 {% hint style="info" %}
 When using usernames or passwords that contain special symbols (especially exclaimation points!), wrap them in single quotes to make sure your shell interprets them as a string.
