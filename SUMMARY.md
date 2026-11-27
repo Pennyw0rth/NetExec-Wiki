@@ -205,3 +205,10 @@
 
 * [Authentication](vnc-protocol/authentication.md)
 * [Screenshot](vnc-protocol/screenshot-screentime.md)
+
+## PSQL Protocol
+
+* [Authentication](psql-protocol/authentication.md)
+* [Password Spraying](psql-protocol/password-spraying.md)
+* [File Upload & Download](psql-protocol/get-and-put-files.md)
+* [SQL Command Execution](psql-protocol/sql-execution.md)
